@@ -1,0 +1,320 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Clinic {
+  id                   String   @id @default(cuid())
+  name                 String
+  address              String?
+  city                 String?
+  phone                String?
+  email                String?
+  logoUrl              String?
+  doctorName           String?
+  doctorRegNumber      String?
+  consultationFeeNew   Float    @default(500)
+  consultationFeeFollowUp Float @default(300)
+  timings              String?  // JSON string
+  whatsappNumber       String?
+  createdAt            DateTime @default(now())
+  updatedAt            DateTime @updatedAt
+
+  users         User[]
+  patients      Patient[]
+  appointments  Appointment[]
+  invoices      Invoice[]
+  inventory     InventoryItem[]
+  activityLogs  ActivityLog[]
+}
+
+model User {
+  id           String   @id @default(cuid())
+  clinicId     String
+  name         String
+  phone        String   @unique
+  email        String?
+  passwordHash String
+  role         String   // DOCTOR | RECEPTIONIST | ASSISTANT
+  isActive     Boolean  @default(true)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  clinic       Clinic   @relation(fields: [clinicId], references: [id])
+  cases        CaseRecord[] @relation("CaseAuthor")
+  prescriptions Prescription[] @relation("RxAuthor")
+  activityLogs ActivityLog[]
+  appointments Appointment[] @relation("ApptCreatedBy")
+}
+
+model Family {
+  id        String    @id @default(cuid())
+  familyId  String    @unique // e.g. FAM-0001
+  name      String?
+  notes     String?
+  createdAt DateTime  @default(now())
+  patients  Patient[]
+}
+
+model Patient {
+  id              String   @id @default(cuid())
+  clinicId        String
+  uhid            String   @unique // e.g. HC-2026-0001
+  familyId        String?
+  fullName        String
+  dateOfBirth     DateTime?
+  ageYears        Int?
+  gender          String?  // Male | Female | Other
+  phone           String
+  alternatePhone  String?
+  address         String?
+  city            String?
+  occupation      String?
+  maritalStatus   String?
+  referredBy      String?
+  photoUrl        String?
+  tag             String   @default("NEW") // NEW | FOLLOW_UP | INACTIVE | VIP
+  bloodGroup      String?
+  notes           String?
+  birthday        DateTime?
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  clinic          Clinic   @relation(fields: [clinicId], references: [id])
+  family          Family?  @relation(fields: [familyId], references: [id])
+  caseRecords     CaseRecord[]
+  appointments    Appointment[]
+  prescriptions   Prescription[]
+  invoices        Invoice[]
+  attachments     Attachment[]
+  followUps       FollowUp[]
+
+  @@index([phone])
+  @@index([fullName])
+  @@index([clinicId])
+}
+
+model CaseRecord {
+  id                  String   @id @default(cuid())
+  patientId           String
+  authorId            String
+  version             Int      @default(1)
+  parentCaseId        String?  // for versioning — links to previous version
+  isLocked            Boolean  @default(true)
+  visitDate           DateTime @default(now())
+  visitType           String   @default("NEW") // NEW | FOLLOW_UP
+
+  // Chief complaints stored as JSON array
+  chiefComplaints     String?  // JSON
+  physicalGenerals    String?  // JSON
+  mentalGenerals      String?  // JSON
+  pastHistory         String?  // JSON
+  physicalExam        String?  // JSON — BP, weight, pulse
+  provisionalDiagnosis String?
+  miasm               String?  // Psoric | Sycotic | Syphilitic | Tubercular
+  doctorObservation   String?
+  improvementStatus   String?  // Improved | Same | Worse
+  improvementPercent  Int?
+
+  createdAt           DateTime @default(now())
+  updatedAt           DateTime @updatedAt
+
+  patient             Patient  @relation(fields: [patientId], references: [id])
+  author              User     @relation("CaseAuthor", fields: [authorId], references: [id])
+  attachments         Attachment[]
+  prescriptions       Prescription[]
+  followUps           FollowUp[]
+
+  @@index([patientId])
+}
+
+model FollowUp {
+  id                 String   @id @default(cuid())
+  patientId          String
+  caseRecordId       String?
+  visitDate          DateTime @default(now())
+  symptomsReported   String?
+  improvementStatus  String?  // Improved | Same | Worse
+  improvementPercent Int?
+  notes              String?
+  nextVisitDue       DateTime?
+  reminderSent       Boolean  @default(false)
+  createdAt          DateTime @default(now())
+
+  patient            Patient  @relation(fields: [patientId], references: [id])
+  caseRecord         CaseRecord? @relation(fields: [caseRecordId], references: [id])
+}
+
+model Remedy {
+  id          String   @id @default(cuid())
+  name        String   @unique
+  commonName  String?
+  category    String   @default("REMEDY") // REMEDY | BIOCHEMIC | MOTHER_TINCTURE
+  potencies   String   @default("[\"6C\",\"30C\",\"200C\",\"1M\",\"10M\"]") // JSON
+  description String?
+  createdAt   DateTime @default(now())
+
+  prescriptionItems PrescriptionItem[]
+  inventoryItems    InventoryItem[]
+}
+
+model Prescription {
+  id            String   @id @default(cuid())
+  patientId     String
+  caseRecordId  String?
+  authorId      String
+  prescriptionNo String @unique
+  visitDate     DateTime @default(now())
+  specialInstructions String?
+  nextVisitDays Int?
+  pdfUrl        String?
+  whatsappSent  Boolean  @default(false)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  patient       Patient  @relation(fields: [patientId], references: [id])
+  caseRecord    CaseRecord? @relation(fields: [caseRecordId], references: [id])
+  author        User     @relation("RxAuthor", fields: [authorId], references: [id])
+  items         PrescriptionItem[]
+}
+
+model PrescriptionItem {
+  id              String  @id @default(cuid())
+  prescriptionId  String
+  remedyId        String?
+  remedyName      String
+  potency         String?
+  dosage          String? // drops/pills
+  frequency       String?
+  duration        String?
+  instructions    String?
+  quantity        Int     @default(1)
+
+  prescription    Prescription @relation(fields: [prescriptionId], references: [id], onDelete: Cascade)
+  remedy          Remedy? @relation(fields: [remedyId], references: [id])
+}
+
+model Appointment {
+  id            String   @id @default(cuid())
+  clinicId      String
+  patientId     String
+  createdById   String?
+  date          DateTime
+  timeSlot      String?
+  tokenNumber   Int?
+  type          String   @default("NEW") // NEW | FOLLOW_UP | WALK_IN
+  status        String   @default("SCHEDULED") // SCHEDULED | ARRIVED | IN_CONSULTATION | COMPLETED | NO_SHOW | CANCELLED
+  notes         String?
+  reminderSent  Boolean  @default(false)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  clinic        Clinic   @relation(fields: [clinicId], references: [id])
+  patient       Patient  @relation(fields: [patientId], references: [id])
+  createdBy     User?    @relation("ApptCreatedBy", fields: [createdById], references: [id])
+
+  @@index([clinicId, date])
+  @@index([status])
+}
+
+model Invoice {
+  id              String   @id @default(cuid())
+  clinicId        String
+  patientId       String
+  invoiceNo       String   @unique
+  visitDate       DateTime @default(now())
+  consultationFee Float    @default(0)
+  medicineCharge  Float    @default(0)
+  discount        Float    @default(0)
+  totalAmount     Float    @default(0)
+  paidAmount      Float    @default(0)
+  paymentMode     String?  // CASH | UPI | CARD | PENDING
+  status          String   @default("PENDING") // PAID | PARTIAL | PENDING
+  notes           String?
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  clinic          Clinic   @relation(fields: [clinicId], references: [id])
+  patient         Patient  @relation(fields: [patientId], references: [id])
+
+  @@index([clinicId, visitDate])
+}
+
+model InventoryItem {
+  id            String   @id @default(cuid())
+  clinicId      String
+  remedyId      String?
+  name          String
+  category      String   // MOTHER_TINCTURE | DILUTION | BIOCHEMIC | GLOBULES | OTHER
+  potency       String?
+  unit          String   @default("bottle")
+  quantity      Float    @default(0)
+  reorderLevel  Float    @default(5)
+  unitCost      Float?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  clinic        Clinic   @relation(fields: [clinicId], references: [id])
+  remedy        Remedy?  @relation(fields: [remedyId], references: [id])
+  stockLogs     StockLog[]
+}
+
+model StockLog {
+  id              String   @id @default(cuid())
+  inventoryItemId String
+  type            String   // PURCHASE | DISPENSE | ADJUSTMENT
+  quantity        Float
+  notes           String?
+  createdAt       DateTime @default(now())
+
+  inventoryItem   InventoryItem @relation(fields: [inventoryItemId], references: [id])
+}
+
+model Attachment {
+  id           String   @id @default(cuid())
+  patientId    String
+  caseRecordId String?
+  fileName     String
+  fileUrl      String
+  fileType     String?
+  category     String?  // REPORT | PRESCRIPTION | PHOTO | OTHER
+  tag          String?  // e.g. "Skin — before treatment"
+  notes        String?
+  uploadedAt   DateTime @default(now())
+
+  patient      Patient  @relation(fields: [patientId], references: [id])
+  caseRecord   CaseRecord? @relation(fields: [caseRecordId], references: [id])
+}
+
+model ActivityLog {
+  id         String   @id @default(cuid())
+  clinicId   String
+  userId     String?
+  action     String
+  entityType String?
+  entityId   String?
+  details    String?
+  ipAddress  String?
+  createdAt  DateTime @default(now())
+
+  clinic     Clinic   @relation(fields: [clinicId], references: [id])
+  user       User?    @relation(fields: [userId], references: [id])
+
+  @@index([clinicId, createdAt])
+}
+
+model MessageLog {
+  id          String   @id @default(cuid())
+  patientId   String?
+  phone       String
+  channel     String   @default("WHATSAPP") // WHATSAPP | SMS
+  template    String?
+  body        String
+  status      String   @default("PENDING") // PENDING | SENT | FAILED
+  error       String?
+  createdAt   DateTime @default(now())
+}
