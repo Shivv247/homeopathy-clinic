@@ -78,7 +78,7 @@ Open **http://localhost:5173**
 
 | Problem | Fix |
 |---------|-----|
-| **Failed deploy** | Almost always `DATABASE_URL` missing or wrong — see below |
+| **Failed deploy (exit 127)** | `NODE_ENV=production` during build skips vite/prisma — fixed in latest `render.yaml`; redeploy |
 | Render build fails | Check **Logs** tab for red error line |
 | `DATABASE_URL is missing` | Environment → add `DATABASE_URL` → Save → Manual Deploy |
 | `Can't reach database` | Use Supabase **Session pooler** URL (port **5432**), not direct IPv6 |

@@ -1,13 +1,11 @@
 services:
   - type: web
-    name: healing-clinic-shivv247
+    name: homeopathy-clinic
     runtime: node
     plan: free
-    buildCommand: npm install && npm run build
-    startCommand: npm start
+    buildCommand: NPM_CONFIG_PRODUCTION=false npm install && npm run build
+    startCommand: NODE_ENV=production npm start
     envVars:
-      - key: NODE_ENV
-        value: production
       - key: DATABASE_URL
         sync: false
       - key: JWT_SECRET
