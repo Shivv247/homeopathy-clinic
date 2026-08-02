@@ -78,10 +78,25 @@ Open **http://localhost:5173**
 
 | Problem | Fix |
 |---------|-----|
-| Render build fails | Check **Logs** — usually missing `DATABASE_URL` |
-| "Can't reach database" | Supabase URL correct? Password special chars URL-encoded? |
-| Login fails | Redeploy after setting `DATABASE_URL`; seed runs on empty DB |
+| **Failed deploy** | Almost always `DATABASE_URL` missing or wrong — see below |
+| Render build fails | Check **Logs** tab for red error line |
+| `DATABASE_URL is missing` | Environment → add `DATABASE_URL` → Save → Manual Deploy |
+| `Can't reach database` | Use Supabase **Session pooler** URL (port **5432**), not direct IPv6 |
+| Password has `@` or `#` | Encode: `@`→`%40`, `#`→`%23` OR reset Supabase password to simple text |
 | Slow first load | Normal on Render free (cold start) |
+
+### Fix a failed Render deploy (your `homeopathy-clinic` service)
+
+1. Render → click **homeopathy-clinic** → **Logs** (last red line = exact error)
+2. **Environment** → **Add Environment Variable**
+   - Key: `DATABASE_URL`
+   - Value: Supabase **Connect → Prisma → DIRECT_URL** (port 5432)
+   - Password: encode `@` → `%40`, `#` → `%23`
+3. **Save Changes**
+4. **Manual Deploy** → **Deploy latest commit**
+5. Wait 5–8 min → open your service URL (top of page, NOT `homeopathy-clinic.onrender.com` unless that's yours)
+
+Test: `https://YOUR-SERVICE-URL.onrender.com/api/health` should return JSON.
 
 ---
 

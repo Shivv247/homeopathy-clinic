@@ -2,6 +2,9 @@
   "name": "homeopathy-clinic",
   "version": "1.0.0",
   "private": true,
+  "engines": {
+    "node": ">=18"
+  },
   "description": "Full-stack Clinic Management App for Indian Homeopathic Doctors",
   "scripts": {
     "setup": "npm install --prefix backend && npm install --prefix frontend && npm run setup --prefix backend",
