@@ -40,7 +40,10 @@ Keep this URL — paste it in Render in Step 2.
 5. Before deploy finishes, open the service → **Environment**:
    - Add **`DATABASE_URL`** = your Supabase URI from Step 1
 6. **Manual Deploy** → **Deploy latest commit** (if first deploy failed without DB URL)
-7. Wait ~5–8 min → copy URL, e.g. `https://homeopathy-clinic-xxxx.onrender.com`
+7. Wait ~5–8 min → copy URL from **your** Render dashboard (top of service page)
+
+> **Important:** `homeopathy-clinic.onrender.com` may belong to someone else's app.
+> Your URL will look like `https://healing-clinic-shivv247.onrender.com` (see service name in dashboard).
 
 > Free tier sleeps after 15 min idle. First open may take ~30 sec to wake up.
 

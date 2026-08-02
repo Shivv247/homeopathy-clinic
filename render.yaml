@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: homeopathy-clinic
+    name: healing-clinic-shivv247
     runtime: node
     plan: free
     buildCommand: npm install && npm run build
