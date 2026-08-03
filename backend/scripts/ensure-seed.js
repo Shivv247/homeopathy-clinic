@@ -1,6 +1,7 @@
 const { PrismaClient } = require('@prisma/client');
 const { execSync } = require('child_process');
 const path = require('path');
+const { ensureDemoReports } = require('./ensure-demo-reports');
 
 async function main() {
   const prisma = new PrismaClient();
@@ -14,6 +15,7 @@ async function main() {
       });
     } else {
       console.log('✓ Database already has data');
+      await ensureDemoReports(prisma);
     }
   } finally {
     await prisma.$disconnect();

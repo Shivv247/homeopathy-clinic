@@ -302,26 +302,26 @@ async function main() {
   }
 
   const reportPatients = [patients[0], patients[3], patients[4], patients[6], patients[9], patients[11]];
-  const reportTags = [
-    ['Skin — before treatment', 'Skin — after 3 months'],
-    ['Thyroid report — Jan 2025', 'Thyroid report — Jul 2025'],
-    ['Blood test — baseline', 'Blood test — follow-up'],
-    ['X-ray — knee', 'X-ray — knee (3 months later)'],
-    ['Old prescription scan'],
-    ['ECG report'],
+  const reportSets = [
+    { tags: ['Skin — Before treatment', 'Skin — After 3 months'], urls: ['https://placehold.co/800x600/f0e4d8/6b4423?text=Skin+Before', 'https://placehold.co/800x600/e4ede6/2f4f37?text=Skin+After+3+Months'] },
+    { tags: ['Eczema — Week 1', 'Eczema — Week 8'], urls: ['https://placehold.co/800x600/ffe8d6/c45c26?text=Eczema+Week+1', 'https://placehold.co/800x600/d4e8d4/1e4620?text=Eczema+Week+8'] },
+    { tags: ['Thyroid report — Jan 2025', 'Thyroid report — Jul 2025'], urls: ['https://placehold.co/800x600/e8eef5/1e3a5f?text=Thyroid+Baseline', 'https://placehold.co/800x600/e8eef5/1e3a5f?text=Thyroid+Follow-up'] },
+    { tags: ['Blood test — baseline', 'Blood test — follow-up'], urls: ['https://placehold.co/800x600/f5f5f4/44403c?text=Blood+Test+Before', 'https://placehold.co/800x600/e7e5e4/292524?text=Blood+Test+After'] },
+    { tags: ['Old prescription scan'], urls: ['https://placehold.co/800x600/fff7ed/9a3412?text=Prescription+Scan'] },
+    { tags: ['ECG report'], urls: ['https://placehold.co/800x600/fee2e2/991b1b?text=ECG+Report'] },
   ];
   for (let i = 0; i < reportPatients.length; i += 1) {
-    const tags = reportTags[i];
-    for (let j = 0; j < tags.length; j += 1) {
+    const set = reportSets[i];
+    for (let j = 0; j < set.tags.length; j += 1) {
       await prisma.attachment.create({
         data: {
           patientId: reportPatients[i].id,
           fileName: `report-${i}-${j}.jpg`,
-          fileUrl: `https://picsum.photos/seed/clinic${i}${j}/800/600`,
+          fileUrl: set.urls[j],
           fileType: 'image/jpeg',
           category: 'REPORT',
-          tag: tags[j],
-          uploadedAt: new Date(Date.now() - (tags.length - j) * 90 * 24 * 60 * 60 * 1000),
+          tag: set.tags[j],
+          uploadedAt: new Date(Date.now() - (set.tags.length - j) * 90 * 24 * 60 * 60 * 1000),
         },
       });
     }
