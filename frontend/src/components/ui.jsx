@@ -12,6 +12,19 @@ export function PageLoader() {
   );
 }
 
+export function Skeleton({ className = '' }) {
+  return <div className={`animate-pulse rounded-xl bg-sage-100/80 ${className}`} />;
+}
+
+export function StatSkeleton() {
+  return (
+    <div className="card-surface p-4 space-y-2">
+      <Skeleton className="h-8 w-16" />
+      <Skeleton className="h-4 w-24" />
+    </div>
+  );
+}
+
 export function EmptyState({ title, description, action }) {
   return (
     <div className="card-surface p-10 text-center">

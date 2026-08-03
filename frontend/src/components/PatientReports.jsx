@@ -1,9 +1,10 @@
 import { useRef, useState } from 'react';
-import { useMutation, useQueryClient } from '@tanstack/react-query';
+import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import imageCompression from 'browser-image-compression';
 import { format } from 'date-fns';
 import { Camera, Upload, X, Columns2 } from 'lucide-react';
 import api from '../lib/api';
+import { Skeleton } from './ui';
 
 function imageUrl(url) {
   if (!url) return '';
@@ -11,7 +12,7 @@ function imageUrl(url) {
   return url;
 }
 
-export default function PatientReports({ patientId, reports = [] }) {
+export default function PatientReports({ patientId }) {
   const qc = useQueryClient();
   const fileRef = useRef(null);
   const cameraRef = useRef(null);
@@ -21,6 +22,12 @@ export default function PatientReports({ patientId, reports = [] }) {
   const [compare, setCompare] = useState([]);
   const [lightbox, setLightbox] = useState(null);
   const [slider, setSlider] = useState(50);
+
+  const { data: reports = [], isLoading } = useQuery({
+    queryKey: ['patient-reports', patientId],
+    queryFn: async () => (await api.get(`/patients/${patientId}/reports`)).data.reports,
+    staleTime: 60_000,
+  });
 
   const uploadMut = useMutation({
     mutationFn: async (file) => {
@@ -37,6 +44,7 @@ export default function PatientReports({ patientId, reports = [] }) {
       });
     },
     onSuccess: () => {
+      qc.invalidateQueries({ queryKey: ['patient-reports', patientId] });
       qc.invalidateQueries({ queryKey: ['patient', patientId] });
       setTag('');
       setError('');
@@ -137,7 +145,14 @@ export default function PatientReports({ patientId, reports = [] }) {
       )}
 
       {!reports.length ? (
-        <div className="card-surface p-6 text-center text-muted text-sm">No report images yet.</div>
+        isLoading ? (
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            <Skeleton className="h-48" />
+            <Skeleton className="h-48" />
+          </div>
+        ) : (
+          <div className="card-surface p-6 text-center text-muted text-sm">No report images yet.</div>
+        )
       ) : (
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
           {reports.map((r) => (

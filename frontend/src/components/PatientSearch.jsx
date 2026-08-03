@@ -3,17 +3,20 @@ import { useNavigate } from 'react-router-dom';
 import { Search, UserPlus } from 'lucide-react';
 import { useQuery } from '@tanstack/react-query';
 import api from '../lib/api';
+import { useDebouncedValue } from '../lib/useDebouncedValue';
 
 export default function PatientSearch({ autoFocus = false, className = '' }) {
   const [q, setQ] = useState('');
   const [open, setOpen] = useState(false);
+  const debouncedQ = useDebouncedValue(q.trim(), 300);
   const ref = useRef(null);
   const navigate = useNavigate();
 
   const { data, isFetching } = useQuery({
-    queryKey: ['patient-search', q],
-    queryFn: async () => (await api.get('/patients', { params: { q, limit: 8 } })).data.patients,
-    enabled: q.trim().length >= 2,
+    queryKey: ['patient-search', debouncedQ],
+    queryFn: async () => (await api.get('/patients', { params: { q: debouncedQ, limit: 8 } })).data.patients,
+    enabled: debouncedQ.length >= 2,
+    staleTime: 60_000,
   });
 
   const results = data || [];
@@ -35,10 +38,10 @@ export default function PatientSearch({ autoFocus = false, className = '' }) {
   return (
     <div ref={ref} className={`relative ${className}`}>
       <div className="relative">
-        <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-sage-500" size={20} />
+        <Search className="pointer-events-none absolute left-3.5 top-1/2 -translate-y-1/2 text-sage-500" size={18} />
         <input
-          className="input pl-12 pr-4 py-3.5 text-base w-full"
-          placeholder="Search by name, phone, or patient ID…"
+          className="input-with-icon py-3.5 text-base w-full"
+          placeholder="Search name, phone, or ID"
           value={q}
           autoFocus={autoFocus}
           onChange={(e) => { setQ(e.target.value); setOpen(true); }}

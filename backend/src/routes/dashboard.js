@@ -10,83 +10,24 @@ router.use(authenticate);
 router.get('/overview', asyncHandler(async (req, res) => {
   const clinicId = req.user.clinicId;
   const now = new Date();
+  const dayStart = startOfDay(now);
+  const dayEnd = endOfDay(now);
 
-  const [
-    todayAppointments,
-    todayCompleted,
-    totalPatients,
-    newPatientsMonth,
-    todayInvoices,
-    lowStock,
-    birthdays,
-  ] = await Promise.all([
+  const [todayPatients, todayCollection] = await Promise.all([
     prisma.appointment.count({
-      where: { clinicId, date: { gte: startOfDay(now), lte: endOfDay(now) } },
+      where: { clinicId, date: { gte: dayStart, lte: dayEnd } },
     }),
-    prisma.appointment.count({
-      where: {
-        clinicId,
-        date: { gte: startOfDay(now), lte: endOfDay(now) },
-        status: 'COMPLETED',
-      },
-    }),
-    prisma.patient.count({ where: { clinicId } }),
-    prisma.patient.count({
-      where: {
-        clinicId,
-        tag: 'NEW',
-        createdAt: { gte: startOfMonth(now), lte: endOfMonth(now) },
-      },
-    }),
-    prisma.invoice.findMany({
-      where: { clinicId, visitDate: { gte: startOfDay(now), lte: endOfDay(now) } },
-    }),
-    prisma.inventoryItem.findMany({ where: { clinicId } }).then((items) =>
-      items.filter((i) => i.quantity <= i.reorderLevel).length
-    ),
-    prisma.patient.findMany({
-      where: { clinicId },
-      select: { id: true, fullName: true, phone: true, birthday: true, dateOfBirth: true },
-    }).then((patients) => {
-      const m = now.getMonth();
-      const d = now.getDate();
-      return patients.filter((p) => {
-        const b = p.birthday || p.dateOfBirth;
-        if (!b) return false;
-        const bd = new Date(b);
-        return bd.getMonth() === m && bd.getDate() === d;
-      }).slice(0, 10);
+    prisma.invoice.aggregate({
+      where: { clinicId, visitDate: { gte: dayStart, lte: dayEnd } },
+      _sum: { paidAmount: true },
     }),
   ]);
-
-  const todayCollection = todayInvoices.reduce((s, i) => s + i.paidAmount, 0);
-  const todayNew = await prisma.appointment.count({
-    where: {
-      clinicId,
-      date: { gte: startOfDay(now), lte: endOfDay(now) },
-      type: { in: ['NEW', 'WALK_IN'] },
-    },
-  });
-  const todayFollowUp = await prisma.appointment.count({
-    where: {
-      clinicId,
-      date: { gte: startOfDay(now), lte: endOfDay(now) },
-      type: 'FOLLOW_UP',
-    },
-  });
 
   res.json({
     success: true,
     overview: {
-      todayPatients: todayAppointments,
-      todayCompleted,
-      todayNew,
-      todayFollowUp,
-      totalPatients,
-      newPatientsMonth,
-      todayCollection,
-      lowStockCount: lowStock,
-      birthdays,
+      todayPatients,
+      todayCollection: todayCollection._sum.paidAmount || 0,
     },
   });
 }));

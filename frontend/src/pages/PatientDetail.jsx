@@ -4,7 +4,7 @@ import { Link, useParams } from 'react-router-dom';
 import { format } from 'date-fns';
 import { Phone, Pill, FileDown, IndianRupee } from 'lucide-react';
 import api from '../lib/api';
-import { PageLoader, StatusBadge } from '../components/ui';
+import { PageLoader, Skeleton, StatusBadge } from '../components/ui';
 import { useAuth } from '../store/auth';
 import PatientReports from '../components/PatientReports';
 
@@ -25,16 +25,28 @@ export default function PatientDetail() {
     queryFn: async () => (await api.get(`/patients/${id}`)).data.patient,
   });
 
-  const { data: timelineData } = useQuery({
+  const { data: timelineData, isLoading: timelineLoading } = useQuery({
     queryKey: ['timeline', id],
     queryFn: async () => (await api.get(`/patients/${id}/timeline`)).data.timeline,
     enabled: tab === 'overview',
   });
 
+  const { data: prescriptions = [], isLoading: rxLoading } = useQuery({
+    queryKey: ['patient-prescriptions', id],
+    queryFn: async () => (await api.get(`/patients/${id}/prescriptions`)).data.prescriptions,
+    enabled: tab === 'prescriptions',
+  });
+
+  const { data: invoices = [], isLoading: invLoading } = useQuery({
+    queryKey: ['patient-invoices', id],
+    queryFn: async () => (await api.get(`/patients/${id}/invoices`)).data.invoices,
+    enabled: tab === 'billing',
+  });
+
   if (isLoading) return <PageLoader />;
   if (!data) return <p>Patient not found</p>;
 
-  const reports = (data.attachments || []).filter((a) => a.category === 'REPORT');
+  const counts = data._count || {};
   const visits = (timelineData || []).filter((t) => t.type === 'PRESCRIPTION' || t.type === 'CASE');
 
   const downloadPdf = async (rxId) => {
@@ -91,7 +103,12 @@ export default function PatientDetail() {
         <div className="space-y-4">
           <div className="card-surface p-4">
             <h3 className="font-medium text-sage-900 mb-3">Visit history</h3>
-            {!visits.length ? (
+            {timelineLoading ? (
+              <div className="space-y-2">
+                <Skeleton className="h-10" />
+                <Skeleton className="h-10" />
+              </div>
+            ) : !visits.length ? (
               <p className="text-sm text-muted">No visits yet.</p>
             ) : (
               <ul className="space-y-2">
@@ -106,15 +123,15 @@ export default function PatientDetail() {
           </div>
           <div className="grid sm:grid-cols-3 gap-3">
             <div className="card-surface p-4 text-center">
-              <p className="text-2xl font-semibold text-sage-900">{data.prescriptions?.length || 0}</p>
+              <p className="text-2xl font-semibold text-sage-900">{counts.prescriptions || 0}</p>
               <p className="text-sm text-muted">Prescriptions</p>
             </div>
             <div className="card-surface p-4 text-center">
-              <p className="text-2xl font-semibold text-sage-900">{reports.length}</p>
+              <p className="text-2xl font-semibold text-sage-900">{counts.attachments || 0}</p>
               <p className="text-sm text-muted">Report images</p>
             </div>
             <div className="card-surface p-4 text-center">
-              <p className="text-2xl font-semibold text-sage-900">{data.invoices?.length || 0}</p>
+              <p className="text-2xl font-semibold text-sage-900">{counts.invoices || 0}</p>
               <p className="text-sm text-muted">Bills</p>
             </div>
           </div>
@@ -123,10 +140,12 @@ export default function PatientDetail() {
 
       {tab === 'prescriptions' && (
         <div className="space-y-3">
-          {!data.prescriptions?.length ? (
+          {rxLoading ? (
+            <Skeleton className="h-28" />
+          ) : !prescriptions.length ? (
             <div className="card-surface p-6 text-muted text-sm">No prescriptions yet.</div>
           ) : (
-            data.prescriptions.map((rx) => (
+            prescriptions.map((rx) => (
               <div key={rx.id} className="card-surface p-4">
                 <div className="flex items-start justify-between gap-3">
                   <div>
@@ -152,15 +171,17 @@ export default function PatientDetail() {
       )}
 
       {tab === 'reports' && (
-        <PatientReports patientId={id} reports={reports} />
+        <PatientReports patientId={id} />
       )}
 
       {tab === 'billing' && (
         <div className="space-y-3">
-          {!data.invoices?.length ? (
+          {invLoading ? (
+            <Skeleton className="h-20" />
+          ) : !invoices.length ? (
             <div className="card-surface p-6 text-muted text-sm">No billing records yet.</div>
           ) : (
-            data.invoices.map((inv) => (
+            invoices.map((inv) => (
               <div key={inv.id} className="card-surface p-4 flex items-center justify-between gap-3">
                 <div>
                   <div className="flex items-center gap-2">

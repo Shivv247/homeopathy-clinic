@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { format } from 'date-fns';
 import { IndianRupee, UserPlus, ChevronRight } from 'lucide-react';
 import api from '../lib/api';
-import { PageLoader, StatusBadge } from '../components/ui';
+import { StatSkeleton } from '../components/ui';
 import { useAuth } from '../store/auth';
 import PatientSearch from '../components/PatientSearch';
 
@@ -20,8 +20,6 @@ export default function Dashboard() {
     queryFn: async () => (await api.get('/appointments/today')).data.appointments,
   });
 
-  if (oLoading || aLoading) return <PageLoader />;
-
   return (
     <div className="space-y-6">
       <div>
@@ -35,14 +33,23 @@ export default function Dashboard() {
       <PatientSearch autoFocus className="max-w-2xl" />
 
       <div className="grid grid-cols-2 gap-3 md:gap-4 max-w-2xl">
-        <div className="card-surface p-4">
-          <p className="text-2xl font-semibold text-sage-900">{overview?.todayPatients ?? 0}</p>
-          <p className="text-sm text-muted">Today&apos;s patients</p>
-        </div>
-        <div className="card-surface p-4">
-          <p className="text-2xl font-semibold text-sage-900">₹{overview?.todayCollection ?? 0}</p>
-          <p className="text-sm text-muted flex items-center gap-1"><IndianRupee size={14} /> Collection</p>
-        </div>
+        {oLoading ? (
+          <>
+            <StatSkeleton />
+            <StatSkeleton />
+          </>
+        ) : (
+          <>
+            <div className="card-surface p-4">
+              <p className="text-2xl font-semibold text-sage-900">{overview?.todayPatients ?? 0}</p>
+              <p className="text-sm text-muted">Today&apos;s patients</p>
+            </div>
+            <div className="card-surface p-4">
+              <p className="text-2xl font-semibold text-sage-900">₹{overview?.todayCollection ?? 0}</p>
+              <p className="text-sm text-muted flex items-center gap-1"><IndianRupee size={14} /> Collection</p>
+            </div>
+          </>
+        )}
       </div>
 
       <section>
@@ -53,7 +60,13 @@ export default function Dashboard() {
           </Link>
         </div>
 
-        {appointments.length === 0 ? (
+        {aLoading ? (
+          <div className="space-y-2">
+            <StatSkeleton className="h-20" />
+            <StatSkeleton className="h-20" />
+            <StatSkeleton className="h-20" />
+          </div>
+        ) : appointments.length === 0 ? (
           <div className="card-surface p-8 text-center text-muted">
             No patients scheduled yet. Search above or register a new patient.
           </div>
@@ -71,7 +84,6 @@ export default function Dashboard() {
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2 flex-wrap">
                     <span className="font-medium text-sage-900">{a.patient.fullName}</span>
-                    <StatusBadge status={a.status} />
                   </div>
                   <p className="text-sm text-muted mt-0.5">
                     {a.patient.uhid} · {a.patient.ageYears || '—'} / {a.patient.gender || '—'}

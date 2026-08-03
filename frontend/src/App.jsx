@@ -1,7 +1,9 @@
+import { lazy, Suspense } from 'react';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import Layout from './components/Layout';
 import { useAuth } from './store/auth';
+import { PageLoader } from './components/ui';
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
 import Patients from './pages/Patients';
@@ -12,10 +14,11 @@ import CaseView from './pages/CaseView';
 import Prescribe from './pages/Prescribe';
 import Appointments from './pages/Appointments';
 import Billing from './pages/Billing';
-import Inventory from './pages/Inventory';
-import Reports from './pages/Reports';
-import Settings from './pages/Settings';
-import Messages from './pages/Messages';
+
+const Inventory = lazy(() => import('./pages/Inventory'));
+const Reports = lazy(() => import('./pages/Reports'));
+const Settings = lazy(() => import('./pages/Settings'));
+const Messages = lazy(() => import('./pages/Messages'));
 
 const qc = new QueryClient({
   defaultOptions: {
@@ -29,6 +32,10 @@ function PrivateRoute({ children, roles }) {
   if (!token || !user) return <Navigate to="/login" replace />;
   if (roles && !roles.includes(user.role)) return <Navigate to="/" replace />;
   return <Layout>{children}</Layout>;
+}
+
+function LazyPage({ children }) {
+  return <Suspense fallback={<PageLoader />}>{children}</Suspense>;
 }
 
 export default function App() {
@@ -46,10 +53,10 @@ export default function App() {
           <Route path="/cases/:id" element={<PrivateRoute><CaseView /></PrivateRoute>} />
           <Route path="/appointments" element={<PrivateRoute><Appointments /></PrivateRoute>} />
           <Route path="/billing" element={<PrivateRoute roles={['DOCTOR', 'RECEPTIONIST']}><Billing /></PrivateRoute>} />
-          <Route path="/inventory" element={<PrivateRoute roles={['DOCTOR', 'RECEPTIONIST']}><Inventory /></PrivateRoute>} />
-          <Route path="/reports" element={<PrivateRoute roles={['DOCTOR']}><Reports /></PrivateRoute>} />
-          <Route path="/messages" element={<PrivateRoute roles={['DOCTOR', 'RECEPTIONIST']}><Messages /></PrivateRoute>} />
-          <Route path="/settings" element={<PrivateRoute roles={['DOCTOR']}><Settings /></PrivateRoute>} />
+          <Route path="/inventory" element={<PrivateRoute roles={['DOCTOR', 'RECEPTIONIST']}><LazyPage><Inventory /></LazyPage></PrivateRoute>} />
+          <Route path="/reports" element={<PrivateRoute roles={['DOCTOR']}><LazyPage><Reports /></LazyPage></PrivateRoute>} />
+          <Route path="/messages" element={<PrivateRoute roles={['DOCTOR', 'RECEPTIONIST']}><LazyPage><Messages /></LazyPage></PrivateRoute>} />
+          <Route path="/settings" element={<PrivateRoute roles={['DOCTOR']}><LazyPage><Settings /></LazyPage></PrivateRoute>} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </BrowserRouter>

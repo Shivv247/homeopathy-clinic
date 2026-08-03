@@ -63,17 +63,78 @@ router.get('/:id', asyncHandler(async (req, res) => {
   const patient = await prisma.patient.findFirst({
     where: { id: req.params.id, clinicId: req.user.clinicId },
     include: {
-      family: { include: { patients: { select: { id: true, fullName: true, uhid: true, phone: true, tag: true } } } },
-      caseRecords: { orderBy: { visitDate: 'desc' }, take: 20 },
-      prescriptions: { orderBy: { visitDate: 'desc' }, take: 10, include: { items: true } },
-      appointments: { orderBy: { date: 'desc' }, take: 10 },
-      attachments: { orderBy: { uploadedAt: 'desc' } },
-      followUps: { orderBy: { visitDate: 'desc' }, take: 20 },
-      invoices: { orderBy: { visitDate: 'desc' }, take: 10 },
+      family: {
+        select: {
+          id: true,
+          familyId: true,
+          name: true,
+          patients: { select: { id: true, fullName: true, uhid: true, phone: true, tag: true } },
+        },
+      },
+      _count: {
+        select: {
+          caseRecords: true,
+          prescriptions: true,
+          attachments: true,
+          invoices: true,
+          followUps: true,
+        },
+      },
     },
   });
   if (!patient) throw new AppError('Patient not found', 404);
   res.json({ success: true, patient });
+}));
+
+router.get('/:id/prescriptions', asyncHandler(async (req, res) => {
+  const patient = await prisma.patient.findFirst({
+    where: { id: req.params.id, clinicId: req.user.clinicId },
+    select: { id: true },
+  });
+  if (!patient) throw new AppError('Patient not found', 404);
+
+  const prescriptions = await prisma.prescription.findMany({
+    where: { patientId: patient.id },
+    orderBy: { visitDate: 'desc' },
+    take: 20,
+    include: {
+      items: {
+        select: {
+          id: true,
+          remedyName: true,
+          potency: true,
+          dosage: true,
+          frequency: true,
+          instructions: true,
+        },
+      },
+    },
+  });
+  res.json({ success: true, prescriptions });
+}));
+
+router.get('/:id/invoices', asyncHandler(async (req, res) => {
+  const patient = await prisma.patient.findFirst({
+    where: { id: req.params.id, clinicId: req.user.clinicId },
+    select: { id: true },
+  });
+  if (!patient) throw new AppError('Patient not found', 404);
+
+  const invoices = await prisma.invoice.findMany({
+    where: { patientId: patient.id },
+    orderBy: { visitDate: 'desc' },
+    take: 20,
+    select: {
+      id: true,
+      invoiceNo: true,
+      visitDate: true,
+      totalAmount: true,
+      paidAmount: true,
+      paymentMode: true,
+      status: true,
+    },
+  });
+  res.json({ success: true, invoices });
 }));
 
 router.post('/', authorize('DOCTOR', 'RECEPTIONIST'), asyncHandler(async (req, res) => {
@@ -171,10 +232,30 @@ router.get('/:id/timeline', asyncHandler(async (req, res) => {
   if (!patient) throw new AppError('Patient not found', 404);
 
   const [cases, prescriptions, followUps, appointments] = await Promise.all([
-    prisma.caseRecord.findMany({ where: { patientId: patient.id }, orderBy: { visitDate: 'desc' } }),
-    prisma.prescription.findMany({ where: { patientId: patient.id }, include: { items: true }, orderBy: { visitDate: 'desc' } }),
-    prisma.followUp.findMany({ where: { patientId: patient.id }, orderBy: { visitDate: 'desc' } }),
-    prisma.appointment.findMany({ where: { patientId: patient.id }, orderBy: { date: 'desc' } }),
+    prisma.caseRecord.findMany({
+      where: { patientId: patient.id },
+      orderBy: { visitDate: 'desc' },
+      take: 20,
+      select: { id: true, visitDate: true, visitType: true, provisionalDiagnosis: true },
+    }),
+    prisma.prescription.findMany({
+      where: { patientId: patient.id },
+      orderBy: { visitDate: 'desc' },
+      take: 20,
+      select: { id: true, visitDate: true, prescriptionNo: true },
+    }),
+    prisma.followUp.findMany({
+      where: { patientId: patient.id },
+      orderBy: { visitDate: 'desc' },
+      take: 20,
+      select: { id: true, visitDate: true, improvementStatus: true },
+    }),
+    prisma.appointment.findMany({
+      where: { patientId: patient.id },
+      orderBy: { date: 'desc' },
+      take: 20,
+      select: { id: true, date: true, status: true, type: true },
+    }),
   ]);
 
   const timeline = [

@@ -5,15 +5,18 @@ import { Search, Plus, Phone } from 'lucide-react';
 import api from '../lib/api';
 import { PageLoader, TagBadge, EmptyState } from '../components/ui';
 import { useAuth } from '../store/auth';
+import { useDebouncedValue } from '../lib/useDebouncedValue';
 
 export default function Patients() {
   const [q, setQ] = useState('');
   const [tag, setTag] = useState('');
+  const debouncedQ = useDebouncedValue(q.trim(), 300);
   const canManage = useAuth((s) => s.canManageOps());
 
   const { data, isLoading } = useQuery({
-    queryKey: ['patients', q, tag],
-    queryFn: async () => (await api.get('/patients', { params: { q: q || undefined, tag: tag || undefined } })).data,
+    queryKey: ['patients', debouncedQ, tag],
+    queryFn: async () => (await api.get('/patients', { params: { q: debouncedQ || undefined, tag: tag || undefined } })).data,
+    staleTime: 30_000,
   });
 
   return (
@@ -32,10 +35,10 @@ export default function Patients() {
 
       <div className="flex flex-col sm:flex-row gap-3">
         <div className="relative flex-1">
-          <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-sage-400" size={18} />
+          <Search className="pointer-events-none absolute left-3.5 top-1/2 -translate-y-1/2 text-sage-400" size={18} />
           <input
-            className="input pl-10"
-            placeholder="Search name / phone / UHID…"
+            className="input-with-icon"
+            placeholder="Search name, phone, or ID"
             value={q}
             onChange={(e) => setQ(e.target.value)}
           />
