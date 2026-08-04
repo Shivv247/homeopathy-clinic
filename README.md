@@ -26,12 +26,13 @@ Built for live consultations: large touch targets, mobile/tablet friendly, “To
 7. **Billing** — Invoices, payment modes, outstanding, daily collection
 8. **Inventory** — Stock + auto-deduct on dispense, low-stock filter
 9. **Dashboard & reports** — Today’s OPD, revenue/patient trends, top remedies
-10. **WhatsApp** — Bulk messages, follow-up reminders (stubbed until API keys set)
-11. **Security** — RBAC, activity log, patient data export
+10. **Clinical Suite** — Kent-style repertory (80+ rubrics), repertorization, materia medica profiles, classic book library, symptom-to-rubric matching
+11. **WhatsApp** — Bulk messages, follow-up reminders (stubbed until API keys set)
+12. **Security** — RBAC, activity log, patient data export
 
-### Phase 2 (documented in Settings)
+### Coming soon
 
-Repertory / materia medica, repertorization, patient portal, telemedicine, Hindi toggle.
+Patient portal, telemedicine, Hindi toggle, expanded repertory library.
 
 ## Quick start (local)
 
@@ -169,6 +170,7 @@ docker compose up -d
 | `GET/POST /api/inventory` | Stock |
 | `GET /api/dashboard/overview` | Today stats |
 | `GET /api/dashboard/analytics` | Charts (doctor) |
+| `GET /api/clinical/*` | Repertory, MM, books, repertorization (doctor) |
 | `POST /api/messages/bulk` | WhatsApp bulk |
 
 ## License

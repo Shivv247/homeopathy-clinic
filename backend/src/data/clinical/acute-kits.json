@@ -1,0 +1,146 @@
+[
+  {
+    "id": "acute-fever",
+    "title": "Acute Fever",
+    "icon": "🌡️",
+    "description": "Sudden onset fever with chills, thirst patterns, and restlessness",
+    "rubricIds": ["r051", "r052", "r053", "r014", "r322", "r325"],
+    "hintRemedies": ["Aconitum Napellus", "Belladonna", "Arsenicum Album", "Bryonia Alba", "Gelsemium"]
+  },
+  {
+    "id": "acute-cough",
+    "title": "Dry Cough / Cold",
+    "icon": "🤧",
+    "description": "Dry tickling cough, worse at night or from cold air",
+    "rubricIds": ["r039", "r040", "r260", "r171", "r255", "r254"],
+    "hintRemedies": ["Rumex Crispus", "Drosera Rotundifolia", "Spongia Tosta", "Bryonia Alba", "Phosphorus"]
+  },
+  {
+    "id": "acute-diarrhea",
+    "title": "Acute Diarrhea",
+    "icon": "💧",
+    "description": "Loose stools, food poisoning, morning diarrhea",
+    "rubricIds": ["r035", "r218", "r219", "r343", "r215"],
+    "hintRemedies": ["Arsenicum Album", "Podophyllum", "China Officinalis", "Veratrum Album", "Aloe Socotrina"]
+  },
+  {
+    "id": "acute-headache",
+    "title": "Acute Headache",
+    "icon": "🤕",
+    "description": "Throbbing, sun headache, worse from motion or noise",
+    "rubricIds": ["r021", "r022", "r023", "r025", "r357", "r154"],
+    "hintRemedies": ["Belladonna", "Bryonia Alba", "Natrum Muriaticum", "Nux Vomica", "Gelsemium"]
+  },
+  {
+    "id": "acute-anxiety",
+    "title": "Anxiety / Panic",
+    "icon": "😰",
+    "description": "Sudden fear, health anxiety, restlessness, anticipatory anxiety",
+    "rubricIds": ["r001", "r002", "r014", "r073", "r048", "r086"],
+    "hintRemedies": ["Aconitum Napellus", "Arsenicum Album", "Gelsemium", "Argentum Nitricum", "Ignatia Amara"]
+  },
+  {
+    "id": "acute-grief",
+    "title": "Grief / Emotional Shock",
+    "icon": "💔",
+    "description": "Ailments from grief, disappointment, sighing, weeping",
+    "rubricIds": ["r003", "r049", "r008", "r103", "r107"],
+    "hintRemedies": ["Ignatia Amara", "Natrum Muriaticum", "Phosphoric Acid", "Aurum Metallicum"]
+  },
+  {
+    "id": "acute-injury",
+    "title": "Injury / Trauma",
+    "icon": "🩹",
+    "description": "Bruises, sprains, nerve injury, post-surgical soreness",
+    "rubricIds": ["r064", "r128", "r129", "r280", "r351"],
+    "hintRemedies": ["Arnica Montana", "Hypericum Perforatum", "Rhus Toxicodendron", "Ruta Graveolens", "Ledum Palustre"]
+  },
+  {
+    "id": "acute-uti",
+    "title": "UTI / Burning Urination",
+    "icon": "🔥",
+    "description": "Burning urination, frequent urging, scanty urine",
+    "rubricIds": ["r070", "r069", "r229", "r232"],
+    "hintRemedies": ["Cantharis", "Apis Mellifica", "Sarsaparilla", "Berberis Vulgaris", "Equisetum Hyemale"]
+  },
+  {
+    "id": "acute-sore-throat",
+    "title": "Sore Throat",
+    "icon": "🗣️",
+    "description": "Painful swallowing, left or right sided, with fever",
+    "rubricIds": ["r057", "r189", "r190", "r191", "r338"],
+    "hintRemedies": ["Lachesis Mutus", "Mercurius Solubilis", "Belladonna", "Phytolacca Decandra", "Hepar Sulphuris"]
+  },
+  {
+    "id": "acute-skin",
+    "title": "Skin Eruption / Urticaria",
+    "icon": "🔴",
+    "description": "Itching, burning eruptions, urticaria, boils",
+    "rubricIds": ["r045", "r046", "r290", "r291", "r292"],
+    "hintRemedies": ["Apis Mellifica", "Rhus Toxicodendron", "Sulphur", "Hepar Sulphuris", "Urtica Urens"]
+  },
+  {
+    "id": "acute-arthritis",
+    "title": "Joint Pain / Arthritis",
+    "icon": "🦴",
+    "description": "Stiffness, worse first motion, better continued motion",
+    "rubricIds": ["r042", "r043", "r044", "r278", "r275"],
+    "hintRemedies": ["Rhus Toxicodendron", "Bryonia Alba", "Colocynthis", "Arnica Montana", "Bryonia Alba"]
+  },
+  {
+    "id": "acute-indigestion",
+    "title": "Indigestion / Acidity",
+    "icon": "🍽️",
+    "description": "Overeating, acidity, nausea, bloating after food",
+    "rubricIds": ["r030", "r359", "r360", "r209", "r344"],
+    "hintRemedies": ["Nux Vomica", "Pulsatilla Nigricans", "Lycopodium Clavatum", "Natrum Phosphoricum", "Carbo Vegetabilis"]
+  },
+  {
+    "id": "acute-child-colic",
+    "title": "Child — Colic / Teething",
+    "icon": "👶",
+    "description": "Irritable child, unbearable pain, one cheek red, teething",
+    "rubricIds": ["r330", "r331", "r004", "r056", "r335"],
+    "hintRemedies": ["Chamomilla", "Colocynthis", "Calcarea Phosphorica", "Belladonna", "Cina Maritima"]
+  },
+  {
+    "id": "acute-constipation",
+    "title": "Constipation",
+    "icon": "⏸️",
+    "description": "Ineffectual urging, hard stool, no desire",
+    "rubricIds": ["r034", "r216", "r217"],
+    "hintRemedies": ["Nux Vomica", "Bryonia Alba", "Alumina", "Opium", "Lycopodium Clavatum"]
+  },
+  {
+    "id": "acute-insomnia",
+    "title": "Sleeplessness",
+    "icon": "🌙",
+    "description": "Cannot sleep from anxiety, grief, or racing thoughts",
+    "rubricIds": ["r048", "r049", "r313", "r002"],
+    "hintRemedies": ["Coffea Cruda", "Arsenicum Album", "Ignatia Amara", "Nux Vomica", "Passiflora Incarnata"]
+  },
+  {
+    "id": "acute-periods",
+    "title": "Painful Periods",
+    "icon": "🌸",
+    "description": "Menstrual colic, bearing down, irregular menses",
+    "rubricIds": ["r036", "r240", "r241", "r245"],
+    "hintRemedies": ["Magnesia Phosphorica", "Pulsatilla Nigricans", "Sepia Officinalis", "Cimicifuga Racemosa", "Sabina"]
+  },
+  {
+    "id": "acute-hayfever",
+    "title": "Hay Fever / Allergy",
+    "icon": "🌼",
+    "description": "Seasonal allergy, sneezing, fluent coryza, itchy eyes",
+    "rubricIds": ["r355", "r342", "r171", "r176", "r055"],
+    "hintRemedies": ["Sabadilla", "Allium Cepa", "Euphrasia Officinalis", "Dulcamara", "Wyethia"]
+  },
+  {
+    "id": "acute-vertigo",
+    "title": "Vertigo / Giddiness",
+    "icon": "🌀",
+    "description": "Motion sickness, vertigo on rising, travel sickness",
+    "rubricIds": ["r328", "r326", "r159", "r206"],
+    "hintRemedies": ["Cocculus Indicus", "Petroleum", "Tabacum", "Gelsemium", "Conium Maculatum"]
+  }
+]

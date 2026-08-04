@@ -5,7 +5,7 @@ import { useQuery } from '@tanstack/react-query';
 import api from '../lib/api';
 import { useDebouncedValue } from '../lib/useDebouncedValue';
 
-export default function PatientSearch({ autoFocus = false, className = '' }) {
+export default function PatientSearch({ autoFocus = false, className = '', onSelect, placeholder = 'Search name, phone, or ID' }) {
   const [q, setQ] = useState('');
   const [open, setOpen] = useState(false);
   const debouncedQ = useDebouncedValue(q.trim(), 300);
@@ -29,19 +29,22 @@ export default function PatientSearch({ autoFocus = false, className = '' }) {
     return () => document.removeEventListener('mousedown', onClick);
   }, []);
 
-  const pick = (id) => {
+  const pick = (patient) => {
     setQ('');
     setOpen(false);
-    navigate(`/patients/${id}`);
+    if (onSelect) onSelect(patient);
+    else navigate(`/patients/${patient.id}`);
   };
 
   return (
-    <div ref={ref} className={`relative ${className}`}>
+    <div ref={ref} className={`relative min-w-0 ${className}`}>
       <div className="relative">
-        <Search className="pointer-events-none absolute left-3.5 top-1/2 -translate-y-1/2 text-sage-500" size={18} />
+        <Search className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-sage-400" size={18} />
         <input
-          className="input-with-icon py-3.5 text-base w-full"
-          placeholder="Search name, phone, or ID"
+          type="search"
+          enterKeyHint="search"
+          className="input-with-icon w-full"
+          placeholder={placeholder}
           value={q}
           autoFocus={autoFocus}
           onChange={(e) => { setQ(e.target.value); setOpen(true); }}
@@ -50,7 +53,7 @@ export default function PatientSearch({ autoFocus = false, className = '' }) {
       </div>
 
       {open && q.trim().length >= 2 && (
-        <div className="absolute z-50 top-full mt-2 w-full card-surface shadow-lg max-h-80 overflow-y-auto">
+        <div className="absolute z-50 top-full left-0 right-0 mt-2 card-surface shadow-lg max-h-80 overflow-y-auto">
           {isFetching ? (
             <p className="p-4 text-sm text-muted">Searching…</p>
           ) : results.length === 0 ? (
@@ -70,10 +73,10 @@ export default function PatientSearch({ autoFocus = false, className = '' }) {
                 key={p.id}
                 type="button"
                 className="w-full text-left px-4 py-3 hover:bg-sage-50 border-b border-sage-100 last:border-0"
-                onClick={() => pick(p.id)}
+                onClick={() => pick(p)}
               >
-                <p className="font-medium text-sage-900">{p.fullName}</p>
-                <p className="text-sm text-muted">{p.uhid} · {p.phone} · {p.ageYears || '—'}y / {p.gender || '—'}</p>
+                <p className="font-medium text-sage-900 truncate">{p.fullName}</p>
+                <p className="text-sm text-muted truncate">{p.uhid} · {p.phone} · {p.ageYears || '—'}y / {p.gender || '—'}</p>
               </button>
             ))
           )}

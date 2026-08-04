@@ -1,5 +1,5 @@
 const express = require('express');
-const { startOfDay, endOfDay, startOfMonth, endOfMonth, subMonths, format } = require('date-fns');
+const { startOfDay, endOfDay, startOfMonth, endOfMonth, subMonths, format, addDays } = require('date-fns');
 const prisma = require('../utils/prisma');
 const { asyncHandler } = require('../utils/errors');
 const { authenticate, authorize } = require('../middleware/auth');
@@ -12,8 +12,10 @@ router.get('/overview', asyncHandler(async (req, res) => {
   const now = new Date();
   const dayStart = startOfDay(now);
   const dayEnd = endOfDay(now);
+  const monthStart = startOfMonth(now);
+  const monthEnd = endOfMonth(now);
 
-  const [todayPatients, todayCollection] = await Promise.all([
+  const [todayPatients, todayCollection, monthPatients, monthRevenue, totalPatients, pendingInvoices] = await Promise.all([
     prisma.appointment.count({
       where: { clinicId, date: { gte: dayStart, lte: dayEnd } },
     }),
@@ -21,13 +23,47 @@ router.get('/overview', asyncHandler(async (req, res) => {
       where: { clinicId, visitDate: { gte: dayStart, lte: dayEnd } },
       _sum: { paidAmount: true },
     }),
+    prisma.appointment.count({
+      where: { clinicId, date: { gte: monthStart, lte: monthEnd } },
+    }),
+    prisma.invoice.aggregate({
+      where: { clinicId, visitDate: { gte: monthStart, lte: monthEnd } },
+      _sum: { paidAmount: true },
+    }),
+    prisma.patient.count({ where: { clinicId } }),
+    prisma.invoice.count({ where: { clinicId, status: { in: ['PENDING', 'PARTIAL'] } } }),
   ]);
+
+  // Low stock: items where quantity <= reorderLevel
+  const inventory = await prisma.inventoryItem.findMany({ where: { clinicId } });
+  const lowStockCount = inventory.filter((i) => i.quantity <= i.reorderLevel).length;
+
+  const todayStart = startOfDay(now);
+  const dueWindowEnd = endOfDay(addDays(todayStart, 15));
+  const dueFollowUps = await prisma.followUp.count({
+    where: {
+      reminderSent: false,
+      nextVisitDue: { not: null, gte: todayStart, lte: dueWindowEnd },
+      patient: { clinicId },
+    },
+  });
+
+  const repertorizationCount = req.user.role === 'DOCTOR'
+    ? await prisma.repertorizationSession.count({ where: { clinicId } })
+    : 0;
 
   res.json({
     success: true,
     overview: {
       todayPatients,
       todayCollection: todayCollection._sum.paidAmount || 0,
+      monthPatients,
+      monthRevenue: monthRevenue._sum.paidAmount || 0,
+      totalPatients,
+      pendingInvoices,
+      lowStockCount,
+      repertorizationCount,
+      dueFollowUps,
     },
   });
 }));

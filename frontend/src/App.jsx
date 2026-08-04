@@ -14,6 +14,7 @@ import CaseView from './pages/CaseView';
 import Prescribe from './pages/Prescribe';
 import Appointments from './pages/Appointments';
 import Billing from './pages/Billing';
+import Clinical from './pages/Clinical';
 
 const Inventory = lazy(() => import('./pages/Inventory'));
 const Reports = lazy(() => import('./pages/Reports'));
@@ -53,6 +54,7 @@ export default function App() {
           <Route path="/cases/:id" element={<PrivateRoute><CaseView /></PrivateRoute>} />
           <Route path="/appointments" element={<PrivateRoute><Appointments /></PrivateRoute>} />
           <Route path="/billing" element={<PrivateRoute roles={['DOCTOR', 'RECEPTIONIST']}><Billing /></PrivateRoute>} />
+          <Route path="/clinical" element={<PrivateRoute roles={['DOCTOR']}><Clinical /></PrivateRoute>} />
           <Route path="/inventory" element={<PrivateRoute roles={['DOCTOR', 'RECEPTIONIST']}><LazyPage><Inventory /></LazyPage></PrivateRoute>} />
           <Route path="/reports" element={<PrivateRoute roles={['DOCTOR']}><LazyPage><Reports /></LazyPage></PrivateRoute>} />
           <Route path="/messages" element={<PrivateRoute roles={['DOCTOR', 'RECEPTIONIST']}><LazyPage><Messages /></LazyPage></PrivateRoute>} />

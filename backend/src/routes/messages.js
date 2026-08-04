@@ -1,4 +1,5 @@
 const express = require('express');
+const { startOfDay, endOfDay, addDays } = require('date-fns');
 const { z } = require('zod');
 const prisma = require('../utils/prisma');
 const { asyncHandler, AppError } = require('../utils/errors');
@@ -57,6 +58,25 @@ router.post('/bulk', authorize('DOCTOR'), asyncHandler(async (req, res) => {
 
   await logActivity(req, 'BULK_MESSAGE', 'Message', null, { count: results.length });
   res.json({ success: true, sent: results.filter((r) => r.success).length, total: results.length, results });
+}));
+
+router.get('/due-follow-ups', asyncHandler(async (req, res) => {
+  const days = parseInt(req.query.days || '15', 10);
+  const todayStart = startOfDay(new Date());
+  const windowEnd = endOfDay(addDays(todayStart, days));
+
+  const followUps = await prisma.followUp.findMany({
+    where: {
+      reminderSent: false,
+      nextVisitDue: { not: null, gte: todayStart, lte: windowEnd },
+      patient: { clinicId: req.user.clinicId },
+    },
+    include: { patient: { select: { id: true, fullName: true, phone: true, uhid: true } } },
+    orderBy: { nextVisitDue: 'asc' },
+    take: 100,
+  });
+
+  res.json({ success: true, followUps, days });
 }));
 
 router.post('/follow-up-reminders', authorize('DOCTOR'), asyncHandler(async (req, res) => {

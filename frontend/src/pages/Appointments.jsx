@@ -6,6 +6,7 @@ import { Plus } from 'lucide-react';
 import api from '../lib/api';
 import { PageLoader, StatusBadge, TagBadge } from '../components/ui';
 import { useAuth } from '../store/auth';
+import PatientSearch from '../components/PatientSearch';
 
 export default function Appointments() {
   const [date, setDate] = useState(format(new Date(), 'yyyy-MM-dd'));
@@ -26,16 +27,25 @@ export default function Appointments() {
   });
 
   return (
-    <div className="space-y-5">
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+    <div className="space-y-5 min-w-0">
+      <div className="flex flex-col gap-4">
         <div>
           <h1 className="font-display text-2xl text-sage-900">Queue & Appointments</h1>
           <p className="text-muted text-sm mt-1">Daily OPD list by token</p>
         </div>
-        <div className="flex gap-2">
-          <input type="date" className="input w-auto" value={date} onChange={(e) => setDate(e.target.value)} />
+        <div className="flex flex-col sm:flex-row gap-2 sm:items-center">
+          <input
+            type="date"
+            className="input w-full sm:w-auto sm:min-w-[11rem]"
+            value={date}
+            onChange={(e) => setDate(e.target.value)}
+          />
           {canManage && (
-            <button type="button" className="btn btn-primary" onClick={() => setShowAdd(true)}>
+            <button
+              type="button"
+              className="btn btn-primary w-full sm:w-auto shrink-0"
+              onClick={() => setShowAdd(true)}
+            >
               <Plus size={16} /> Add / Walk-in
             </button>
           )}
@@ -57,28 +67,34 @@ export default function Appointments() {
       {isLoading ? <PageLoader /> : appointments.length === 0 ? (
         <div className="card-surface p-8 text-center text-muted">No appointments for this day.</div>
       ) : (
-        <div className="space-y-2">
+        <div className="space-y-3">
           {appointments.map((a) => (
-            <div key={a.id} className="card-surface p-4 flex flex-col sm:flex-row sm:items-center gap-3">
-              <div className="w-12 h-12 rounded-xl bg-sage-100 text-sage-800 flex items-center justify-center font-semibold text-lg shrink-0">
-                {a.tokenNumber}
-              </div>
-              <div className="flex-1 min-w-0">
-                <div className="flex items-center gap-2 flex-wrap">
-                  <Link to={`/patients/${a.patient.id}`} className="font-medium hover:underline">{a.patient.fullName}</Link>
-                  <TagBadge tag={a.patient.tag} />
-                  <StatusBadge status={a.status} />
+            <div key={a.id} className="card-surface p-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-4">
+              <div className="flex items-start gap-3 min-w-0 flex-1">
+                <div className="w-11 h-11 rounded-xl bg-sage-100 text-sage-800 flex items-center justify-center font-semibold text-lg shrink-0">
+                  {a.tokenNumber}
                 </div>
-                <p className="text-sm text-muted">{a.patient.uhid} · {a.type.replace('_', ' ')} {a.timeSlot ? `· ${a.timeSlot}` : ''}</p>
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-center gap-2 flex-wrap">
+                    <Link to={`/patients/${a.patient.id}`} className="font-medium text-sage-900 hover:underline truncate max-w-full">
+                      {a.patient.fullName}
+                    </Link>
+                    <TagBadge tag={a.patient.tag} />
+                    <StatusBadge status={a.status} />
+                  </div>
+                  <p className="text-sm text-muted mt-0.5 break-words">
+                    {a.patient.uhid} · {a.type.replace('_', ' ')}{a.timeSlot ? ` · ${a.timeSlot}` : ''}
+                  </p>
+                </div>
               </div>
               {canManage && (
                 <select
-                  className="input w-auto text-sm min-h-10"
+                  className="input w-full sm:w-auto sm:min-w-[10.5rem] shrink-0 text-sm"
                   value={a.status}
                   onChange={(e) => statusMut.mutate({ id: a.id, status: e.target.value })}
                 >
                   {['SCHEDULED', 'ARRIVED', 'IN_CONSULTATION', 'COMPLETED', 'NO_SHOW', 'CANCELLED'].map((s) => (
-                    <option key={s} value={s}>{s.replace('_', ' ')}</option>
+                    <option key={s} value={s}>{s.replace(/_/g, ' ')}</option>
                   ))}
                 </select>
               )}
@@ -91,17 +107,11 @@ export default function Appointments() {
 }
 
 function AddAppointment({ date, prePatient, onClose, onSaved }) {
-  const [patientQ, setPatientQ] = useState('');
   const [patientId, setPatientId] = useState(prePatient);
+  const [selectedName, setSelectedName] = useState('');
   const [type, setType] = useState(prePatient ? 'FOLLOW_UP' : 'WALK_IN');
   const [timeSlot, setTimeSlot] = useState('');
   const [error, setError] = useState('');
-
-  const { data: patients = [] } = useQuery({
-    queryKey: ['patient-search', patientQ],
-    queryFn: async () => (await api.get('/patients', { params: { q: patientQ, limit: 8 } })).data.patients,
-    enabled: patientQ.length >= 2 && !prePatient,
-  });
 
   const { data: preloaded } = useQuery({
     queryKey: ['patient', prePatient],
@@ -119,28 +129,23 @@ function AddAppointment({ date, prePatient, onClose, onSaved }) {
     <div className="card-surface p-5 space-y-4">
       <h2 className="font-medium text-sage-900">New appointment / walk-in</h2>
       {!prePatient ? (
-        <div className="relative">
+        <div>
           <label className="label">Patient</label>
-          <input className="input" placeholder="Search patient…" value={patientQ} onChange={(e) => { setPatientQ(e.target.value); setPatientId(''); }} />
-          {patients.length > 0 && !patientId && (
-            <ul className="mt-1 border border-sage-200 rounded-xl bg-white overflow-hidden">
-              {patients.map((p) => (
-                <li key={p.id}>
-                  <button type="button" className="w-full text-left px-3 py-2.5 text-sm hover:bg-sage-50" onClick={() => { setPatientId(p.id); setPatientQ(p.fullName); }}>
-                    {p.fullName} · {p.uhid} · {p.phone}
-                  </button>
-                </li>
-              ))}
-            </ul>
+          <PatientSearch
+            placeholder="Search patient by name, phone, or ID"
+            onSelect={(p) => { setPatientId(p.id); setSelectedName(p.fullName); }}
+          />
+          {patientId && selectedName && (
+            <p className="text-sm text-sage-700 mt-2">Selected: <strong>{selectedName}</strong></p>
           )}
         </div>
       ) : (
         <p className="text-sm">Patient: <strong>{preloaded?.fullName}</strong></p>
       )}
-      <div className="grid sm:grid-cols-2 gap-3">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         <div>
           <label className="label">Type</label>
-          <select className="input" value={type} onChange={(e) => setType(e.target.value)}>
+          <select className="input w-full" value={type} onChange={(e) => setType(e.target.value)}>
             <option value="WALK_IN">Walk-in</option>
             <option value="NEW">New appointment</option>
             <option value="FOLLOW_UP">Follow-up</option>
@@ -148,20 +153,20 @@ function AddAppointment({ date, prePatient, onClose, onSaved }) {
         </div>
         <div>
           <label className="label">Time slot</label>
-          <input className="input" placeholder="e.g. 11:00" value={timeSlot} onChange={(e) => setTimeSlot(e.target.value)} />
+          <input className="input w-full" placeholder="e.g. 11:00" value={timeSlot} onChange={(e) => setTimeSlot(e.target.value)} />
         </div>
       </div>
       {error && <p className="text-sm text-red-600">{error}</p>}
-      <div className="flex gap-2">
+      <div className="flex flex-col-reverse sm:flex-row gap-2">
+        <button type="button" className="btn btn-secondary w-full sm:w-auto" onClick={onClose}>Cancel</button>
         <button
           type="button"
-          className="btn btn-primary"
+          className="btn btn-primary w-full sm:w-auto"
           disabled={!patientId || mut.isPending}
           onClick={() => mut.mutate({ patientId, date: `${date}T10:00:00`, type, timeSlot: timeSlot || null })}
         >
           {mut.isPending ? 'Saving…' : 'Add to queue'}
         </button>
-        <button type="button" className="btn btn-secondary" onClick={onClose}>Cancel</button>
       </div>
     </div>
   );

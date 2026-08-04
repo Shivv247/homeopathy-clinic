@@ -115,11 +115,41 @@ export default function Settings() {
         </ul>
       </section>
 
+      <section className="card-surface p-5 bg-gradient-to-br from-sage-50 to-cream border-sage-200">
+        <h2 className="font-display text-lg text-sage-900 mb-2">Clinical Suite — included</h2>
+        <p className="text-sm text-muted mb-4">
+          Your all-in-one practice platform — clinic management + clinical prescribing tools.
+          No need for separate Hompath/RADAR subscriptions.
+        </p>
+        <div className="grid sm:grid-cols-2 gap-3 text-sm">
+          {[
+            ['Repertory', '360+ Kent-style rubrics across 25 chapters'],
+            ['Acute Kits', '18 one-click OPD kits — fever, cough, UTI, colic & more'],
+            ['Repertorization', 'Multi-rubric analysis with remedy scoring + save to patient'],
+            ['Materia Medica', '55 polychrest profiles with keynotes & modalities'],
+            ['Remedy Compare', 'Side-by-side differential of 2–3 remedies'],
+            ['Classic Library', '6 books — Kent, Boericke, Hahnemann, Boenninghausen'],
+            ['Symptom AI Match', 'Auto-match case symptoms to rubrics'],
+            ['Prescribe Flow', 'Repertory → patient → Rx in one workflow'],
+          ].map(([title, desc]) => (
+            <div key={title} className="flex gap-2">
+              <span className="text-sage-600 font-bold">✓</span>
+              <div>
+                <p className="font-medium text-sage-800">{title}</p>
+                <p className="text-xs text-muted">{desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+        <p className="text-xs text-muted mt-4 pt-3 border-t border-sage-200">
+          Plus full clinic ops: OPD queue, billing, inventory, WhatsApp, PDF Rx, family linking, reports.
+        </p>
+      </section>
+
       <section className="card-surface p-5 bg-sage-50/50">
-        <h2 className="font-display text-lg text-sage-900 mb-2">Phase 2 — future scope</h2>
+        <h2 className="font-display text-lg text-sage-900 mb-2">Coming soon</h2>
         <ul className="text-sm text-muted space-y-1 list-disc pl-5">
-          <li>Kent / Boericke repertory & materia medica quick search</li>
-          <li>Rubric-based repertorization tool</li>
+          <li>Expanded repertory (500+ rubrics) & more materia medica</li>
           <li>Patient self-service portal for Rx history & booking</li>
           <li>Telemedicine / video consult</li>
           <li>Hindi + English language toggle</li>

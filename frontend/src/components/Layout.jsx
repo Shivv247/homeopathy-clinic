@@ -1,7 +1,8 @@
 import { NavLink, useNavigate } from 'react-router-dom';
 import {
   LayoutDashboard, Users, Stethoscope,
-  Receipt, Settings, LogOut, Menu, X,
+  Receipt, Settings, LogOut, Menu, X, Brain,
+  CalendarDays, MessageCircle, Package, BarChart3,
 } from 'lucide-react';
 import { useState } from 'react';
 import { useAuth } from '../store/auth';
@@ -10,7 +11,12 @@ import clsx from 'clsx';
 const nav = [
   { to: '/', label: 'Dashboard', icon: LayoutDashboard, roles: ['DOCTOR', 'RECEPTIONIST', 'ASSISTANT'] },
   { to: '/patients', label: 'Patients', icon: Users, roles: ['DOCTOR', 'RECEPTIONIST', 'ASSISTANT'] },
+  { to: '/appointments', label: 'Appointments', icon: CalendarDays, roles: ['DOCTOR', 'RECEPTIONIST', 'ASSISTANT'] },
+  { to: '/clinical', label: 'Clinical Suite', icon: Brain, roles: ['DOCTOR'] },
   { to: '/billing', label: 'Billing', icon: Receipt, roles: ['DOCTOR', 'RECEPTIONIST'] },
+  { to: '/inventory', label: 'Inventory', icon: Package, roles: ['DOCTOR', 'RECEPTIONIST'] },
+  { to: '/messages', label: 'Messages', icon: MessageCircle, roles: ['DOCTOR', 'RECEPTIONIST'] },
+  { to: '/reports', label: 'Reports', icon: BarChart3, roles: ['DOCTOR'] },
   { to: '/settings', label: 'Settings', icon: Settings, roles: ['DOCTOR'] },
 ];
 
@@ -59,12 +65,12 @@ export default function Layout({ children }) {
               end={to === '/'}
               onClick={() => setOpen(false)}
               className={({ isActive }) => clsx(
-                'flex items-center gap-3 px-3 py-3 rounded-xl text-sm font-medium transition-colors min-h-12',
+                'flex items-center gap-3 px-3 py-3 rounded-xl text-sm font-medium transition-colors min-h-11',
                 isActive ? 'bg-sage-600 text-white' : 'text-sage-200 hover:bg-sage-700/60 hover:text-white'
               )}
             >
-              <Icon size={20} />
-              {label}
+              <Icon size={20} className="shrink-0" />
+              <span>{label}</span>
             </NavLink>
           ))}
         </nav>

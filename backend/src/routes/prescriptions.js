@@ -145,6 +145,22 @@ router.post('/', doctorOnly, asyncHandler(async (req, res) => {
   }
 
   await logActivity(req, 'CREATE_PRESCRIPTION', 'Prescription', prescription.id, { prescriptionNo });
+
+  if (data.nextVisitDays && data.nextVisitDays > 0) {
+    const nextVisitDue = new Date();
+    nextVisitDue.setDate(nextVisitDue.getDate() + data.nextVisitDays);
+    await prisma.followUp.create({
+      data: {
+        patientId: patient.id,
+        caseRecordId: data.caseRecordId || null,
+        visitDate: new Date(),
+        nextVisitDue,
+        notes: `Auto-scheduled from Rx ${prescriptionNo} (${data.nextVisitDays} days)`,
+        reminderSent: false,
+      },
+    });
+  }
+
   res.status(201).json({ success: true, prescription });
 }));
 

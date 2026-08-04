@@ -3,7 +3,7 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
+  provider = "sqlite"
   url      = env("DATABASE_URL")
 }
 
@@ -30,6 +30,7 @@ model Clinic {
   invoices      Invoice[]
   inventory     InventoryItem[]
   activityLogs  ActivityLog[]
+  repertorizationSessions RepertorizationSession[]
 }
 
 model User {
@@ -49,6 +50,7 @@ model User {
   prescriptions Prescription[] @relation("RxAuthor")
   activityLogs ActivityLog[]
   appointments Appointment[] @relation("ApptCreatedBy")
+  repertorizationSessions RepertorizationSession[]
 }
 
 model Family {
@@ -92,6 +94,7 @@ model Patient {
   invoices        Invoice[]
   attachments     Attachment[]
   followUps       FollowUp[]
+  repertorizationSessions RepertorizationSession[]
 
   @@index([phone])
   @@index([fullName])
@@ -317,4 +320,23 @@ model MessageLog {
   status      String   @default("PENDING") // PENDING | SENT | FAILED
   error       String?
   createdAt   DateTime @default(now())
+}
+
+model RepertorizationSession {
+  id          String   @id @default(cuid())
+  clinicId    String
+  patientId   String?
+  authorId    String
+  title       String?
+  rubricIds   String   // JSON array of rubric IDs
+  topRemedies String?  // JSON array of analysis results
+  notes       String?
+  createdAt   DateTime @default(now())
+
+  clinic      Clinic   @relation(fields: [clinicId], references: [id])
+  patient     Patient? @relation(fields: [patientId], references: [id])
+  author      User     @relation(fields: [authorId], references: [id])
+
+  @@index([clinicId, createdAt])
+  @@index([patientId])
 }

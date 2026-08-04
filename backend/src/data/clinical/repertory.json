@@ -1,0 +1,6798 @@
+[
+  {
+    "id": "r001",
+    "chapter": "Mind",
+    "rubric": "FEAR, death, of",
+    "remedies": [
+      {
+        "name": "Aconitum Napellus",
+        "grade": 3
+      },
+      {
+        "name": "Arsenicum Album",
+        "grade": 3
+      },
+      {
+        "name": "Lycopodium Clavatum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r002",
+    "chapter": "Mind",
+    "rubric": "ANXIETY, health, about",
+    "remedies": [
+      {
+        "name": "Arsenicum Album",
+        "grade": 4
+      },
+      {
+        "name": "Natrum Muriaticum",
+        "grade": 2
+      },
+      {
+        "name": "Phosphorus",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r003",
+    "chapter": "Mind",
+    "rubric": "GRIEF, ailments from",
+    "remedies": [
+      {
+        "name": "Ignatia Amara",
+        "grade": 4
+      },
+      {
+        "name": "Natrum Muriaticum",
+        "grade": 4
+      },
+      {
+        "name": "Phosphoric Acid",
+        "grade": 3
+      }
+    ]
+  },
+  {
+    "id": "r004",
+    "chapter": "Mind",
+    "rubric": "IRRITABILITY",
+    "remedies": [
+      {
+        "name": "Chamomilla",
+        "grade": 4
+      },
+      {
+        "name": "Nux Vomica",
+        "grade": 4
+      },
+      {
+        "name": "Sepia Officinalis",
+        "grade": 3
+      }
+    ]
+  },
+  {
+    "id": "r005",
+    "chapter": "Mind",
+    "rubric": "FEAR, alone, of being",
+    "remedies": [
+      {
+        "name": "Arsenicum Album",
+        "grade": 3
+      },
+      {
+        "name": "Lycopodium Clavatum",
+        "grade": 3
+      },
+      {
+        "name": "Phosphorus",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r006",
+    "chapter": "Mind",
+    "rubric": "INDIFFERENCE, apathy",
+    "remedies": [
+      {
+        "name": "Sepia Officinalis",
+        "grade": 4
+      },
+      {
+        "name": "Phosphoric Acid",
+        "grade": 3
+      },
+      {
+        "name": "Natrum Muriaticum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r007",
+    "chapter": "Mind",
+    "rubric": "TIMIDITY",
+    "remedies": [
+      {
+        "name": "Gelsemium",
+        "grade": 3
+      },
+      {
+        "name": "Lycopodium Clavatum",
+        "grade": 3
+      },
+      {
+        "name": "Pulsatilla Nigricans",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r008",
+    "chapter": "Mind",
+    "rubric": "CONSOLATION, agg.",
+    "remedies": [
+      {
+        "name": "Natrum Muriaticum",
+        "grade": 4
+      },
+      {
+        "name": "Ignatia Amara",
+        "grade": 2
+      },
+      {
+        "name": "Sepia Officinalis",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r009",
+    "chapter": "Mind",
+    "rubric": "CONSOLATION, amel.",
+    "remedies": [
+      {
+        "name": "Pulsatilla Nigricans",
+        "grade": 4
+      },
+      {
+        "name": "Phosphorus",
+        "grade": 3
+      },
+      {
+        "name": "Arsenicum Album",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r010",
+    "chapter": "Mind",
+    "rubric": "MEMORY, weakness of",
+    "remedies": [
+      {
+        "name": "Lycopodium Clavatum",
+        "grade": 3
+      },
+      {
+        "name": "Natrum Muriaticum",
+        "grade": 2
+      },
+      {
+        "name": "Phosphoric Acid",
+        "grade": 3
+      }
+    ]
+  },
+  {
+    "id": "r011",
+    "chapter": "Generals",
+    "rubric": "HEAT, lack of vital",
+    "remedies": [
+      {
+        "name": "Sepia Officinalis",
+        "grade": 3
+      },
+      {
+        "name": "Calcarea Carbonica",
+        "grade": 3
+      },
+      {
+        "name": "Silicea",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r012",
+    "chapter": "Generals",
+    "rubric": "COLD, tendency to take",
+    "remedies": [
+      {
+        "name": "Calcarea Carbonica",
+        "grade": 4
+      },
+      {
+        "name": "Silicea",
+        "grade": 3
+      },
+      {
+        "name": "Arsenicum Album",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r013",
+    "chapter": "Generals",
+    "rubric": "HEAT, flushes of",
+    "remedies": [
+      {
+        "name": "Sulphur",
+        "grade": 3
+      },
+      {
+        "name": "Lycopodium Clavatum",
+        "grade": 2
+      },
+      {
+        "name": "Pulsatilla Nigricans",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r014",
+    "chapter": "Generals",
+    "rubric": "RESTLESSNESS",
+    "remedies": [
+      {
+        "name": "Arsenicum Album",
+        "grade": 4
+      },
+      {
+        "name": "Rhus Toxicodendron",
+        "grade": 4
+      },
+      {
+        "name": "Aconitum Napellus",
+        "grade": 3
+      }
+    ]
+  },
+  {
+    "id": "r015",
+    "chapter": "Generals",
+    "rubric": "WEAKNESS, general",
+    "remedies": [
+      {
+        "name": "Gelsemium",
+        "grade": 4
+      },
+      {
+        "name": "Phosphoric Acid",
+        "grade": 3
+      },
+      {
+        "name": "China Officinalis",
+        "grade": 3
+      }
+    ]
+  },
+  {
+    "id": "r016",
+    "chapter": "Generals",
+    "rubric": "PERIODICITY",
+    "remedies": [
+      {
+        "name": "Cedron",
+        "grade": 3
+      },
+      {
+        "name": "China Officinalis",
+        "grade": 2
+      },
+      {
+        "name": "Arsenicum Album",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r017",
+    "chapter": "Generals",
+    "rubric": "FOOD and drinks, desires, salt",
+    "remedies": [
+      {
+        "name": "Natrum Muriaticum",
+        "grade": 4
+      },
+      {
+        "name": "Phosphorus",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r018",
+    "chapter": "Generals",
+    "rubric": "FOOD and drinks, desires, sweets",
+    "remedies": [
+      {
+        "name": "Argentum Nitricum",
+        "grade": 3
+      },
+      {
+        "name": "Lycopodium Clavatum",
+        "grade": 2
+      },
+      {
+        "name": "Sulphur",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r019",
+    "chapter": "Generals",
+    "rubric": "FOOD and drinks, aversion, milk",
+    "remedies": [
+      {
+        "name": "Sepia Officinalis",
+        "grade": 3
+      },
+      {
+        "name": "Natrum Carbonicum",
+        "grade": 2
+      },
+      {
+        "name": "Calcarea Carbonica",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r020",
+    "chapter": "Generals",
+    "rubric": "PERSPIRATION, profuse",
+    "remedies": [
+      {
+        "name": "Calcarea Carbonica",
+        "grade": 3
+      },
+      {
+        "name": "Mercurius Solubilis",
+        "grade": 3
+      },
+      {
+        "name": "Silicea",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r021",
+    "chapter": "Head",
+    "rubric": "PAIN, headache, sun, from exposure to",
+    "remedies": [
+      {
+        "name": "Belladonna",
+        "grade": 4
+      },
+      {
+        "name": "Glonoine",
+        "grade": 3
+      },
+      {
+        "name": "Natrum Muriaticum",
+        "grade": 3
+      }
+    ]
+  },
+  {
+    "id": "r022",
+    "chapter": "Head",
+    "rubric": "PAIN, headache, morning",
+    "remedies": [
+      {
+        "name": "Nux Vomica",
+        "grade": 3
+      },
+      {
+        "name": "Bryonia Alba",
+        "grade": 3
+      },
+      {
+        "name": "Natrum Muriaticum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r023",
+    "chapter": "Head",
+    "rubric": "PAIN, headache, motion, from",
+    "remedies": [
+      {
+        "name": "Bryonia Alba",
+        "grade": 4
+      },
+      {
+        "name": "Belladonna",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r024",
+    "chapter": "Head",
+    "rubric": "PAIN, headache, better pressure",
+    "remedies": [
+      {
+        "name": "Ignatia Amara",
+        "grade": 3
+      },
+      {
+        "name": "Bryonia Alba",
+        "grade": 2
+      },
+      {
+        "name": "Nux Vomica",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r025",
+    "chapter": "Head",
+    "rubric": "PAIN, headache, hammering",
+    "remedies": [
+      {
+        "name": "Belladonna",
+        "grade": 4
+      },
+      {
+        "name": "Glonoinum",
+        "grade": 3
+      }
+    ]
+  },
+  {
+    "id": "r026",
+    "chapter": "Stomach",
+    "rubric": "NAUSEA",
+    "remedies": [
+      {
+        "name": "Ipecacuanha",
+        "grade": 4
+      },
+      {
+        "name": "Nux Vomica",
+        "grade": 3
+      },
+      {
+        "name": "Sepia Officinalis",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r027",
+    "chapter": "Stomach",
+    "rubric": "DESIRES, cold drinks",
+    "remedies": [
+      {
+        "name": "Phosphorus",
+        "grade": 4
+      },
+      {
+        "name": "Arsenicum Album",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r028",
+    "chapter": "Stomach",
+    "rubric": "THIRST, small quantities, often",
+    "remedies": [
+      {
+        "name": "Arsenicum Album",
+        "grade": 4
+      },
+      {
+        "name": "China Officinalis",
+        "grade": 3
+      }
+    ]
+  },
+  {
+    "id": "r029",
+    "chapter": "Stomach",
+    "rubric": "THIRST, absent",
+    "remedies": [
+      {
+        "name": "Apis Mellifica",
+        "grade": 3
+      },
+      {
+        "name": "Pulsatilla Nigricans",
+        "grade": 2
+      },
+      {
+        "name": "Sepia Officinalis",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r030",
+    "chapter": "Stomach",
+    "rubric": "INDIGESTION, after overeating",
+    "remedies": [
+      {
+        "name": "Nux Vomica",
+        "grade": 4
+      },
+      {
+        "name": "Pulsatilla Nigricans",
+        "grade": 3
+      },
+      {
+        "name": "Lycopodium Clavatum",
+        "grade": 3
+      }
+    ]
+  },
+  {
+    "id": "r031",
+    "chapter": "Abdomen",
+    "rubric": "PAIN, colic, bending double amel.",
+    "remedies": [
+      {
+        "name": "Colocynthis",
+        "grade": 4
+      },
+      {
+        "name": "Magnesia Phosphorica",
+        "grade": 3
+      },
+      {
+        "name": "Dioscorea",
+        "grade": 3
+      }
+    ]
+  },
+  {
+    "id": "r032",
+    "chapter": "Abdomen",
+    "rubric": "FLATULENCE",
+    "remedies": [
+      {
+        "name": "Lycopodium Clavatum",
+        "grade": 4
+      },
+      {
+        "name": "Carbo Vegetabilis",
+        "grade": 3
+      },
+      {
+        "name": "China Officinalis",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r033",
+    "chapter": "Abdomen",
+    "rubric": "PAIN, liver, region of",
+    "remedies": [
+      {
+        "name": "Chelidonium Majus",
+        "grade": 4
+      },
+      {
+        "name": "Lycopodium Clavatum",
+        "grade": 3
+      },
+      {
+        "name": "Bryonia Alba",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r034",
+    "chapter": "Rectum",
+    "rubric": "CONSTIPATION, ineffectual urging",
+    "remedies": [
+      {
+        "name": "Nux Vomica",
+        "grade": 4
+      },
+      {
+        "name": "Alumina",
+        "grade": 3
+      },
+      {
+        "name": "Lycopodium Clavatum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r035",
+    "chapter": "Rectum",
+    "rubric": "DIARRHEA, morning",
+    "remedies": [
+      {
+        "name": "Sulphur",
+        "grade": 3
+      },
+      {
+        "name": "Podophyllum",
+        "grade": 3
+      },
+      {
+        "name": "Bryonia Alba",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r036",
+    "chapter": "Female",
+    "rubric": "MENSES, painful",
+    "remedies": [
+      {
+        "name": "Magnesia Phosphorica",
+        "grade": 4
+      },
+      {
+        "name": "Pulsatilla Nigricans",
+        "grade": 3
+      },
+      {
+        "name": "Sepia Officinalis",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r037",
+    "chapter": "Female",
+    "rubric": "MENSES, suppressed",
+    "remedies": [
+      {
+        "name": "Pulsatilla Nigricans",
+        "grade": 3
+      },
+      {
+        "name": "Sepia Officinalis",
+        "grade": 3
+      },
+      {
+        "name": "Natrum Muriaticum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r038",
+    "chapter": "Female",
+    "rubric": "LEUCORRHEA, acrid",
+    "remedies": [
+      {
+        "name": "Sepia Officinalis",
+        "grade": 3
+      },
+      {
+        "name": "Kreosotum",
+        "grade": 3
+      },
+      {
+        "name": "Mercurius Solubilis",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r039",
+    "chapter": "Respiratory",
+    "rubric": "COUGH, dry, tickling",
+    "remedies": [
+      {
+        "name": "Rumex Crispus",
+        "grade": 4
+      },
+      {
+        "name": "Phosphorus",
+        "grade": 3
+      },
+      {
+        "name": "Spongia Tosta",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r040",
+    "chapter": "Respiratory",
+    "rubric": "COUGH, night",
+    "remedies": [
+      {
+        "name": "Drosera Rotundifolia",
+        "grade": 4
+      },
+      {
+        "name": "Hyoscyamus Niger",
+        "grade": 3
+      },
+      {
+        "name": "Kali Carbonicum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r041",
+    "chapter": "Respiratory",
+    "rubric": "ASTHMA, worse night",
+    "remedies": [
+      {
+        "name": "Arsenicum Album",
+        "grade": 3
+      },
+      {
+        "name": "Sambucus Nigra",
+        "grade": 3
+      },
+      {
+        "name": "Kali Carbonicum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r042",
+    "chapter": "Extremities",
+    "rubric": "PAIN, joints, motion amel.",
+    "remedies": [
+      {
+        "name": "Rhus Toxicodendron",
+        "grade": 4
+      },
+      {
+        "name": "Bryonia Alba",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r043",
+    "chapter": "Extremities",
+    "rubric": "PAIN, joints, first motion agg.",
+    "remedies": [
+      {
+        "name": "Rhus Toxicodendron",
+        "grade": 4
+      },
+      {
+        "name": "Causticum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r044",
+    "chapter": "Extremities",
+    "rubric": "PAIN, joints, rest amel.",
+    "remedies": [
+      {
+        "name": "Bryonia Alba",
+        "grade": 4
+      },
+      {
+        "name": "Kali Carbonicum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r045",
+    "chapter": "Skin",
+    "rubric": "ERUPTIONS, urticaria",
+    "remedies": [
+      {
+        "name": "Apis Mellifica",
+        "grade": 4
+      },
+      {
+        "name": "Urtica Urens",
+        "grade": 3
+      },
+      {
+        "name": "Rhus Toxicodendron",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r046",
+    "chapter": "Skin",
+    "rubric": "ITCHING, burning",
+    "remedies": [
+      {
+        "name": "Sulphur",
+        "grade": 4
+      },
+      {
+        "name": "Arsenicum Album",
+        "grade": 3
+      },
+      {
+        "name": "Mezereum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r047",
+    "chapter": "Skin",
+    "rubric": "WARTS",
+    "remedies": [
+      {
+        "name": "Thuja Occidentalis",
+        "grade": 4
+      },
+      {
+        "name": "Causticum",
+        "grade": 3
+      },
+      {
+        "name": "Nitricum Acidum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r048",
+    "chapter": "Sleep",
+    "rubric": "SLEEPLESSNESS, anxiety, from",
+    "remedies": [
+      {
+        "name": "Arsenicum Album",
+        "grade": 4
+      },
+      {
+        "name": "Coffea Cruda",
+        "grade": 3
+      },
+      {
+        "name": "Aconitum Napellus",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r049",
+    "chapter": "Sleep",
+    "rubric": "SLEEPLESSNESS, grief, from",
+    "remedies": [
+      {
+        "name": "Ignatia Amara",
+        "grade": 4
+      },
+      {
+        "name": "Natrum Muriaticum",
+        "grade": 3
+      }
+    ]
+  },
+  {
+    "id": "r050",
+    "chapter": "Sleep",
+    "rubric": "DREAMS, anxious",
+    "remedies": [
+      {
+        "name": "Aconitum Napellus",
+        "grade": 3
+      },
+      {
+        "name": "Arsenicum Album",
+        "grade": 2
+      },
+      {
+        "name": "Phosphorus",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r051",
+    "chapter": "Fever",
+    "rubric": "FEVER, sudden onset",
+    "remedies": [
+      {
+        "name": "Aconitum Napellus",
+        "grade": 4
+      },
+      {
+        "name": "Belladonna",
+        "grade": 4
+      },
+      {
+        "name": "Gelsemium",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r052",
+    "chapter": "Fever",
+    "rubric": "FEVER, thirst absent",
+    "remedies": [
+      {
+        "name": "Apis Mellifica",
+        "grade": 3
+      },
+      {
+        "name": "Pulsatilla Nigricans",
+        "grade": 2
+      },
+      {
+        "name": "Gelsemium",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r053",
+    "chapter": "Fever",
+    "rubric": "CHILL, with thirst",
+    "remedies": [
+      {
+        "name": "Bryonia Alba",
+        "grade": 3
+      },
+      {
+        "name": "Rhus Toxicodendron",
+        "grade": 2
+      },
+      {
+        "name": "China Officinalis",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r054",
+    "chapter": "Eye",
+    "rubric": "INFLAMMATION, conjunctiva",
+    "remedies": [
+      {
+        "name": "Euphrasia Officinalis",
+        "grade": 4
+      },
+      {
+        "name": "Pulsatilla Nigricans",
+        "grade": 3
+      },
+      {
+        "name": "Mercurius Solubilis",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r055",
+    "chapter": "Eye",
+    "rubric": "LACHRYMATION, profuse",
+    "remedies": [
+      {
+        "name": "Euphrasia Officinalis",
+        "grade": 4
+      },
+      {
+        "name": "Allium Cepa",
+        "grade": 3
+      },
+      {
+        "name": "Pulsatilla Nigricans",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r056",
+    "chapter": "Ear",
+    "rubric": "PAIN, earache, night",
+    "remedies": [
+      {
+        "name": "Chamomilla",
+        "grade": 4
+      },
+      {
+        "name": "Pulsatilla Nigricans",
+        "grade": 3
+      },
+      {
+        "name": "Mercurius Solubilis",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r057",
+    "chapter": "Throat",
+    "rubric": "PAIN, sore throat, swallowing liquids",
+    "remedies": [
+      {
+        "name": "Lachesis Mutus",
+        "grade": 3
+      },
+      {
+        "name": "Mercurius Solubilis",
+        "grade": 3
+      },
+      {
+        "name": "Phytolacca Decandra",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r058",
+    "chapter": "Throat",
+    "rubric": "PAIN, sore throat, right side",
+    "remedies": [
+      {
+        "name": "Lycopodium Clavatum",
+        "grade": 3
+      },
+      {
+        "name": "Lachesis Mutus",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r059",
+    "chapter": "Face",
+    "rubric": "ERUPTIONS, acne",
+    "remedies": [
+      {
+        "name": "Sulphur",
+        "grade": 3
+      },
+      {
+        "name": "Hepar Sulphuris",
+        "grade": 3
+      },
+      {
+        "name": "Kali Bromatum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r060",
+    "chapter": "Face",
+    "rubric": "FLUSHED, fever during",
+    "remedies": [
+      {
+        "name": "Belladonna",
+        "grade": 4
+      },
+      {
+        "name": "Ferrum Phosphoricum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r061",
+    "chapter": "Mind",
+    "rubric": "ANGER, ailments from",
+    "remedies": [
+      {
+        "name": "Chamomilla",
+        "grade": 4
+      },
+      {
+        "name": "Staphysagria",
+        "grade": 4
+      },
+      {
+        "name": "Nux Vomica",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r062",
+    "chapter": "Mind",
+    "rubric": "JEALOUSY",
+    "remedies": [
+      {
+        "name": "Lachesis Mutus",
+        "grade": 3
+      },
+      {
+        "name": "Hyoscyamus Niger",
+        "grade": 2
+      },
+      {
+        "name": "Nux Vomica",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r063",
+    "chapter": "Mind",
+    "rubric": "SUSPICION",
+    "remedies": [
+      {
+        "name": "Hyoscyamus Niger",
+        "grade": 3
+      },
+      {
+        "name": "Lachesis Mutus",
+        "grade": 2
+      },
+      {
+        "name": "Anacardium Orientale",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r064",
+    "chapter": "Generals",
+    "rubric": "INJURIES, ailments from",
+    "remedies": [
+      {
+        "name": "Arnica Montana",
+        "grade": 4
+      },
+      {
+        "name": "Hypericum Perforatum",
+        "grade": 3
+      },
+      {
+        "name": "Ruta Graveolens",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r065",
+    "chapter": "Generals",
+    "rubric": "BURNING, pains",
+    "remedies": [
+      {
+        "name": "Arsenicum Album",
+        "grade": 4
+      },
+      {
+        "name": "Sulphur",
+        "grade": 3
+      },
+      {
+        "name": "Phosphorus",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r066",
+    "chapter": "Generals",
+    "rubric": "OFFENSIVE, discharges",
+    "remedies": [
+      {
+        "name": "Mercurius Solubilis",
+        "grade": 4
+      },
+      {
+        "name": "Hepar Sulphuris",
+        "grade": 3
+      },
+      {
+        "name": "Psorinum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r067",
+    "chapter": "Generals",
+    "rubric": "SUPPURATION, tendency to",
+    "remedies": [
+      {
+        "name": "Hepar Sulphuris",
+        "grade": 4
+      },
+      {
+        "name": "Silicea",
+        "grade": 3
+      },
+      {
+        "name": "Mercurius Solubilis",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r068",
+    "chapter": "Stomach",
+    "rubric": "VOMITING, pregnancy during",
+    "remedies": [
+      {
+        "name": "Sepia Officinalis",
+        "grade": 3
+      },
+      {
+        "name": "Nux Vomica",
+        "grade": 2
+      },
+      {
+        "name": "Symphoricarpus Racemosus",
+        "grade": 3
+      }
+    ]
+  },
+  {
+    "id": "r069",
+    "chapter": "Urinary",
+    "rubric": "URINATION, frequent",
+    "remedies": [
+      {
+        "name": "Equisetum Hyemale",
+        "grade": 3
+      },
+      {
+        "name": "Cantharis",
+        "grade": 2
+      },
+      {
+        "name": "Phosphorus",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r070",
+    "chapter": "Urinary",
+    "rubric": "BURNING, urination during",
+    "remedies": [
+      {
+        "name": "Cantharis",
+        "grade": 4
+      },
+      {
+        "name": "Apis Mellifica",
+        "grade": 3
+      },
+      {
+        "name": "Sarsaparilla",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r071",
+    "chapter": "Back",
+    "rubric": "PAIN, lumbar region",
+    "remedies": [
+      {
+        "name": "Rhus Toxicodendron",
+        "grade": 3
+      },
+      {
+        "name": "Kali Carbonicum",
+        "grade": 3
+      },
+      {
+        "name": "Nux Vomica",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r072",
+    "chapter": "Back",
+    "rubric": "PAIN, cervical region",
+    "remedies": [
+      {
+        "name": "Rhus Toxicodendron",
+        "grade": 3
+      },
+      {
+        "name": "Bryonia Alba",
+        "grade": 2
+      },
+      {
+        "name": "Lachnanthes Tinctoria",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r073",
+    "chapter": "Mind",
+    "rubric": "ANTICIPATION, complaints from",
+    "remedies": [
+      {
+        "name": "Gelsemium",
+        "grade": 4
+      },
+      {
+        "name": "Argentum Nitricum",
+        "grade": 4
+      },
+      {
+        "name": "Lycopodium Clavatum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r074",
+    "chapter": "Mind",
+    "rubric": "FASTIDIOUS",
+    "remedies": [
+      {
+        "name": "Arsenicum Album",
+        "grade": 4
+      },
+      {
+        "name": "Nux Vomica",
+        "grade": 2
+      },
+      {
+        "name": "Sulphur",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r075",
+    "chapter": "Generals",
+    "rubric": "OPEN AIR, amel.",
+    "remedies": [
+      {
+        "name": "Pulsatilla Nigricans",
+        "grade": 4
+      },
+      {
+        "name": "Aconitum Napellus",
+        "grade": 2
+      },
+      {
+        "name": "Arsenicum Album",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r076",
+    "chapter": "Generals",
+    "rubric": "WARMTH, amel.",
+    "remedies": [
+      {
+        "name": "Magnesia Phosphorica",
+        "grade": 3
+      },
+      {
+        "name": "Arsenicum Album",
+        "grade": 2
+      },
+      {
+        "name": "Rhus Toxicodendron",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r077",
+    "chapter": "Generals",
+    "rubric": "COLD, amel.",
+    "remedies": [
+      {
+        "name": "Apis Mellifica",
+        "grade": 3
+      },
+      {
+        "name": "Pulsatilla Nigricans",
+        "grade": 2
+      },
+      {
+        "name": "Ledum Palustre",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r078",
+    "chapter": "Mind",
+    "rubric": "LOQUACITY",
+    "remedies": [
+      {
+        "name": "Lachesis Mutus",
+        "grade": 4
+      },
+      {
+        "name": "Hyoscyamus Niger",
+        "grade": 3
+      },
+      {
+        "name": "Stramonium",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r079",
+    "chapter": "Mind",
+    "rubric": "DULLNESS, mental",
+    "remedies": [
+      {
+        "name": "Gelsemium",
+        "grade": 3
+      },
+      {
+        "name": "Phosphoric Acid",
+        "grade": 3
+      },
+      {
+        "name": "Baryta Carbonica",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r080",
+    "chapter": "Generals",
+    "rubric": "HISTORY, family, tuberculosis",
+    "remedies": [
+      {
+        "name": "Tuberculinum",
+        "grade": 3
+      },
+      {
+        "name": "Phosphorus",
+        "grade": 2
+      },
+      {
+        "name": "Calcarea Phosphorica",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r081",
+    "chapter": "Mind",
+    "rubric": "ANGER, violent",
+    "remedies": [
+      {
+        "name": "Staphysagria",
+        "grade": 4
+      },
+      {
+        "name": "Chamomilla",
+        "grade": 3
+      },
+      {
+        "name": "Nux Vomica",
+        "grade": 3
+      }
+    ]
+  },
+  {
+    "id": "r082",
+    "chapter": "Mind",
+    "rubric": "ANGER, suppressed",
+    "remedies": [
+      {
+        "name": "Staphysagria",
+        "grade": 4
+      },
+      {
+        "name": "Natrum Muriaticum",
+        "grade": 3
+      },
+      {
+        "name": "Lycopodium Clavatum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r083",
+    "chapter": "Mind",
+    "rubric": "DELUSIONS, imaginations",
+    "remedies": [
+      {
+        "name": "Hyoscyamus Niger",
+        "grade": 3
+      },
+      {
+        "name": "Anacardium Orientale",
+        "grade": 3
+      },
+      {
+        "name": "Stramonium",
+        "grade": 3
+      }
+    ]
+  },
+  {
+    "id": "r084",
+    "chapter": "Mind",
+    "rubric": "DELUSIONS, persecuted",
+    "remedies": [
+      {
+        "name": "Hyoscyamus Niger",
+        "grade": 4
+      },
+      {
+        "name": "Lachesis Mutus",
+        "grade": 3
+      },
+      {
+        "name": "Anacardium Orientale",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r085",
+    "chapter": "Mind",
+    "rubric": "DESPAIR",
+    "remedies": [
+      {
+        "name": "Arsenicum Album",
+        "grade": 3
+      },
+      {
+        "name": "Aurum Metallicum",
+        "grade": 4
+      },
+      {
+        "name": "Natrum Muriaticum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r086",
+    "chapter": "Mind",
+    "rubric": "FEAR, crowd, in a",
+    "remedies": [
+      {
+        "name": "Argentum Nitricum",
+        "grade": 4
+      },
+      {
+        "name": "Gelsemium",
+        "grade": 3
+      },
+      {
+        "name": "Lycopodium Clavatum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r087",
+    "chapter": "Mind",
+    "rubric": "FEAR, dark",
+    "remedies": [
+      {
+        "name": "Stramonium",
+        "grade": 4
+      },
+      {
+        "name": "Calcarea Carbonica",
+        "grade": 3
+      },
+      {
+        "name": "Phosphorus",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r088",
+    "chapter": "Mind",
+    "rubric": "FEAR, disease, of",
+    "remedies": [
+      {
+        "name": "Arsenicum Album",
+        "grade": 4
+      },
+      {
+        "name": "Nitricum Acidum",
+        "grade": 3
+      },
+      {
+        "name": "Kali Arsenicosum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r089",
+    "chapter": "Mind",
+    "rubric": "FEAR, failure, of",
+    "remedies": [
+      {
+        "name": "Lycopodium Clavatum",
+        "grade": 4
+      },
+      {
+        "name": "Argentum Nitricum",
+        "grade": 3
+      },
+      {
+        "name": "Gelsemium",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r090",
+    "chapter": "Mind",
+    "rubric": "FEAR, ghosts, of",
+    "remedies": [
+      {
+        "name": "Phosphorus",
+        "grade": 3
+      },
+      {
+        "name": "Stramonium",
+        "grade": 3
+      },
+      {
+        "name": "Pulsatilla Nigricans",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r091",
+    "chapter": "Mind",
+    "rubric": "FEAR, high places",
+    "remedies": [
+      {
+        "name": "Argentum Nitricum",
+        "grade": 4
+      },
+      {
+        "name": "Gelsemium",
+        "grade": 2
+      },
+      {
+        "name": "Phosphorus",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r092",
+    "chapter": "Mind",
+    "rubric": "FEAR, thunderstorm",
+    "remedies": [
+      {
+        "name": "Phosphorus",
+        "grade": 4
+      },
+      {
+        "name": "Rhododendron",
+        "grade": 3
+      },
+      {
+        "name": "Borax",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r093",
+    "chapter": "Mind",
+    "rubric": "FORGETFULNESS",
+    "remedies": [
+      {
+        "name": "Anacardium Orientale",
+        "grade": 3
+      },
+      {
+        "name": "Lycopodium Clavatum",
+        "grade": 3
+      },
+      {
+        "name": "Natrum Muriaticum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r094",
+    "chapter": "Mind",
+    "rubric": "HURRIED",
+    "remedies": [
+      {
+        "name": "Argentum Nitricum",
+        "grade": 3
+      },
+      {
+        "name": "Nux Vomica",
+        "grade": 2
+      },
+      {
+        "name": "Lilium Tigrinum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r095",
+    "chapter": "Mind",
+    "rubric": "IMPULSIVE",
+    "remedies": [
+      {
+        "name": "Nux Vomica",
+        "grade": 3
+      },
+      {
+        "name": "Hyoscyamus Niger",
+        "grade": 3
+      },
+      {
+        "name": "Tarentula Hispanica",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r096",
+    "chapter": "Mind",
+    "rubric": "IRRITABILITY, trifles, about",
+    "remedies": [
+      {
+        "name": "Chamomilla",
+        "grade": 4
+      },
+      {
+        "name": "Nux Vomica",
+        "grade": 3
+      },
+      {
+        "name": "Ignatia Amara",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r097",
+    "chapter": "Mind",
+    "rubric": "LAZINESS",
+    "remedies": [
+      {
+        "name": "Sulphur",
+        "grade": 3
+      },
+      {
+        "name": "Sepia Officinalis",
+        "grade": 2
+      },
+      {
+        "name": "Calcarea Carbonica",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r098",
+    "chapter": "Mind",
+    "rubric": "MANIA, religious",
+    "remedies": [
+      {
+        "name": "Stramonium",
+        "grade": 3
+      },
+      {
+        "name": "Veratrum Album",
+        "grade": 3
+      },
+      {
+        "name": "Hyoscyamus Niger",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r099",
+    "chapter": "Mind",
+    "rubric": "MELANCHOLY",
+    "remedies": [
+      {
+        "name": "Natrum Muriaticum",
+        "grade": 3
+      },
+      {
+        "name": "Aurum Metallicum",
+        "grade": 4
+      },
+      {
+        "name": "Ignatia Amara",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r100",
+    "chapter": "Mind",
+    "rubric": "MOOD, changeable",
+    "remedies": [
+      {
+        "name": "Pulsatilla Nigricans",
+        "grade": 4
+      },
+      {
+        "name": "Ignatia Amara",
+        "grade": 3
+      },
+      {
+        "name": "Crocus Sativus",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r101",
+    "chapter": "Mind",
+    "rubric": "OBSTINATE",
+    "remedies": [
+      {
+        "name": "Chamomilla",
+        "grade": 3
+      },
+      {
+        "name": "Calcarea Carbonica",
+        "grade": 2
+      },
+      {
+        "name": "Silicea",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r102",
+    "chapter": "Mind",
+    "rubric": "RESTLESSNESS, anxious",
+    "remedies": [
+      {
+        "name": "Arsenicum Album",
+        "grade": 4
+      },
+      {
+        "name": "Aconitum Napellus",
+        "grade": 3
+      },
+      {
+        "name": "Rhus Toxicodendron",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r103",
+    "chapter": "Mind",
+    "rubric": "SADNESS",
+    "remedies": [
+      {
+        "name": "Natrum Muriaticum",
+        "grade": 3
+      },
+      {
+        "name": "Ignatia Amara",
+        "grade": 3
+      },
+      {
+        "name": "Pulsatilla Nigricans",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r104",
+    "chapter": "Mind",
+    "rubric": "SHRIEKING",
+    "remedies": [
+      {
+        "name": "Stramonium",
+        "grade": 4
+      },
+      {
+        "name": "Hyoscyamus Niger",
+        "grade": 3
+      },
+      {
+        "name": "Belladonna",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r105",
+    "chapter": "Mind",
+    "rubric": "SUSPICIOUS",
+    "remedies": [
+      {
+        "name": "Hyoscyamus Niger",
+        "grade": 3
+      },
+      {
+        "name": "Anacardium Orientale",
+        "grade": 3
+      },
+      {
+        "name": "Lachesis Mutus",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r106",
+    "chapter": "Mind",
+    "rubric": "TALKING, one subject, constantly",
+    "remedies": [
+      {
+        "name": "Lachesis Mutus",
+        "grade": 3
+      },
+      {
+        "name": "Hyoscyamus Niger",
+        "grade": 2
+      },
+      {
+        "name": "Stramonium",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r107",
+    "chapter": "Mind",
+    "rubric": "WEEPING, tendency",
+    "remedies": [
+      {
+        "name": "Pulsatilla Nigricans",
+        "grade": 4
+      },
+      {
+        "name": "Natrum Muriaticum",
+        "grade": 2
+      },
+      {
+        "name": "Ignatia Amara",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r108",
+    "chapter": "Mind",
+    "rubric": "WILL, weakness of",
+    "remedies": [
+      {
+        "name": "Phosphoric Acid",
+        "grade": 3
+      },
+      {
+        "name": "Sepia Officinalis",
+        "grade": 2
+      },
+      {
+        "name": "Nux Vomica",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r109",
+    "chapter": "Generals",
+    "rubric": "ANAEMIA",
+    "remedies": [
+      {
+        "name": "Ferrum Metallicum",
+        "grade": 3
+      },
+      {
+        "name": "Calcarea Phosphorica",
+        "grade": 3
+      },
+      {
+        "name": "China Officinalis",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r110",
+    "chapter": "Generals",
+    "rubric": "ASCITES",
+    "remedies": [
+      {
+        "name": "Apis Mellifica",
+        "grade": 3
+      },
+      {
+        "name": "Arsenicum Album",
+        "grade": 2
+      },
+      {
+        "name": "China Officinalis",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r111",
+    "chapter": "Generals",
+    "rubric": "CARCINOMATOUS cachexia",
+    "remedies": [
+      {
+        "name": "Arsenicum Album",
+        "grade": 3
+      },
+      {
+        "name": "Cadmium Sulphuratum",
+        "grade": 2
+      },
+      {
+        "name": "Hydrastis Canadensis",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r112",
+    "chapter": "Generals",
+    "rubric": "CHILLINESS",
+    "remedies": [
+      {
+        "name": "Calcarea Carbonica",
+        "grade": 3
+      },
+      {
+        "name": "Silicea",
+        "grade": 3
+      },
+      {
+        "name": "Arsenicum Album",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r113",
+    "chapter": "Generals",
+    "rubric": "COLLAPSE",
+    "remedies": [
+      {
+        "name": "Camphora",
+        "grade": 3
+      },
+      {
+        "name": "Carbo Vegetabilis",
+        "grade": 3
+      },
+      {
+        "name": "Veratrum Album",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r114",
+    "chapter": "Generals",
+    "rubric": "CONVULSIONS",
+    "remedies": [
+      {
+        "name": "Cuprum Metallicum",
+        "grade": 3
+      },
+      {
+        "name": "Belladonna",
+        "grade": 3
+      },
+      {
+        "name": "Cicuta Virosa",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r115",
+    "chapter": "Generals",
+    "rubric": "CYANOSIS",
+    "remedies": [
+      {
+        "name": "Carbo Vegetabilis",
+        "grade": 3
+      },
+      {
+        "name": "Lachesis Mutus",
+        "grade": 2
+      },
+      {
+        "name": "Digitalis Purpurea",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r116",
+    "chapter": "Generals",
+    "rubric": "DEHYDRATION",
+    "remedies": [
+      {
+        "name": "China Officinalis",
+        "grade": 3
+      },
+      {
+        "name": "Arsenicum Album",
+        "grade": 2
+      },
+      {
+        "name": "Phosphoric Acid",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r117",
+    "chapter": "Generals",
+    "rubric": "DROPSY",
+    "remedies": [
+      {
+        "name": "Apis Mellifica",
+        "grade": 4
+      },
+      {
+        "name": "Arsenicum Album",
+        "grade": 3
+      },
+      {
+        "name": "Apocynum Cannabinum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r118",
+    "chapter": "Generals",
+    "rubric": "EMACIATION",
+    "remedies": [
+      {
+        "name": "Natrum Muriaticum",
+        "grade": 3
+      },
+      {
+        "name": "Iodum",
+        "grade": 3
+      },
+      {
+        "name": "Abrotanum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r119",
+    "chapter": "Generals",
+    "rubric": "FAINTNESS",
+    "remedies": [
+      {
+        "name": "Nux Moschata",
+        "grade": 3
+      },
+      {
+        "name": "Ignatia Amara",
+        "grade": 2
+      },
+      {
+        "name": "Gelsemium",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r120",
+    "chapter": "Generals",
+    "rubric": "FOOD and drinks, desires, cold drinks",
+    "remedies": [
+      {
+        "name": "Phosphorus",
+        "grade": 4
+      },
+      {
+        "name": "Veratrum Album",
+        "grade": 2
+      },
+      {
+        "name": "Arsenicum Album",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r121",
+    "chapter": "Generals",
+    "rubric": "FOOD and drinks, desires, eggs",
+    "remedies": [
+      {
+        "name": "Calcarea Carbonica",
+        "grade": 3
+      },
+      {
+        "name": "Natrum Muriaticum",
+        "grade": 2
+      },
+      {
+        "name": "Sulphur",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r122",
+    "chapter": "Generals",
+    "rubric": "FOOD and drinks, desires, fat",
+    "remedies": [
+      {
+        "name": "Pulsatilla Nigricans",
+        "grade": 2
+      },
+      {
+        "name": "Calcarea Carbonica",
+        "grade": 2
+      },
+      {
+        "name": "Nux Vomica",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r123",
+    "chapter": "Generals",
+    "rubric": "FOOD and drinks, desires, sour",
+    "remedies": [
+      {
+        "name": "Ignatia Amara",
+        "grade": 3
+      },
+      {
+        "name": "Sepia Officinalis",
+        "grade": 2
+      },
+      {
+        "name": "Nitricum Acidum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r124",
+    "chapter": "Generals",
+    "rubric": "FOOD and drinks, desires, spicy",
+    "remedies": [
+      {
+        "name": "Phosphorus",
+        "grade": 2
+      },
+      {
+        "name": "Nux Vomica",
+        "grade": 2
+      },
+      {
+        "name": "Capsicum Annuum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r125",
+    "chapter": "Generals",
+    "rubric": "FOOD and drinks, aversion, meat",
+    "remedies": [
+      {
+        "name": "Sepia Officinalis",
+        "grade": 3
+      },
+      {
+        "name": "Natrum Muriaticum",
+        "grade": 2
+      },
+      {
+        "name": "Pulsatilla Nigricans",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r126",
+    "chapter": "Generals",
+    "rubric": "FOOD and drinks, aversion, bread",
+    "remedies": [
+      {
+        "name": "Natrum Muriaticum",
+        "grade": 2
+      },
+      {
+        "name": "Bryonia Alba",
+        "grade": 2
+      },
+      {
+        "name": "Lycopodium Clavatum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r127",
+    "chapter": "Generals",
+    "rubric": "HEMORRHAGE",
+    "remedies": [
+      {
+        "name": "Phosphorus",
+        "grade": 3
+      },
+      {
+        "name": "Crotalus Horridus",
+        "grade": 3
+      },
+      {
+        "name": "Hamamelis Virginiana",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r128",
+    "chapter": "Generals",
+    "rubric": "INJURIES, bruises",
+    "remedies": [
+      {
+        "name": "Arnica Montana",
+        "grade": 4
+      },
+      {
+        "name": "Bellis Perennis",
+        "grade": 2
+      },
+      {
+        "name": "Hypericum Perforatum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r129",
+    "chapter": "Generals",
+    "rubric": "INJURIES, nerves",
+    "remedies": [
+      {
+        "name": "Hypericum Perforatum",
+        "grade": 4
+      },
+      {
+        "name": "Ledum Palustre",
+        "grade": 2
+      },
+      {
+        "name": "Staphysagria",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r130",
+    "chapter": "Generals",
+    "rubric": "INJURIES, spine",
+    "remedies": [
+      {
+        "name": "Hypericum Perforatum",
+        "grade": 4
+      },
+      {
+        "name": "Natrum Sulphuricum",
+        "grade": 2
+      },
+      {
+        "name": "Ruta Graveolens",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r131",
+    "chapter": "Generals",
+    "rubric": "NAUSEA, constant",
+    "remedies": [
+      {
+        "name": "Ipecacuanha",
+        "grade": 4
+      },
+      {
+        "name": "Cocculus Indicus",
+        "grade": 2
+      },
+      {
+        "name": "Sepia Officinalis",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r132",
+    "chapter": "Generals",
+    "rubric": "OBESITY",
+    "remedies": [
+      {
+        "name": "Calcarea Carbonica",
+        "grade": 3
+      },
+      {
+        "name": "Graphites",
+        "grade": 2
+      },
+      {
+        "name": "Antimonium Crudum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r133",
+    "chapter": "Generals",
+    "rubric": "ODOR of body, offensive",
+    "remedies": [
+      {
+        "name": "Sulphur",
+        "grade": 3
+      },
+      {
+        "name": "Psorinum",
+        "grade": 3
+      },
+      {
+        "name": "Mercurius Solubilis",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r134",
+    "chapter": "Generals",
+    "rubric": "PAIN, neuralgic",
+    "remedies": [
+      {
+        "name": "Magnesia Phosphorica",
+        "grade": 3
+      },
+      {
+        "name": "Spigelia Anthelmia",
+        "grade": 3
+      },
+      {
+        "name": "Colocynthis",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r135",
+    "chapter": "Generals",
+    "rubric": "PAIN, stitching",
+    "remedies": [
+      {
+        "name": "Bryonia Alba",
+        "grade": 4
+      },
+      {
+        "name": "Kali Carbonicum",
+        "grade": 2
+      },
+      {
+        "name": "Apis Mellifica",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r136",
+    "chapter": "Generals",
+    "rubric": "PAIN, tearing",
+    "remedies": [
+      {
+        "name": "Colocynthis",
+        "grade": 2
+      },
+      {
+        "name": "Rhus Toxicodendron",
+        "grade": 2
+      },
+      {
+        "name": "Chamomilla",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r137",
+    "chapter": "Generals",
+    "rubric": "PARALYSIS",
+    "remedies": [
+      {
+        "name": "Causticum",
+        "grade": 3
+      },
+      {
+        "name": "Gelsemium",
+        "grade": 2
+      },
+      {
+        "name": "Plumbum Metallicum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r138",
+    "chapter": "Generals",
+    "rubric": "SEPSIS",
+    "remedies": [
+      {
+        "name": "Pyrogenium",
+        "grade": 3
+      },
+      {
+        "name": "Arsenicum Album",
+        "grade": 2
+      },
+      {
+        "name": "Lachesis Mutus",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r139",
+    "chapter": "Generals",
+    "rubric": "SHOCK, surgical",
+    "remedies": [
+      {
+        "name": "Arnica Montana",
+        "grade": 3
+      },
+      {
+        "name": "Opium",
+        "grade": 2
+      },
+      {
+        "name": "Aconitum Napellus",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r140",
+    "chapter": "Generals",
+    "rubric": "SWELLING, general",
+    "remedies": [
+      {
+        "name": "Apis Mellifica",
+        "grade": 3
+      },
+      {
+        "name": "Rhus Toxicodendron",
+        "grade": 2
+      },
+      {
+        "name": "Arsenicum Album",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r141",
+    "chapter": "Generals",
+    "rubric": "TREMBLING, external",
+    "remedies": [
+      {
+        "name": "Gelsemium",
+        "grade": 4
+      },
+      {
+        "name": "Argentum Nitricum",
+        "grade": 3
+      },
+      {
+        "name": "Cocculus Indicus",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r142",
+    "chapter": "Generals",
+    "rubric": "VACCINATION, ailments after",
+    "remedies": [
+      {
+        "name": "Thuja Occidentalis",
+        "grade": 4
+      },
+      {
+        "name": "Silicea",
+        "grade": 3
+      },
+      {
+        "name": "Malandrinum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r143",
+    "chapter": "Generals",
+    "rubric": "WEAKNESS, nervous",
+    "remedies": [
+      {
+        "name": "Gelsemium",
+        "grade": 3
+      },
+      {
+        "name": "Phosphoric Acid",
+        "grade": 3
+      },
+      {
+        "name": "Kali Phosphoricum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r144",
+    "chapter": "Head",
+    "rubric": "PAIN, headache, afternoon",
+    "remedies": [
+      {
+        "name": "Lycopodium Clavatum",
+        "grade": 3
+      },
+      {
+        "name": "Sulphur",
+        "grade": 2
+      },
+      {
+        "name": "Gelsemium",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r145",
+    "chapter": "Head",
+    "rubric": "PAIN, headache, evening",
+    "remedies": [
+      {
+        "name": "Pulsatilla Nigricans",
+        "grade": 2
+      },
+      {
+        "name": "Sulphur",
+        "grade": 2
+      },
+      {
+        "name": "Nux Vomica",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r146",
+    "chapter": "Head",
+    "rubric": "PAIN, headache, night",
+    "remedies": [
+      {
+        "name": "Arsenicum Album",
+        "grade": 2
+      },
+      {
+        "name": "Nux Vomica",
+        "grade": 2
+      },
+      {
+        "name": "Rhus Toxicodendron",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r147",
+    "chapter": "Head",
+    "rubric": "PAIN, headache, periodic",
+    "remedies": [
+      {
+        "name": "Cedron",
+        "grade": 3
+      },
+      {
+        "name": "Sanguinaria Canadensis",
+        "grade": 2
+      },
+      {
+        "name": "China Officinalis",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r148",
+    "chapter": "Head",
+    "rubric": "PAIN, headache, vertex",
+    "remedies": [
+      {
+        "name": "Silicea",
+        "grade": 2
+      },
+      {
+        "name": "Calcarea Carbonica",
+        "grade": 2
+      },
+      {
+        "name": "Sulphur",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r149",
+    "chapter": "Head",
+    "rubric": "PAIN, headache, occiput",
+    "remedies": [
+      {
+        "name": "Gelsemium",
+        "grade": 3
+      },
+      {
+        "name": "Silicea",
+        "grade": 2
+      },
+      {
+        "name": "Natrum Muriaticum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r150",
+    "chapter": "Head",
+    "rubric": "PAIN, headache, forehead",
+    "remedies": [
+      {
+        "name": "Natrum Muriaticum",
+        "grade": 2
+      },
+      {
+        "name": "Bryonia Alba",
+        "grade": 2
+      },
+      {
+        "name": "Pulsatilla Nigricans",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r151",
+    "chapter": "Head",
+    "rubric": "PAIN, headache, temples",
+    "remedies": [
+      {
+        "name": "Belladonna",
+        "grade": 3
+      },
+      {
+        "name": "Glonoinum",
+        "grade": 2
+      },
+      {
+        "name": "Spigelia Anthelmia",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r152",
+    "chapter": "Head",
+    "rubric": "PAIN, headache, cold, from taking",
+    "remedies": [
+      {
+        "name": "Dulcamara",
+        "grade": 3
+      },
+      {
+        "name": "Rhus Toxicodendron",
+        "grade": 2
+      },
+      {
+        "name": "Bryonia Alba",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r153",
+    "chapter": "Head",
+    "rubric": "PAIN, headache, heat, from",
+    "remedies": [
+      {
+        "name": "Belladonna",
+        "grade": 3
+      },
+      {
+        "name": "Glonoine",
+        "grade": 2
+      },
+      {
+        "name": "Lachesis Mutus",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r154",
+    "chapter": "Head",
+    "rubric": "PAIN, headache, noise, from",
+    "remedies": [
+      {
+        "name": "Nux Vomica",
+        "grade": 2
+      },
+      {
+        "name": "Belladonna",
+        "grade": 2
+      },
+      {
+        "name": "Natrum Carbonicum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r155",
+    "chapter": "Head",
+    "rubric": "PAIN, headache, stooping, from",
+    "remedies": [
+      {
+        "name": "Bryonia Alba",
+        "grade": 3
+      },
+      {
+        "name": "Kali Carbonicum",
+        "grade": 2
+      },
+      {
+        "name": "Silicea",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r156",
+    "chapter": "Head",
+    "rubric": "PAIN, headache, better open air",
+    "remedies": [
+      {
+        "name": "Pulsatilla Nigricans",
+        "grade": 3
+      },
+      {
+        "name": "Aconitum Napellus",
+        "grade": 2
+      },
+      {
+        "name": "Arsenicum Album",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r157",
+    "chapter": "Head",
+    "rubric": "PAIN, headache, school girls",
+    "remedies": [
+      {
+        "name": "Natrum Muriaticum",
+        "grade": 3
+      },
+      {
+        "name": "Calcarea Phosphorica",
+        "grade": 2
+      },
+      {
+        "name": "Ignatia Amara",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r158",
+    "chapter": "Head",
+    "rubric": "PERSPIRATION, head, on",
+    "remedies": [
+      {
+        "name": "Calcarea Carbonica",
+        "grade": 4
+      },
+      {
+        "name": "Silicea",
+        "grade": 3
+      },
+      {
+        "name": "Mercurius Solubilis",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r159",
+    "chapter": "Head",
+    "rubric": "VERTIGO, with headache",
+    "remedies": [
+      {
+        "name": "Gelsemium",
+        "grade": 3
+      },
+      {
+        "name": "Nux Vomica",
+        "grade": 2
+      },
+      {
+        "name": "Cocculus Indicus",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r160",
+    "chapter": "Eye",
+    "rubric": "CATARACT",
+    "remedies": [
+      {
+        "name": "Calcarea Fluorica",
+        "grade": 3
+      },
+      {
+        "name": "Silicea",
+        "grade": 2
+      },
+      {
+        "name": "Natrum Muriaticum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r161",
+    "chapter": "Eye",
+    "rubric": "STYES",
+    "remedies": [
+      {
+        "name": "Pulsatilla Nigricans",
+        "grade": 3
+      },
+      {
+        "name": "Staphysagria",
+        "grade": 3
+      },
+      {
+        "name": "Sulphur",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r162",
+    "chapter": "Eye",
+    "rubric": "PHOTOPHOBIA",
+    "remedies": [
+      {
+        "name": "Belladonna",
+        "grade": 3
+      },
+      {
+        "name": "Euphrasia Officinalis",
+        "grade": 2
+      },
+      {
+        "name": "Gelsemium",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r163",
+    "chapter": "Eye",
+    "rubric": "ULCERS, cornea",
+    "remedies": [
+      {
+        "name": "Mercurius Solubilis",
+        "grade": 3
+      },
+      {
+        "name": "Silicea",
+        "grade": 2
+      },
+      {
+        "name": "Calcarea Sulphurica",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r164",
+    "chapter": "Eye",
+    "rubric": "VISION, dim",
+    "remedies": [
+      {
+        "name": "Gelsemium",
+        "grade": 3
+      },
+      {
+        "name": "Natrum Muriaticum",
+        "grade": 2
+      },
+      {
+        "name": "Causticum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r165",
+    "chapter": "Eye",
+    "rubric": "VISION, flickering",
+    "remedies": [
+      {
+        "name": "Natrum Muriaticum",
+        "grade": 2
+      },
+      {
+        "name": "Lilium Tigrinum",
+        "grade": 2
+      },
+      {
+        "name": "Sepia Officinalis",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r166",
+    "chapter": "Ear",
+    "rubric": "DISCHARGE, ear, offensive",
+    "remedies": [
+      {
+        "name": "Tellurium",
+        "grade": 3
+      },
+      {
+        "name": "Mercurius Solubilis",
+        "grade": 3
+      },
+      {
+        "name": "Psorinum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r167",
+    "chapter": "Ear",
+    "rubric": "NOISES, ringing",
+    "remedies": [
+      {
+        "name": "China Officinalis",
+        "grade": 3
+      },
+      {
+        "name": "Lycopodium Clavatum",
+        "grade": 2
+      },
+      {
+        "name": "Natrum Salicylicum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r168",
+    "chapter": "Ear",
+    "rubric": "DEAFNESS, catarrh, from",
+    "remedies": [
+      {
+        "name": "Pulsatilla Nigricans",
+        "grade": 3
+      },
+      {
+        "name": "Kali Muriaticum",
+        "grade": 2
+      },
+      {
+        "name": "Graphites",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r169",
+    "chapter": "Ear",
+    "rubric": "PAIN, earache, cold, from taking",
+    "remedies": [
+      {
+        "name": "Dulcamara",
+        "grade": 3
+      },
+      {
+        "name": "Aconitum Napellus",
+        "grade": 2
+      },
+      {
+        "name": "Belladonna",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r170",
+    "chapter": "Ear",
+    "rubric": "PAIN, earache, warmth amel.",
+    "remedies": [
+      {
+        "name": "Chamomilla",
+        "grade": 3
+      },
+      {
+        "name": "Pulsatilla Nigricans",
+        "grade": 2
+      },
+      {
+        "name": "Magnesia Carbonica",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r171",
+    "chapter": "Nose",
+    "rubric": "CORYZA, fluent",
+    "remedies": [
+      {
+        "name": "Allium Cepa",
+        "grade": 4
+      },
+      {
+        "name": "Arsenicum Album",
+        "grade": 2
+      },
+      {
+        "name": "Euphrasia Officinalis",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r172",
+    "chapter": "Nose",
+    "rubric": "CORYZA, dry",
+    "remedies": [
+      {
+        "name": "Nux Vomica",
+        "grade": 3
+      },
+      {
+        "name": "Bryonia Alba",
+        "grade": 2
+      },
+      {
+        "name": "Arum Triphyllum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r173",
+    "chapter": "Nose",
+    "rubric": "CORYZA, annual",
+    "remedies": [
+      {
+        "name": "Dulcamara",
+        "grade": 3
+      },
+      {
+        "name": "Sabadilla",
+        "grade": 2
+      },
+      {
+        "name": "Wyethia",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r174",
+    "chapter": "Nose",
+    "rubric": "EPISTAXIS",
+    "remedies": [
+      {
+        "name": "Phosphorus",
+        "grade": 3
+      },
+      {
+        "name": "Hamamelis Virginiana",
+        "grade": 2
+      },
+      {
+        "name": "Carbo Vegetabilis",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r175",
+    "chapter": "Nose",
+    "rubric": "OBSTRUCTION, nose",
+    "remedies": [
+      {
+        "name": "Nux Vomica",
+        "grade": 2
+      },
+      {
+        "name": "Sambucus Nigra",
+        "grade": 2
+      },
+      {
+        "name": "Sticta Pulmonaria",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r176",
+    "chapter": "Nose",
+    "rubric": "SNEEZING, paroxysmal",
+    "remedies": [
+      {
+        "name": "Sabadilla",
+        "grade": 3
+      },
+      {
+        "name": "Arsenicum Album",
+        "grade": 2
+      },
+      {
+        "name": "Dulcamara",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r177",
+    "chapter": "Face",
+    "rubric": "CRACKS, lips",
+    "remedies": [
+      {
+        "name": "Natrum Muriaticum",
+        "grade": 3
+      },
+      {
+        "name": "Graphites",
+        "grade": 2
+      },
+      {
+        "name": "Nitricum Acidum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r178",
+    "chapter": "Face",
+    "rubric": "ERUPTIONS, eczema",
+    "remedies": [
+      {
+        "name": "Graphites",
+        "grade": 3
+      },
+      {
+        "name": "Sulphur",
+        "grade": 3
+      },
+      {
+        "name": "Petroleum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r179",
+    "chapter": "Face",
+    "rubric": "ERUPTIONS, herpes",
+    "remedies": [
+      {
+        "name": "Natrum Muriaticum",
+        "grade": 3
+      },
+      {
+        "name": "Rhus Toxicodendron",
+        "grade": 2
+      },
+      {
+        "name": "Dulcamara",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r180",
+    "chapter": "Face",
+    "rubric": "PAIN, neuralgia, face",
+    "remedies": [
+      {
+        "name": "Spigelia Anthelmia",
+        "grade": 3
+      },
+      {
+        "name": "Magnesia Phosphorica",
+        "grade": 2
+      },
+      {
+        "name": "Colocynthis",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r181",
+    "chapter": "Face",
+    "rubric": "PALE",
+    "remedies": [
+      {
+        "name": "China Officinalis",
+        "grade": 2
+      },
+      {
+        "name": "Veratrum Album",
+        "grade": 2
+      },
+      {
+        "name": "Ferrum Metallicum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r182",
+    "chapter": "Face",
+    "rubric": "SWELLING, face",
+    "remedies": [
+      {
+        "name": "Apis Mellifica",
+        "grade": 3
+      },
+      {
+        "name": "Rhus Toxicodendron",
+        "grade": 2
+      },
+      {
+        "name": "Arsenicum Album",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r183",
+    "chapter": "Mouth",
+    "rubric": "APHTHAE",
+    "remedies": [
+      {
+        "name": "Borax",
+        "grade": 3
+      },
+      {
+        "name": "Mercurius Solubilis",
+        "grade": 3
+      },
+      {
+        "name": "Natrum Muriaticum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r184",
+    "chapter": "Mouth",
+    "rubric": "BLEEDING, gums",
+    "remedies": [
+      {
+        "name": "Phosphorus",
+        "grade": 3
+      },
+      {
+        "name": "Mercurius Solubilis",
+        "grade": 2
+      },
+      {
+        "name": "Carbo Vegetabilis",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r185",
+    "chapter": "Mouth",
+    "rubric": "TASTE, bitter",
+    "remedies": [
+      {
+        "name": "Nux Vomica",
+        "grade": 3
+      },
+      {
+        "name": "Pulsatilla Nigricans",
+        "grade": 2
+      },
+      {
+        "name": "Bryonia Alba",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r186",
+    "chapter": "Mouth",
+    "rubric": "TASTE, salty",
+    "remedies": [
+      {
+        "name": "Natrum Muriaticum",
+        "grade": 3
+      },
+      {
+        "name": "Mercurius Solubilis",
+        "grade": 2
+      },
+      {
+        "name": "Sepia Officinalis",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r187",
+    "chapter": "Mouth",
+    "rubric": "TONGUE, mapped",
+    "remedies": [
+      {
+        "name": "Natrum Muriaticum",
+        "grade": 3
+      },
+      {
+        "name": "Taraxacum",
+        "grade": 2
+      },
+      {
+        "name": "Lycopodium Clavatum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r188",
+    "chapter": "Mouth",
+    "rubric": "TONGUE, cracked",
+    "remedies": [
+      {
+        "name": "Nitricum Acidum",
+        "grade": 2
+      },
+      {
+        "name": "Arum Triphyllum",
+        "grade": 2
+      },
+      {
+        "name": "Natrum Muriaticum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r189",
+    "chapter": "Throat",
+    "rubric": "PAIN, sore throat, left side",
+    "remedies": [
+      {
+        "name": "Lachesis Mutus",
+        "grade": 4
+      },
+      {
+        "name": "Lycopodium Clavatum",
+        "grade": 2
+      },
+      {
+        "name": "Apis Mellifica",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r190",
+    "chapter": "Throat",
+    "rubric": "PAIN, sore throat, swallowing solids",
+    "remedies": [
+      {
+        "name": "Belladonna",
+        "grade": 3
+      },
+      {
+        "name": "Lachesis Mutus",
+        "grade": 2
+      },
+      {
+        "name": "Phytolacca Decandra",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r191",
+    "chapter": "Throat",
+    "rubric": "PAIN, sore throat, empty swallowing",
+    "remedies": [
+      {
+        "name": "Ignatia Amara",
+        "grade": 3
+      },
+      {
+        "name": "Lachesis Mutus",
+        "grade": 2
+      },
+      {
+        "name": "Belladonna",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r192",
+    "chapter": "Throat",
+    "rubric": "ULCERS, throat",
+    "remedies": [
+      {
+        "name": "Mercurius Solubilis",
+        "grade": 3
+      },
+      {
+        "name": "Nitricum Acidum",
+        "grade": 2
+      },
+      {
+        "name": "Kali Bichromicum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r193",
+    "chapter": "Throat",
+    "rubric": "HAWKING, constant",
+    "remedies": [
+      {
+        "name": "Kali Bichromicum",
+        "grade": 3
+      },
+      {
+        "name": "Alumina",
+        "grade": 2
+      },
+      {
+        "name": "Phosphorus",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r194",
+    "chapter": "Throat",
+    "rubric": "GLOBUS hystericus",
+    "remedies": [
+      {
+        "name": "Ignatia Amara",
+        "grade": 4
+      },
+      {
+        "name": "Asafoetida",
+        "grade": 2
+      },
+      {
+        "name": "Lachesis Mutus",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r195",
+    "chapter": "Stomach",
+    "rubric": "APPETITE, increased",
+    "remedies": [
+      {
+        "name": "Iodum",
+        "grade": 3
+      },
+      {
+        "name": "China Officinalis",
+        "grade": 2
+      },
+      {
+        "name": "Sulphur",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r196",
+    "chapter": "Stomach",
+    "rubric": "APPETITE, wanting",
+    "remedies": [
+      {
+        "name": "Sepia Officinalis",
+        "grade": 3
+      },
+      {
+        "name": "Arsenicum Album",
+        "grade": 2
+      },
+      {
+        "name": "Carbo Vegetabilis",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r197",
+    "chapter": "Stomach",
+    "rubric": "ERUCTATIONS, empty",
+    "remedies": [
+      {
+        "name": "Lycopodium Clavatum",
+        "grade": 3
+      },
+      {
+        "name": "Argentum Nitricum",
+        "grade": 2
+      },
+      {
+        "name": "Carbo Vegetabilis",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r198",
+    "chapter": "Stomach",
+    "rubric": "ERUCTATIONS, sour",
+    "remedies": [
+      {
+        "name": "Nux Vomica",
+        "grade": 3
+      },
+      {
+        "name": "Robinia Pseudacacia",
+        "grade": 2
+      },
+      {
+        "name": "Iris Versicolor",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r199",
+    "chapter": "Stomach",
+    "rubric": "HEARTBURN",
+    "remedies": [
+      {
+        "name": "Natrum Phosphoricum",
+        "grade": 3
+      },
+      {
+        "name": "Nux Vomica",
+        "grade": 2
+      },
+      {
+        "name": "Pulsatilla Nigricans",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r200",
+    "chapter": "Stomach",
+    "rubric": "PAIN, stomach, eating after",
+    "remedies": [
+      {
+        "name": "Nux Vomica",
+        "grade": 3
+      },
+      {
+        "name": "Kali Bichromicum",
+        "grade": 2
+      },
+      {
+        "name": "Bryonia Alba",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r201",
+    "chapter": "Stomach",
+    "rubric": "PAIN, stomach, fasting",
+    "remedies": [
+      {
+        "name": "Phosphorus",
+        "grade": 3
+      },
+      {
+        "name": "Anacardium Orientale",
+        "grade": 2
+      },
+      {
+        "name": "Ignatia Amara",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r202",
+    "chapter": "Stomach",
+    "rubric": "THIRST, excessive",
+    "remedies": [
+      {
+        "name": "Bryonia Alba",
+        "grade": 3
+      },
+      {
+        "name": "Phosphorus",
+        "grade": 2
+      },
+      {
+        "name": "Arsenicum Album",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r203",
+    "chapter": "Stomach",
+    "rubric": "VOMITING, bile",
+    "remedies": [
+      {
+        "name": "Iris Versicolor",
+        "grade": 3
+      },
+      {
+        "name": "Podophyllum",
+        "grade": 2
+      },
+      {
+        "name": "Nux Vomica",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r204",
+    "chapter": "Stomach",
+    "rubric": "VOMITING, blood",
+    "remedies": [
+      {
+        "name": "Phosphorus",
+        "grade": 3
+      },
+      {
+        "name": "Hamamelis Virginiana",
+        "grade": 2
+      },
+      {
+        "name": "Ipecacuanha",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r205",
+    "chapter": "Stomach",
+    "rubric": "VOMITING, food",
+    "remedies": [
+      {
+        "name": "Antimonium Crudum",
+        "grade": 2
+      },
+      {
+        "name": "Pulsatilla Nigricans",
+        "grade": 2
+      },
+      {
+        "name": "Ferrum Metallicum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r206",
+    "chapter": "Stomach",
+    "rubric": "VOMITING, motion, from",
+    "remedies": [
+      {
+        "name": "Cocculus Indicus",
+        "grade": 4
+      },
+      {
+        "name": "Petroleum",
+        "grade": 3
+      },
+      {
+        "name": "Tabacum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r207",
+    "chapter": "Abdomen",
+    "rubric": "ASCITES",
+    "remedies": [
+      {
+        "name": "Apis Mellifica",
+        "grade": 3
+      },
+      {
+        "name": "Arsenicum Album",
+        "grade": 2
+      },
+      {
+        "name": "China Officinalis",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r208",
+    "chapter": "Abdomen",
+    "rubric": "COLIC, infants",
+    "remedies": [
+      {
+        "name": "Chamomilla",
+        "grade": 4
+      },
+      {
+        "name": "Colocynthis",
+        "grade": 3
+      },
+      {
+        "name": "Magnesia Phosphorica",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r209",
+    "chapter": "Abdomen",
+    "rubric": "DISTENSION, abdomen",
+    "remedies": [
+      {
+        "name": "Lycopodium Clavatum",
+        "grade": 4
+      },
+      {
+        "name": "Carbo Vegetabilis",
+        "grade": 3
+      },
+      {
+        "name": "China Officinalis",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r210",
+    "chapter": "Abdomen",
+    "rubric": "HERNIA",
+    "remedies": [
+      {
+        "name": "Nux Vomica",
+        "grade": 3
+      },
+      {
+        "name": "Lycopodium Clavatum",
+        "grade": 2
+      },
+      {
+        "name": "Calcarea Carbonica",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r211",
+    "chapter": "Abdomen",
+    "rubric": "PAIN, abdomen, cold, from",
+    "remedies": [
+      {
+        "name": "Dulcamara",
+        "grade": 3
+      },
+      {
+        "name": "Colocynthis",
+        "grade": 2
+      },
+      {
+        "name": "Nux Vomica",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r212",
+    "chapter": "Abdomen",
+    "rubric": "PAIN, abdomen, eating after",
+    "remedies": [
+      {
+        "name": "Nux Vomica",
+        "grade": 3
+      },
+      {
+        "name": "Lycopodium Clavatum",
+        "grade": 2
+      },
+      {
+        "name": "Pulsatilla Nigricans",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r213",
+    "chapter": "Abdomen",
+    "rubric": "TYPHLITIS",
+    "remedies": [
+      {
+        "name": "Bryonia Alba",
+        "grade": 2
+      },
+      {
+        "name": "Rhus Toxicodendron",
+        "grade": 2
+      },
+      {
+        "name": "Belladonna",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r214",
+    "chapter": "Abdomen",
+    "rubric": "APPENDICITIS",
+    "remedies": [
+      {
+        "name": "Bryonia Alba",
+        "grade": 2
+      },
+      {
+        "name": "Rhus Toxicodendron",
+        "grade": 2
+      },
+      {
+        "name": "Belladonna",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r215",
+    "chapter": "Rectum",
+    "rubric": "CHOLERA",
+    "remedies": [
+      {
+        "name": "Veratrum Album",
+        "grade": 4
+      },
+      {
+        "name": "Camphora",
+        "grade": 3
+      },
+      {
+        "name": "Cuprum Metallicum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r216",
+    "chapter": "Rectum",
+    "rubric": "CONSTIPATION, hard stool",
+    "remedies": [
+      {
+        "name": "Bryonia Alba",
+        "grade": 3
+      },
+      {
+        "name": "Nux Vomica",
+        "grade": 2
+      },
+      {
+        "name": "Alumina",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r217",
+    "chapter": "Rectum",
+    "rubric": "CONSTIPATION, no desire",
+    "remedies": [
+      {
+        "name": "Opium",
+        "grade": 3
+      },
+      {
+        "name": "Alumina",
+        "grade": 2
+      },
+      {
+        "name": "Veratrum Album",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r218",
+    "chapter": "Rectum",
+    "rubric": "DIARRHEA, painless",
+    "remedies": [
+      {
+        "name": "Phosphoric Acid",
+        "grade": 3
+      },
+      {
+        "name": "China Officinalis",
+        "grade": 2
+      },
+      {
+        "name": "Ferrum Metallicum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r219",
+    "chapter": "Rectum",
+    "rubric": "DIARRHEA, food, after",
+    "remedies": [
+      {
+        "name": "Arsenicum Album",
+        "grade": 3
+      },
+      {
+        "name": "China Officinalis",
+        "grade": 2
+      },
+      {
+        "name": "Ferrum Metallicum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r220",
+    "chapter": "Rectum",
+    "rubric": "DIARRHEA, nervous",
+    "remedies": [
+      {
+        "name": "Argentum Nitricum",
+        "grade": 3
+      },
+      {
+        "name": "Gelsemium",
+        "grade": 2
+      },
+      {
+        "name": "Lilium Tigrinum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r221",
+    "chapter": "Rectum",
+    "rubric": "DYSENTERY",
+    "remedies": [
+      {
+        "name": "Mercurius Corrosivus",
+        "grade": 3
+      },
+      {
+        "name": "Colocynthis",
+        "grade": 2
+      },
+      {
+        "name": "Nux Vomica",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r222",
+    "chapter": "Rectum",
+    "rubric": "HEMORRHOIDS",
+    "remedies": [
+      {
+        "name": "Aesculus Hippocastanum",
+        "grade": 3
+      },
+      {
+        "name": "Nux Vomica",
+        "grade": 3
+      },
+      {
+        "name": "Collinsonia Canadensis",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r223",
+    "chapter": "Rectum",
+    "rubric": "HEMORRHOIDS, bleeding",
+    "remedies": [
+      {
+        "name": "Hamamelis Virginiana",
+        "grade": 3
+      },
+      {
+        "name": "Phosphorus",
+        "grade": 2
+      },
+      {
+        "name": "Millefolium",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r224",
+    "chapter": "Rectum",
+    "rubric": "PROLAPSUS ani",
+    "remedies": [
+      {
+        "name": "Podophyllum",
+        "grade": 3
+      },
+      {
+        "name": "Ruta Graveolens",
+        "grade": 2
+      },
+      {
+        "name": "Ignatia Amara",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r225",
+    "chapter": "Rectum",
+    "rubric": "WORMS",
+    "remedies": [
+      {
+        "name": "Cina Maritima",
+        "grade": 4
+      },
+      {
+        "name": "Teucrium Marum Verum",
+        "grade": 3
+      },
+      {
+        "name": "Spigelia Anthelmia",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r226",
+    "chapter": "Urinary",
+    "rubric": "DIABETES",
+    "remedies": [
+      {
+        "name": "Phosphoric Acid",
+        "grade": 3
+      },
+      {
+        "name": "Syzygium Jambolanum",
+        "grade": 3
+      },
+      {
+        "name": "Uranium Nitricum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r227",
+    "chapter": "Urinary",
+    "rubric": "GRAVEL",
+    "remedies": [
+      {
+        "name": "Berberis Vulgaris",
+        "grade": 3
+      },
+      {
+        "name": "Lycopodium Clavatum",
+        "grade": 2
+      },
+      {
+        "name": "Sarsaparilla",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r228",
+    "chapter": "Urinary",
+    "rubric": "INCONTINENCE, urine",
+    "remedies": [
+      {
+        "name": "Causticum",
+        "grade": 3
+      },
+      {
+        "name": "Pulsatilla Nigricans",
+        "grade": 2
+      },
+      {
+        "name": "Zincum Metallicum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r229",
+    "chapter": "Urinary",
+    "rubric": "RETENTION, urine",
+    "remedies": [
+      {
+        "name": "Apis Mellifica",
+        "grade": 3
+      },
+      {
+        "name": "Nux Vomica",
+        "grade": 2
+      },
+      {
+        "name": "Opium",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r230",
+    "chapter": "Urinary",
+    "rubric": "STONES, kidney",
+    "remedies": [
+      {
+        "name": "Berberis Vulgaris",
+        "grade": 4
+      },
+      {
+        "name": "Lycopodium Clavatum",
+        "grade": 3
+      },
+      {
+        "name": "Sarsaparilla",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r231",
+    "chapter": "Urinary",
+    "rubric": "URINE, bloody",
+    "remedies": [
+      {
+        "name": "Cantharis",
+        "grade": 3
+      },
+      {
+        "name": "Hamamelis Virginiana",
+        "grade": 2
+      },
+      {
+        "name": "Terebinthina",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r232",
+    "chapter": "Urinary",
+    "rubric": "URINE, scanty",
+    "remedies": [
+      {
+        "name": "Apis Mellifica",
+        "grade": 3
+      },
+      {
+        "name": "Arsenicum Album",
+        "grade": 2
+      },
+      {
+        "name": "Digitalis Purpurea",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r233",
+    "chapter": "Female",
+    "rubric": "ABORTION, tendency",
+    "remedies": [
+      {
+        "name": "Sabina",
+        "grade": 3
+      },
+      {
+        "name": "Secale Cornutum",
+        "grade": 2
+      },
+      {
+        "name": "Cimicifuga Racemosa",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r234",
+    "chapter": "Female",
+    "rubric": "BREASTS, inflammation",
+    "remedies": [
+      {
+        "name": "Phytolacca Decandra",
+        "grade": 3
+      },
+      {
+        "name": "Belladonna",
+        "grade": 2
+      },
+      {
+        "name": "Bryonia Alba",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r235",
+    "chapter": "Female",
+    "rubric": "BREASTS, milk, scanty",
+    "remedies": [
+      {
+        "name": "Urtica Urens",
+        "grade": 3
+      },
+      {
+        "name": "Ricinus Communis",
+        "grade": 2
+      },
+      {
+        "name": "Asafoetida",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r236",
+    "chapter": "Female",
+    "rubric": "FIBROIDS",
+    "remedies": [
+      {
+        "name": "Thlaspi Bursa Pastoris",
+        "grade": 2
+      },
+      {
+        "name": "Calcarea Fluorica",
+        "grade": 2
+      },
+      {
+        "name": "Fraxinus Americana",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r237",
+    "chapter": "Female",
+    "rubric": "INFERTILITY",
+    "remedies": [
+      {
+        "name": "Sepia Officinalis",
+        "grade": 3
+      },
+      {
+        "name": "Agnus Castus",
+        "grade": 2
+      },
+      {
+        "name": "Natrum Phosphoricum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r238",
+    "chapter": "Female",
+    "rubric": "LEUCORRHEA, bland",
+    "remedies": [
+      {
+        "name": "Pulsatilla Nigricans",
+        "grade": 3
+      },
+      {
+        "name": "Graphites",
+        "grade": 2
+      },
+      {
+        "name": "Calcarea Carbonica",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r239",
+    "chapter": "Female",
+    "rubric": "MENOPAUSE, complaints during",
+    "remedies": [
+      {
+        "name": "Lachesis Mutus",
+        "grade": 3
+      },
+      {
+        "name": "Sepia Officinalis",
+        "grade": 3
+      },
+      {
+        "name": "Sanguinaria Canadensis",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r240",
+    "chapter": "Female",
+    "rubric": "MENSES, copious",
+    "remedies": [
+      {
+        "name": "Calcarea Carbonica",
+        "grade": 2
+      },
+      {
+        "name": "China Officinalis",
+        "grade": 2
+      },
+      {
+        "name": "Phosphorus",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r241",
+    "chapter": "Female",
+    "rubric": "MENSES, irregular",
+    "remedies": [
+      {
+        "name": "Pulsatilla Nigricans",
+        "grade": 3
+      },
+      {
+        "name": "Sepia Officinalis",
+        "grade": 2
+      },
+      {
+        "name": "Natrum Muriaticum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r242",
+    "chapter": "Female",
+    "rubric": "MENSES, profuse, dark",
+    "remedies": [
+      {
+        "name": "Sabina",
+        "grade": 3
+      },
+      {
+        "name": "Ipecacuanha",
+        "grade": 2
+      },
+      {
+        "name": "Secale Cornutum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r243",
+    "chapter": "Female",
+    "rubric": "MENSES, scanty",
+    "remedies": [
+      {
+        "name": "Pulsatilla Nigricans",
+        "grade": 2
+      },
+      {
+        "name": "Sepia Officinalis",
+        "grade": 2
+      },
+      {
+        "name": "Conium Maculatum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r244",
+    "chapter": "Female",
+    "rubric": "OVARIAN cysts",
+    "remedies": [
+      {
+        "name": "Apis Mellifica",
+        "grade": 3
+      },
+      {
+        "name": "Lachesis Mutus",
+        "grade": 2
+      },
+      {
+        "name": "Thuja Occidentalis",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r245",
+    "chapter": "Female",
+    "rubric": "PROLAPSUS uteri",
+    "remedies": [
+      {
+        "name": "Sepia Officinalis",
+        "grade": 4
+      },
+      {
+        "name": "Lilium Tigrinum",
+        "grade": 2
+      },
+      {
+        "name": "Murex Purpurea",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r246",
+    "chapter": "Female",
+    "rubric": "VAGINITIS",
+    "remedies": [
+      {
+        "name": "Kreosotum",
+        "grade": 3
+      },
+      {
+        "name": "Sepia Officinalis",
+        "grade": 2
+      },
+      {
+        "name": "Hydrastis Canadensis",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r247",
+    "chapter": "Male",
+    "rubric": "IMPOTENCE",
+    "remedies": [
+      {
+        "name": "Agnus Castus",
+        "grade": 4
+      },
+      {
+        "name": "Lycopodium Clavatum",
+        "grade": 3
+      },
+      {
+        "name": "Caladium Seguinum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r248",
+    "chapter": "Male",
+    "rubric": "PROSTATE, enlarged",
+    "remedies": [
+      {
+        "name": "Sabal Serrulata",
+        "grade": 3
+      },
+      {
+        "name": "Chimaphila Umbellata",
+        "grade": 2
+      },
+      {
+        "name": "Pulsatilla Nigricans",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r249",
+    "chapter": "Male",
+    "rubric": "GONORRHEA",
+    "remedies": [
+      {
+        "name": "Medorrhinum",
+        "grade": 3
+      },
+      {
+        "name": "Thuja Occidentalis",
+        "grade": 2
+      },
+      {
+        "name": "Cannabis Sativa",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r250",
+    "chapter": "Male",
+    "rubric": "SPERMATORRHEA",
+    "remedies": [
+      {
+        "name": "China Officinalis",
+        "grade": 2
+      },
+      {
+        "name": "Phosphoric Acid",
+        "grade": 2
+      },
+      {
+        "name": "Staphysagria",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r251",
+    "chapter": "Respiratory",
+    "rubric": "ASTHMA, damp weather",
+    "remedies": [
+      {
+        "name": "Dulcamara",
+        "grade": 3
+      },
+      {
+        "name": "Natrum Sulphuricum",
+        "grade": 2
+      },
+      {
+        "name": "Arsenicum Album",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r252",
+    "chapter": "Respiratory",
+    "rubric": "ASTHMA, worse 3 AM",
+    "remedies": [
+      {
+        "name": "Kali Carbonicum",
+        "grade": 3
+      },
+      {
+        "name": "Arsenicum Album",
+        "grade": 2
+      },
+      {
+        "name": "Sambucus Nigra",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r253",
+    "chapter": "Respiratory",
+    "rubric": "BRONCHITIS",
+    "remedies": [
+      {
+        "name": "Antimonium Tartaricum",
+        "grade": 3
+      },
+      {
+        "name": "Bryonia Alba",
+        "grade": 2
+      },
+      {
+        "name": "Ipecacuanha",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r254",
+    "chapter": "Respiratory",
+    "rubric": "COUGH, barking",
+    "remedies": [
+      {
+        "name": "Spongia Tosta",
+        "grade": 4
+      },
+      {
+        "name": "Hepar Sulphuris",
+        "grade": 2
+      },
+      {
+        "name": "Aconitum Napellus",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r255",
+    "chapter": "Respiratory",
+    "rubric": "COUGH, deep",
+    "remedies": [
+      {
+        "name": "Rumex Crispus",
+        "grade": 2
+      },
+      {
+        "name": "Drosera Rotundifolia",
+        "grade": 2
+      },
+      {
+        "name": "Sticta Pulmonaria",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r256",
+    "chapter": "Respiratory",
+    "rubric": "COUGH, hollow",
+    "remedies": [
+      {
+        "name": "Tuberculinum",
+        "grade": 2
+      },
+      {
+        "name": "Phosphorus",
+        "grade": 2
+      },
+      {
+        "name": "Stannum Metallicum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r257",
+    "chapter": "Respiratory",
+    "rubric": "COUGH, loose",
+    "remedies": [
+      {
+        "name": "Antimonium Tartaricum",
+        "grade": 3
+      },
+      {
+        "name": "Pulsatilla Nigricans",
+        "grade": 2
+      },
+      {
+        "name": "Ipecacuanha",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r258",
+    "chapter": "Respiratory",
+    "rubric": "COUGH, paroxysmal",
+    "remedies": [
+      {
+        "name": "Drosera Rotundifolia",
+        "grade": 4
+      },
+      {
+        "name": "Coccus Cacti",
+        "grade": 2
+      },
+      {
+        "name": "Corallium Rubrum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r259",
+    "chapter": "Respiratory",
+    "rubric": "COUGH, whooping",
+    "remedies": [
+      {
+        "name": "Drosera Rotundifolia",
+        "grade": 4
+      },
+      {
+        "name": "Corallium Rubrum",
+        "grade": 3
+      },
+      {
+        "name": "Cuprum Metallicum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r260",
+    "chapter": "Respiratory",
+    "rubric": "COUGH, worse cold air",
+    "remedies": [
+      {
+        "name": "Rumex Crispus",
+        "grade": 4
+      },
+      {
+        "name": "Spongia Tosta",
+        "grade": 2
+      },
+      {
+        "name": "Hepar Sulphuris",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r261",
+    "chapter": "Respiratory",
+    "rubric": "COUGH, worse lying",
+    "remedies": [
+      {
+        "name": "Drosera Rotundifolia",
+        "grade": 3
+      },
+      {
+        "name": "Hyoscyamus Niger",
+        "grade": 2
+      },
+      {
+        "name": "Manganum Aceticum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r262",
+    "chapter": "Respiratory",
+    "rubric": "EXPECTORATION, bloody",
+    "remedies": [
+      {
+        "name": "Phosphorus",
+        "grade": 3
+      },
+      {
+        "name": "Ipecacuanha",
+        "grade": 2
+      },
+      {
+        "name": "Mill",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r263",
+    "chapter": "Respiratory",
+    "rubric": "EXPECTORATION, green",
+    "remedies": [
+      {
+        "name": "Pulsatilla Nigricans",
+        "grade": 2
+      },
+      {
+        "name": "Kali Bichromicum",
+        "grade": 2
+      },
+      {
+        "name": "Stannum Metallicum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r264",
+    "chapter": "Respiratory",
+    "rubric": "EXPECTORATION, salty",
+    "remedies": [
+      {
+        "name": "Phosphorus",
+        "grade": 3
+      },
+      {
+        "name": "Sepia Officinalis",
+        "grade": 2
+      },
+      {
+        "name": "Carbo Vegetabilis",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r265",
+    "chapter": "Respiratory",
+    "rubric": "PNEUMONIA",
+    "remedies": [
+      {
+        "name": "Bryonia Alba",
+        "grade": 3
+      },
+      {
+        "name": "Phosphorus",
+        "grade": 2
+      },
+      {
+        "name": "Ferrum Phosphoricum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r266",
+    "chapter": "Respiratory",
+    "rubric": "PLEURISY",
+    "remedies": [
+      {
+        "name": "Bryonia Alba",
+        "grade": 4
+      },
+      {
+        "name": "Ranunculus Bulbosus",
+        "grade": 2
+      },
+      {
+        "name": "Asclepias Tuberosa",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r267",
+    "chapter": "Heart",
+    "rubric": "ANGINA pectoris",
+    "remedies": [
+      {
+        "name": "Cactus Grandiflorus",
+        "grade": 3
+      },
+      {
+        "name": "Spigelia Anthelmia",
+        "grade": 2
+      },
+      {
+        "name": "Lilium Tigrinum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r268",
+    "chapter": "Heart",
+    "rubric": "PALPITATION, anxiety, from",
+    "remedies": [
+      {
+        "name": "Aconitum Napellus",
+        "grade": 3
+      },
+      {
+        "name": "Arsenicum Album",
+        "grade": 2
+      },
+      {
+        "name": "Cactus Grandiflorus",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r269",
+    "chapter": "Heart",
+    "rubric": "PALPITATION, lying on left side",
+    "remedies": [
+      {
+        "name": "Lilium Tigrinum",
+        "grade": 3
+      },
+      {
+        "name": "Phosphorus",
+        "grade": 2
+      },
+      {
+        "name": "Natrum Muriaticum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r270",
+    "chapter": "Heart",
+    "rubric": "HYPERTENSION",
+    "remedies": [
+      {
+        "name": "Rauwolfia Serpentina",
+        "grade": 2
+      },
+      {
+        "name": "Crataegus Oxycantha",
+        "grade": 2
+      },
+      {
+        "name": "Baryta Carbonica",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r271",
+    "chapter": "Heart",
+    "rubric": "MURMURS",
+    "remedies": [
+      {
+        "name": "Digitalis Purpurea",
+        "grade": 2
+      },
+      {
+        "name": "Spongia Tosta",
+        "grade": 2
+      },
+      {
+        "name": "Kalmia Latifolia",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r272",
+    "chapter": "Extremities",
+    "rubric": "CRAMPS, calves",
+    "remedies": [
+      {
+        "name": "Calcarea Carbonica",
+        "grade": 2
+      },
+      {
+        "name": "Silicea",
+        "grade": 2
+      },
+      {
+        "name": "Sulphur",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r273",
+    "chapter": "Extremities",
+    "rubric": "GOUT",
+    "remedies": [
+      {
+        "name": "Colchicum Autumnale",
+        "grade": 3
+      },
+      {
+        "name": "Ledum Palustre",
+        "grade": 2
+      },
+      {
+        "name": "Benzoicum Acidum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r274",
+    "chapter": "Extremities",
+    "rubric": "NUMBNESS, fingers",
+    "remedies": [
+      {
+        "name": "Plumbum Metallicum",
+        "grade": 2
+      },
+      {
+        "name": "Gelsemium",
+        "grade": 2
+      },
+      {
+        "name": "Hypericum Perforatum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r275",
+    "chapter": "Extremities",
+    "rubric": "PAIN, sciatica",
+    "remedies": [
+      {
+        "name": "Colocynthis",
+        "grade": 3
+      },
+      {
+        "name": "Rhus Toxicodendron",
+        "grade": 3
+      },
+      {
+        "name": "Magnesia Phosphorica",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r276",
+    "chapter": "Extremities",
+    "rubric": "PAIN, joints, gouty",
+    "remedies": [
+      {
+        "name": "Colchicum Autumnale",
+        "grade": 3
+      },
+      {
+        "name": "Ledum Palustre",
+        "grade": 2
+      },
+      {
+        "name": "Benzoicum Acidum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r277",
+    "chapter": "Extremities",
+    "rubric": "PAIN, joints, wandering",
+    "remedies": [
+      {
+        "name": "Pulsatilla Nigricans",
+        "grade": 3
+      },
+      {
+        "name": "Kali Bichromicum",
+        "grade": 2
+      },
+      {
+        "name": "Kalmia Latifolia",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r278",
+    "chapter": "Extremities",
+    "rubric": "RHEUMATISM, acute",
+    "remedies": [
+      {
+        "name": "Bryonia Alba",
+        "grade": 3
+      },
+      {
+        "name": "Rhus Toxicodendron",
+        "grade": 3
+      },
+      {
+        "name": "Aconitum Napellus",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r279",
+    "chapter": "Extremities",
+    "rubric": "RHEUMATISM, chronic",
+    "remedies": [
+      {
+        "name": "Rhus Toxicodendron",
+        "grade": 3
+      },
+      {
+        "name": "Kali Carbonicum",
+        "grade": 2
+      },
+      {
+        "name": "Causticum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r280",
+    "chapter": "Extremities",
+    "rubric": "SPRAIN",
+    "remedies": [
+      {
+        "name": "Rhus Toxicodendron",
+        "grade": 3
+      },
+      {
+        "name": "Arnica Montana",
+        "grade": 2
+      },
+      {
+        "name": "Ruta Graveolens",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r281",
+    "chapter": "Extremities",
+    "rubric": "SWELLING, joints",
+    "remedies": [
+      {
+        "name": "Apis Mellifica",
+        "grade": 3
+      },
+      {
+        "name": "Bryonia Alba",
+        "grade": 2
+      },
+      {
+        "name": "Rhus Toxicodendron",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r282",
+    "chapter": "Extremities",
+    "rubric": "VARICOSE veins",
+    "remedies": [
+      {
+        "name": "Hamamelis Virginiana",
+        "grade": 3
+      },
+      {
+        "name": "Pulsatilla Nigricans",
+        "grade": 2
+      },
+      {
+        "name": "Fluoricum Acidum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r283",
+    "chapter": "Extremities",
+    "rubric": "COLDNESS, feet",
+    "remedies": [
+      {
+        "name": "Calcarea Carbonica",
+        "grade": 3
+      },
+      {
+        "name": "Sepia Officinalis",
+        "grade": 2
+      },
+      {
+        "name": "Silicea",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r284",
+    "chapter": "Extremities",
+    "rubric": "HEAT, feet",
+    "remedies": [
+      {
+        "name": "Sulphur",
+        "grade": 3
+      },
+      {
+        "name": "Chamomilla",
+        "grade": 2
+      },
+      {
+        "name": "Medorrhinum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r285",
+    "chapter": "Back",
+    "rubric": "PAIN, coccyx",
+    "remedies": [
+      {
+        "name": "Hypericum Perforatum",
+        "grade": 3
+      },
+      {
+        "name": "Aesculus Hippocastanum",
+        "grade": 2
+      },
+      {
+        "name": "Nitricum Acidum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r286",
+    "chapter": "Back",
+    "rubric": "PAIN, sacrum",
+    "remedies": [
+      {
+        "name": "Aesculus Hippocastanum",
+        "grade": 2
+      },
+      {
+        "name": "Kali Carbonicum",
+        "grade": 2
+      },
+      {
+        "name": "Natrum Muriaticum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r287",
+    "chapter": "Back",
+    "rubric": "PAIN, dorsal region",
+    "remedies": [
+      {
+        "name": "Natrum Muriaticum",
+        "grade": 2
+      },
+      {
+        "name": "Nux Vomica",
+        "grade": 2
+      },
+      {
+        "name": "Phosphorus",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r288",
+    "chapter": "Back",
+    "rubric": "PAIN, spine, injury",
+    "remedies": [
+      {
+        "name": "Hypericum Perforatum",
+        "grade": 4
+      },
+      {
+        "name": "Natrum Sulphuricum",
+        "grade": 2
+      },
+      {
+        "name": "Ruta Graveolens",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r289",
+    "chapter": "Back",
+    "rubric": "STIFFNESS, neck",
+    "remedies": [
+      {
+        "name": "Rhus Toxicodendron",
+        "grade": 3
+      },
+      {
+        "name": "Bryonia Alba",
+        "grade": 2
+      },
+      {
+        "name": "Lachnanthes Tinctoria",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r290",
+    "chapter": "Skin",
+    "rubric": "ABSCESS",
+    "remedies": [
+      {
+        "name": "Hepar Sulphuris",
+        "grade": 4
+      },
+      {
+        "name": "Silicea",
+        "grade": 3
+      },
+      {
+        "name": "Calcarea Sulphurica",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r291",
+    "chapter": "Skin",
+    "rubric": "BOILS",
+    "remedies": [
+      {
+        "name": "Silicea",
+        "grade": 3
+      },
+      {
+        "name": "Hepar Sulphuris",
+        "grade": 3
+      },
+      {
+        "name": "Arnica Montana",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r292",
+    "chapter": "Skin",
+    "rubric": "BURNS",
+    "remedies": [
+      {
+        "name": "Cantharis",
+        "grade": 4
+      },
+      {
+        "name": "Arsenicum Album",
+        "grade": 2
+      },
+      {
+        "name": "Causticum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r293",
+    "chapter": "Skin",
+    "rubric": "CARBUNCLE",
+    "remedies": [
+      {
+        "name": "Anthracinum",
+        "grade": 3
+      },
+      {
+        "name": "Arsenicum Album",
+        "grade": 2
+      },
+      {
+        "name": "Lachesis Mutus",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r294",
+    "chapter": "Skin",
+    "rubric": "CHAPPED",
+    "remedies": [
+      {
+        "name": "Graphites",
+        "grade": 3
+      },
+      {
+        "name": "Petroleum",
+        "grade": 2
+      },
+      {
+        "name": "Natrum Muriaticum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r295",
+    "chapter": "Skin",
+    "rubric": "CRACKS, skin",
+    "remedies": [
+      {
+        "name": "Graphites",
+        "grade": 3
+      },
+      {
+        "name": "Petroleum",
+        "grade": 2
+      },
+      {
+        "name": "Sulphur",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r296",
+    "chapter": "Skin",
+    "rubric": "ECZEMA, dry",
+    "remedies": [
+      {
+        "name": "Graphites",
+        "grade": 3
+      },
+      {
+        "name": "Petroleum",
+        "grade": 2
+      },
+      {
+        "name": "Sulphur",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r297",
+    "chapter": "Skin",
+    "rubric": "ECZEMA, moist",
+    "remedies": [
+      {
+        "name": "Graphites",
+        "grade": 3
+      },
+      {
+        "name": "Mezereum",
+        "grade": 2
+      },
+      {
+        "name": "Dulcamara",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r298",
+    "chapter": "Skin",
+    "rubric": "ERUPTIONS, suppressed",
+    "remedies": [
+      {
+        "name": "Zincum Metallicum",
+        "grade": 3
+      },
+      {
+        "name": "Sulphur",
+        "grade": 2
+      },
+      {
+        "name": "Psorinum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r299",
+    "chapter": "Skin",
+    "rubric": "FISTULA",
+    "remedies": [
+      {
+        "name": "Silicea",
+        "grade": 3
+      },
+      {
+        "name": "Calcarea Sulphurica",
+        "grade": 2
+      },
+      {
+        "name": "Berberis Vulgaris",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r300",
+    "chapter": "Skin",
+    "rubric": "FUNGUS",
+    "remedies": [
+      {
+        "name": "Sepia Officinalis",
+        "grade": 2
+      },
+      {
+        "name": "Tellurium",
+        "grade": 2
+      },
+      {
+        "name": "Graphites",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r301",
+    "chapter": "Skin",
+    "rubric": "HERPES, zoster",
+    "remedies": [
+      {
+        "name": "Ranunculus Bulbosus",
+        "grade": 3
+      },
+      {
+        "name": "Rhus Toxicodendron",
+        "grade": 2
+      },
+      {
+        "name": "Mezereum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r302",
+    "chapter": "Skin",
+    "rubric": "IMPETIGO",
+    "remedies": [
+      {
+        "name": "Antimonium Tartaricum",
+        "grade": 2
+      },
+      {
+        "name": "Graphites",
+        "grade": 2
+      },
+      {
+        "name": "Hepar Sulphuris",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r303",
+    "chapter": "Skin",
+    "rubric": "INTERTRIGO",
+    "remedies": [
+      {
+        "name": "Graphites",
+        "grade": 3
+      },
+      {
+        "name": "Sulphur",
+        "grade": 2
+      },
+      {
+        "name": "Sepia Officinalis",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r304",
+    "chapter": "Skin",
+    "rubric": "JAUNDICE",
+    "remedies": [
+      {
+        "name": "Chelidonium Majus",
+        "grade": 3
+      },
+      {
+        "name": "Myrica Cerifera",
+        "grade": 2
+      },
+      {
+        "name": "Digitalis Purpurea",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r305",
+    "chapter": "Skin",
+    "rubric": "LICHEN",
+    "remedies": [
+      {
+        "name": "Arsenicum Album",
+        "grade": 2
+      },
+      {
+        "name": "Antimonium Crudum",
+        "grade": 2
+      },
+      {
+        "name": "Sulphur",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r306",
+    "chapter": "Skin",
+    "rubric": "PSORIASIS",
+    "remedies": [
+      {
+        "name": "Arsenicum Album",
+        "grade": 2
+      },
+      {
+        "name": "Graphites",
+        "grade": 2
+      },
+      {
+        "name": "Petroleum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r307",
+    "chapter": "Skin",
+    "rubric": "RINGWORM",
+    "remedies": [
+      {
+        "name": "Sepia Officinalis",
+        "grade": 2
+      },
+      {
+        "name": "Tellurium",
+        "grade": 2
+      },
+      {
+        "name": "Bacillinum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r308",
+    "chapter": "Skin",
+    "rubric": "SCARS, painful",
+    "remedies": [
+      {
+        "name": "Graphites",
+        "grade": 2
+      },
+      {
+        "name": "Fluoricum Acidum",
+        "grade": 2
+      },
+      {
+        "name": "Silicea",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r309",
+    "chapter": "Skin",
+    "rubric": "ULCERS, burning",
+    "remedies": [
+      {
+        "name": "Arsenicum Album",
+        "grade": 3
+      },
+      {
+        "name": "Merc Solubilis",
+        "grade": 2
+      },
+      {
+        "name": "Carbo Vegetabilis",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r310",
+    "chapter": "Skin",
+    "rubric": "ULCERS, indolent",
+    "remedies": [
+      {
+        "name": "Silicea",
+        "grade": 3
+      },
+      {
+        "name": "Calcarea Sulphurica",
+        "grade": 2
+      },
+      {
+        "name": "Pulsatilla Nigricans",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r311",
+    "chapter": "Sleep",
+    "rubric": "DROWSINESS, daytime",
+    "remedies": [
+      {
+        "name": "Nux Moschata",
+        "grade": 3
+      },
+      {
+        "name": "Gelsemium",
+        "grade": 2
+      },
+      {
+        "name": "Opium",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r312",
+    "chapter": "Sleep",
+    "rubric": "POSITION, cannot sleep on left side",
+    "remedies": [
+      {
+        "name": "Lilium Tigrinum",
+        "grade": 3
+      },
+      {
+        "name": "Phosphorus",
+        "grade": 2
+      },
+      {
+        "name": "Spigelia Anthelmia",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r313",
+    "chapter": "Sleep",
+    "rubric": "SLEEP, disturbed",
+    "remedies": [
+      {
+        "name": "Nux Vomica",
+        "grade": 2
+      },
+      {
+        "name": "Coffea Cruda",
+        "grade": 2
+      },
+      {
+        "name": "Arsenicum Album",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r314",
+    "chapter": "Sleep",
+    "rubric": "SOMNAMBULISM",
+    "remedies": [
+      {
+        "name": "Phosphorus",
+        "grade": 2
+      },
+      {
+        "name": "Stramonium",
+        "grade": 2
+      },
+      {
+        "name": "Artemisia Vulgaris",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r315",
+    "chapter": "Sleep",
+    "rubric": "SNORING",
+    "remedies": [
+      {
+        "name": "Opium",
+        "grade": 2
+      },
+      {
+        "name": "Lachesis Mutus",
+        "grade": 2
+      },
+      {
+        "name": "Carbo Vegetabilis",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r316",
+    "chapter": "Sleep",
+    "rubric": "YAWNING, constant",
+    "remedies": [
+      {
+        "name": "Ignatia Amara",
+        "grade": 2
+      },
+      {
+        "name": "Antimonium Tartaricum",
+        "grade": 2
+      },
+      {
+        "name": "Gelsemium",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r317",
+    "chapter": "Fever",
+    "rubric": "AGUE, malarial",
+    "remedies": [
+      {
+        "name": "China Officinalis",
+        "grade": 4
+      },
+      {
+        "name": "Natrum Muriaticum",
+        "grade": 2
+      },
+      {
+        "name": "Arsenicum Album",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r318",
+    "chapter": "Fever",
+    "rubric": "CHILL, with heat",
+    "remedies": [
+      {
+        "name": "Mercurius Solubilis",
+        "grade": 2
+      },
+      {
+        "name": "Rhus Toxicodendron",
+        "grade": 2
+      },
+      {
+        "name": "Pulsatilla Nigricans",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r319",
+    "chapter": "Fever",
+    "rubric": "FEVER, intermittent",
+    "remedies": [
+      {
+        "name": "China Officinalis",
+        "grade": 3
+      },
+      {
+        "name": "Natrum Muriaticum",
+        "grade": 2
+      },
+      {
+        "name": "Ignatia Amara",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r320",
+    "chapter": "Fever",
+    "rubric": "FEVER, remittent",
+    "remedies": [
+      {
+        "name": "Bryonia Alba",
+        "grade": 2
+      },
+      {
+        "name": "Rhus Toxicodendron",
+        "grade": 2
+      },
+      {
+        "name": "Arsenicum Album",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r321",
+    "chapter": "Fever",
+    "rubric": "FEVER, typhoid",
+    "remedies": [
+      {
+        "name": "Baptisia Tinctoria",
+        "grade": 3
+      },
+      {
+        "name": "Rhus Toxicodendron",
+        "grade": 2
+      },
+      {
+        "name": "Arnica Montana",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r322",
+    "chapter": "Fever",
+    "rubric": "HEAT, dry, burning",
+    "remedies": [
+      {
+        "name": "Belladonna",
+        "grade": 3
+      },
+      {
+        "name": "Aconitum Napellus",
+        "grade": 2
+      },
+      {
+        "name": "Bryonia Alba",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r323",
+    "chapter": "Fever",
+    "rubric": "PERSPIRATION, cold",
+    "remedies": [
+      {
+        "name": "Veratrum Album",
+        "grade": 3
+      },
+      {
+        "name": "Carbo Vegetabilis",
+        "grade": 2
+      },
+      {
+        "name": "Camphora",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r324",
+    "chapter": "Fever",
+    "rubric": "PERSPIRATION, sour",
+    "remedies": [
+      {
+        "name": "Calcarea Carbonica",
+        "grade": 2
+      },
+      {
+        "name": "China Officinalis",
+        "grade": 2
+      },
+      {
+        "name": "Mercurius Solubilis",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r325",
+    "chapter": "Fever",
+    "rubric": "SHIVERING",
+    "remedies": [
+      {
+        "name": "Aconitum Napellus",
+        "grade": 3
+      },
+      {
+        "name": "Nux Vomica",
+        "grade": 2
+      },
+      {
+        "name": "Bryonia Alba",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r326",
+    "chapter": "Vertigo",
+    "rubric": "VERTIGO, rising from bed",
+    "remedies": [
+      {
+        "name": "Bryonia Alba",
+        "grade": 2
+      },
+      {
+        "name": "Phosphorus",
+        "grade": 2
+      },
+      {
+        "name": "Conium Maculatum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r327",
+    "chapter": "Vertigo",
+    "rubric": "VERTIGO, looking up",
+    "remedies": [
+      {
+        "name": "Silicea",
+        "grade": 2
+      },
+      {
+        "name": "Phosphorus",
+        "grade": 2
+      },
+      {
+        "name": "Spigelia Anthelmia",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r328",
+    "chapter": "Vertigo",
+    "rubric": "VERTIGO, motion, from",
+    "remedies": [
+      {
+        "name": "Cocculus Indicus",
+        "grade": 4
+      },
+      {
+        "name": "Petroleum",
+        "grade": 3
+      },
+      {
+        "name": "Tabacum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r329",
+    "chapter": "Vertigo",
+    "rubric": "VERTIGO, objects seem to turn",
+    "remedies": [
+      {
+        "name": "Cyclamen Europaeum",
+        "grade": 2
+      },
+      {
+        "name": "Conium Maculatum",
+        "grade": 2
+      },
+      {
+        "name": "Gelsemium",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r330",
+    "chapter": "Children",
+    "rubric": "COLIC, infants",
+    "remedies": [
+      {
+        "name": "Chamomilla",
+        "grade": 4
+      },
+      {
+        "name": "Colocynthis",
+        "grade": 3
+      },
+      {
+        "name": "Magnesia Phosphorica",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r331",
+    "chapter": "Children",
+    "rubric": "DENTITION, difficult",
+    "remedies": [
+      {
+        "name": "Chamomilla",
+        "grade": 4
+      },
+      {
+        "name": "Calcarea Phosphorica",
+        "grade": 3
+      },
+      {
+        "name": "Belladonna",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r332",
+    "chapter": "Children",
+    "rubric": "DELAYED milestones",
+    "remedies": [
+      {
+        "name": "Calcarea Carbonica",
+        "grade": 3
+      },
+      {
+        "name": "Baryta Carbonica",
+        "grade": 3
+      },
+      {
+        "name": "Silicea",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r333",
+    "chapter": "Children",
+    "rubric": "ENURESIS",
+    "remedies": [
+      {
+        "name": "Equisetum Hyemale",
+        "grade": 3
+      },
+      {
+        "name": "Causticum",
+        "grade": 2
+      },
+      {
+        "name": "Kreosotum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r334",
+    "chapter": "Children",
+    "rubric": "NURSING, sore mouth",
+    "remedies": [
+      {
+        "name": "Borax",
+        "grade": 4
+      },
+      {
+        "name": "Mercurius Solubilis",
+        "grade": 2
+      },
+      {
+        "name": "Natrum Muriaticum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r335",
+    "chapter": "Children",
+    "rubric": "SCREAMING, children",
+    "remedies": [
+      {
+        "name": "Chamomilla",
+        "grade": 3
+      },
+      {
+        "name": "Cina Maritima",
+        "grade": 2
+      },
+      {
+        "name": "Stramonium",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r336",
+    "chapter": "Children",
+    "rubric": "THRUSH",
+    "remedies": [
+      {
+        "name": "Borax",
+        "grade": 4
+      },
+      {
+        "name": "Mercurius Solubilis",
+        "grade": 2
+      },
+      {
+        "name": "Helleborus Niger",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r337",
+    "chapter": "Children",
+    "rubric": "WHOOPING cough",
+    "remedies": [
+      {
+        "name": "Drosera Rotundifolia",
+        "grade": 4
+      },
+      {
+        "name": "Corallium Rubrum",
+        "grade": 3
+      },
+      {
+        "name": "Coccus Cacti",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r338",
+    "chapter": "Larynx",
+    "rubric": "HOARSENESS",
+    "remedies": [
+      {
+        "name": "Phosphorus",
+        "grade": 3
+      },
+      {
+        "name": "Causticum",
+        "grade": 3
+      },
+      {
+        "name": "Argentum Nitricum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r339",
+    "chapter": "Larynx",
+    "rubric": "CROUP",
+    "remedies": [
+      {
+        "name": "Hepar Sulphuris",
+        "grade": 3
+      },
+      {
+        "name": "Spongia Tosta",
+        "grade": 3
+      },
+      {
+        "name": "Aconitum Napellus",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r340",
+    "chapter": "Larynx",
+    "rubric": "LARYNGITIS",
+    "remedies": [
+      {
+        "name": "Phosphorus",
+        "grade": 3
+      },
+      {
+        "name": "Argentum Nitricum",
+        "grade": 2
+      },
+      {
+        "name": "Causticum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r341",
+    "chapter": "Larynx",
+    "rubric": "VOICE, lost",
+    "remedies": [
+      {
+        "name": "Causticum",
+        "grade": 3
+      },
+      {
+        "name": "Phosphorus",
+        "grade": 2
+      },
+      {
+        "name": "Argentum Nitricum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r342",
+    "chapter": "Generals",
+    "rubric": "ALLERGY, seasonal",
+    "remedies": [
+      {
+        "name": "Sabadilla",
+        "grade": 3
+      },
+      {
+        "name": "Allium Cepa",
+        "grade": 2
+      },
+      {
+        "name": "Dulcamara",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r343",
+    "chapter": "Generals",
+    "rubric": "FOOD POISONING",
+    "remedies": [
+      {
+        "name": "Arsenicum Album",
+        "grade": 4
+      },
+      {
+        "name": "Veratrum Album",
+        "grade": 3
+      },
+      {
+        "name": "China Officinalis",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r344",
+    "chapter": "Generals",
+    "rubric": "HANGOVER",
+    "remedies": [
+      {
+        "name": "Nux Vomica",
+        "grade": 4
+      },
+      {
+        "name": "Sulphur",
+        "grade": 2
+      },
+      {
+        "name": "Lycopodium Clavatum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r345",
+    "chapter": "Generals",
+    "rubric": "JET LAG",
+    "remedies": [
+      {
+        "name": "Cocculus Indicus",
+        "grade": 3
+      },
+      {
+        "name": "Arnica Montana",
+        "grade": 2
+      },
+      {
+        "name": "Gelsemium",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r346",
+    "chapter": "Generals",
+    "rubric": "SUNSTROKE",
+    "remedies": [
+      {
+        "name": "Glonoine",
+        "grade": 4
+      },
+      {
+        "name": "Belladonna",
+        "grade": 3
+      },
+      {
+        "name": "Natrum Carbonicum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r347",
+    "chapter": "Generals",
+    "rubric": "HEAT STROKE",
+    "remedies": [
+      {
+        "name": "Glonoine",
+        "grade": 4
+      },
+      {
+        "name": "Belladonna",
+        "grade": 3
+      },
+      {
+        "name": "Natrum Carbonicum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r348",
+    "chapter": "Mind",
+    "rubric": "EXAMINATION FUNK",
+    "remedies": [
+      {
+        "name": "Gelsemium",
+        "grade": 4
+      },
+      {
+        "name": "Argentum Nitricum",
+        "grade": 4
+      },
+      {
+        "name": "Lycopodium Clavatum",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r349",
+    "chapter": "Mind",
+    "rubric": "HOMESICKNESS",
+    "remedies": [
+      {
+        "name": "Capsicum Annuum",
+        "grade": 3
+      },
+      {
+        "name": "Phosphoric Acid",
+        "grade": 2
+      },
+      {
+        "name": "Ignatia Amara",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r350",
+    "chapter": "Generals",
+    "rubric": "SURGERY, before",
+    "remedies": [
+      {
+        "name": "Arnica Montana",
+        "grade": 3
+      },
+      {
+        "name": "Aconitum Napellus",
+        "grade": 2
+      },
+      {
+        "name": "Gelsemium",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r351",
+    "chapter": "Generals",
+    "rubric": "SURGERY, after",
+    "remedies": [
+      {
+        "name": "Arnica Montana",
+        "grade": 3
+      },
+      {
+        "name": "Staphysagria",
+        "grade": 2
+      },
+      {
+        "name": "Bellis Perennis",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r352",
+    "chapter": "Female",
+    "rubric": "MORNING SICKNESS",
+    "remedies": [
+      {
+        "name": "Sepia Officinalis",
+        "grade": 3
+      },
+      {
+        "name": "Nux Vomica",
+        "grade": 2
+      },
+      {
+        "name": "Symphoricarpus Racemosus",
+        "grade": 3
+      }
+    ]
+  },
+  {
+    "id": "r353",
+    "chapter": "Female",
+    "rubric": "LACTATION, deficient",
+    "remedies": [
+      {
+        "name": "Urtica Urens",
+        "grade": 3
+      },
+      {
+        "name": "Ricinus Communis",
+        "grade": 2
+      },
+      {
+        "name": "Asafoetida",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r354",
+    "chapter": "Female",
+    "rubric": "MASTITIS",
+    "remedies": [
+      {
+        "name": "Phytolacca Decandra",
+        "grade": 4
+      },
+      {
+        "name": "Belladonna",
+        "grade": 2
+      },
+      {
+        "name": "Bryonia Alba",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r355",
+    "chapter": "Respiratory",
+    "rubric": "HAY FEVER",
+    "remedies": [
+      {
+        "name": "Sabadilla",
+        "grade": 3
+      },
+      {
+        "name": "Allium Cepa",
+        "grade": 2
+      },
+      {
+        "name": "Wyethia",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r356",
+    "chapter": "Respiratory",
+    "rubric": "SINUSITIS",
+    "remedies": [
+      {
+        "name": "Kali Bichromicum",
+        "grade": 3
+      },
+      {
+        "name": "Pulsatilla Nigricans",
+        "grade": 2
+      },
+      {
+        "name": "Mercurius Solubilis",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r357",
+    "chapter": "Head",
+    "rubric": "MIGRAINE, one-sided",
+    "remedies": [
+      {
+        "name": "Iris Versicolor",
+        "grade": 3
+      },
+      {
+        "name": "Sanguinaria Canadensis",
+        "grade": 3
+      },
+      {
+        "name": "Spigelia Anthelmia",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r358",
+    "chapter": "Head",
+    "rubric": "MIGRAINE, with nausea",
+    "remedies": [
+      {
+        "name": "Ipecacuanha",
+        "grade": 2
+      },
+      {
+        "name": "Iris Versicolor",
+        "grade": 2
+      },
+      {
+        "name": "Sanguinaria Canadensis",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r359",
+    "chapter": "Stomach",
+    "rubric": "ACIDITY",
+    "remedies": [
+      {
+        "name": "Natrum Phosphoricum",
+        "grade": 3
+      },
+      {
+        "name": "Robinia Pseudacacia",
+        "grade": 2
+      },
+      {
+        "name": "Nux Vomica",
+        "grade": 2
+      }
+    ]
+  },
+  {
+    "id": "r360",
+    "chapter": "Stomach",
+    "rubric": "GASTRITIS",
+    "remedies": [
+      {
+        "name": "Nux Vomica",
+        "grade": 3
+      },
+      {
+        "name": "Arsenicum Album",
+        "grade": 2
+      },
+      {
+        "name": "Phosphorus",
+        "grade": 2
+      }
+    ]
+  }
+]

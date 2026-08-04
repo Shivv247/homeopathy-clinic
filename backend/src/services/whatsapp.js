@@ -82,7 +82,13 @@ function appointmentReminder(clinic, patient, appointment) {
 }
 
 function followUpReminder(clinic, patient, days) {
-  return `Namaste ${patient.fullName},\nThis is a gentle reminder from ${clinic.name} — your follow-up visit is due${days ? ` in ${days} days` : ' soon'}. Please book or walk in at your convenience.\n— ${clinic.doctorName || 'Doctor'}`;
+  const duePart =
+    days === 0
+      ? 'your follow-up visit is due today'
+      : days === 1
+        ? 'your follow-up visit is tomorrow'
+        : `your follow-up visit is due in ${days} days`;
+  return `Namaste ${patient.fullName},\nThis is a gentle reminder from ${clinic.name} — ${duePart}. Please book or walk in at your convenience.\n— ${clinic.doctorName || 'Doctor'}`;
 }
 
 module.exports = {

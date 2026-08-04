@@ -42,6 +42,7 @@ async function main() {
 
   await prisma.messageLog.deleteMany();
   await prisma.activityLog.deleteMany();
+  await prisma.repertorizationSession.deleteMany();
   await prisma.stockLog.deleteMany();
   await prisma.inventoryItem.deleteMany();
   await prisma.prescriptionItem.deleteMany();
@@ -153,23 +154,29 @@ async function main() {
   });
 
   const year = new Date().getFullYear();
-  const patientsData = [
-    { uhid: `HC-${year}-0001`, fullName: 'Rajesh Kumar', ageYears: 42, gender: 'Male', phone: '9811111111', city: 'Delhi', address: '12 Green Park', familyId: family.id },
-    { uhid: `HC-${year}-0002`, fullName: 'Sunita Kumar', ageYears: 38, gender: 'Female', phone: '9811111112', city: 'Delhi', address: '12 Green Park', familyId: family.id },
-    { uhid: `HC-${year}-0003`, fullName: 'Aarav Mehta', ageYears: 8, gender: 'Male', phone: '9822222222', city: 'Noida', address: 'Sector 62' },
-    { uhid: `HC-${year}-0004`, fullName: 'Meera Iyer', ageYears: 55, gender: 'Female', phone: '9833333333', city: 'Gurgaon', address: 'DLF Phase 2' },
-    { uhid: `HC-${year}-0005`, fullName: 'Vikram Singh', ageYears: 29, gender: 'Male', phone: '9844444444', city: 'Delhi', address: 'Rohini Sector 9' },
-    { uhid: `HC-${year}-0006`, fullName: 'Priya Nair', ageYears: 34, gender: 'Female', phone: '9855555555', city: 'Delhi', address: 'Saket' },
-    { uhid: `HC-${year}-0007`, fullName: 'Rohan Gupta', ageYears: 12, gender: 'Male', phone: '9866666666', city: 'Noida', address: 'Sector 18' },
-    { uhid: `HC-${year}-0008`, fullName: 'Anita Desai', ageYears: 47, gender: 'Female', phone: '9877777777', city: 'Delhi', address: 'Lajpat Nagar' },
-    { uhid: `HC-${year}-0009`, fullName: 'Karan Malhotra', ageYears: 31, gender: 'Male', phone: '9888888888', city: 'Gurgaon', address: 'Sohna Road' },
-    { uhid: `HC-${year}-0010`, fullName: 'Deepa Sharma', ageYears: 26, gender: 'Female', phone: '9899999999', city: 'Delhi', address: 'Dwarka' },
-    { uhid: `HC-${year}-0011`, fullName: 'Ishaan Patel', ageYears: 6, gender: 'Male', phone: '9800000001', city: 'Noida', address: 'Sector 50' },
-    { uhid: `HC-${year}-0012`, fullName: 'Neha Kapoor', ageYears: 41, gender: 'Female', phone: '9800000002', city: 'Delhi', address: 'Pitampura' },
-    { uhid: `HC-${year}-0013`, fullName: 'Arjun Reddy', ageYears: 52, gender: 'Male', phone: '9800000003', city: 'Gurgaon', address: 'MG Road' },
-    { uhid: `HC-${year}-0014`, fullName: 'Pooja Verma', ageYears: 33, gender: 'Female', phone: '9800000004', city: 'Delhi', address: 'Karol Bagh' },
-    { uhid: `HC-${year}-0015`, fullName: 'Sanjay Joshi', ageYears: 60, gender: 'Male', phone: '9800000005', city: 'Delhi', address: 'R K Puram' },
-  ];
+  const firstNames = ['Rajesh', 'Sunita', 'Aarav', 'Meera', 'Vikram', 'Priya', 'Rohan', 'Anita', 'Karan', 'Deepa', 'Ishaan', 'Neha', 'Arjun', 'Pooja', 'Sanjay', 'Ritu', 'Amit', 'Kavita', 'Suresh', 'Lata', 'Manoj', 'Geeta', 'Rahul', 'Sneha', 'Vivek', 'Nisha', 'Ashok', 'Rekha', 'Gaurav', 'Anjali'];
+  const lastNames = ['Kumar', 'Sharma', 'Mehta', 'Iyer', 'Singh', 'Nair', 'Gupta', 'Desai', 'Malhotra', 'Patel', 'Kapoor', 'Reddy', 'Verma', 'Joshi', 'Agarwal', 'Chopra', 'Bansal', 'Saxena', 'Tiwari', 'Mishra'];
+  const cities = ['Delhi', 'Noida', 'Gurgaon', 'Faridabad', 'Ghaziabad'];
+  const tags = ['NEW', 'FOLLOW_UP', 'VIP', 'INACTIVE'];
+  const genders = ['Male', 'Female'];
+
+  const patientsData = [];
+  for (let i = 1; i <= 120; i += 1) {
+    const fn = firstNames[i % firstNames.length];
+    const ln = lastNames[(i * 3) % lastNames.length];
+    const phone = `98${String(10000000 + i).slice(-8)}`;
+    patientsData.push({
+      uhid: `HC-${year}-${String(i).padStart(4, '0')}`,
+      fullName: `${fn} ${ln}`,
+      ageYears: 5 + (i % 65),
+      gender: genders[i % 2],
+      phone,
+      city: cities[i % cities.length],
+      address: `Sector ${(i % 80) + 1}, Block ${String.fromCharCode(65 + (i % 5))}`,
+      tag: tags[i % 4],
+      familyId: i <= 2 ? family.id : null,
+    });
+  }
 
   const patients = [];
   for (const p of patientsData) {
@@ -270,7 +277,7 @@ async function main() {
 
   let rxNo = 1;
   for (let i = 0; i < patients.length; i += 1) {
-    const count = 2 + (i % 3);
+    const count = 1 + (i % 2);
     for (let j = 0; j < count; j += 1) {
       const tpl = rxTemplates[(i + j) % rxTemplates.length];
       const visitDate = new Date(Date.now() - (j * 45 + i * 7) * 24 * 60 * 60 * 1000);
@@ -330,25 +337,25 @@ async function main() {
   const today = new Date();
   today.setHours(10, 0, 0, 0);
 
-  for (let i = 0; i < 8; i += 1) {
+  for (let i = 0; i < 25; i += 1) {
     const d = new Date(today);
-    d.setHours(10 + i, 0, 0, 0);
+    d.setHours(10 + (i % 12), (i % 2) * 30, 0, 0);
     await prisma.appointment.create({
       data: {
         clinicId: clinic.id,
         patientId: patients[i].id,
         createdById: doctor.id,
         date: d,
-        timeSlot: `${10 + i}:00`,
+        timeSlot: `${10 + (i % 12)}:${i % 2 === 0 ? '00' : '30'}`,
         tokenNumber: i + 1,
-        type: i < 3 ? 'FOLLOW_UP' : 'NEW',
-        status: i === 0 ? 'ARRIVED' : i === 1 ? 'IN_CONSULTATION' : 'SCHEDULED',
+        type: i < 8 ? 'FOLLOW_UP' : 'NEW',
+        status: i === 0 ? 'ARRIVED' : i === 1 ? 'IN_CONSULTATION' : i < 15 ? 'SCHEDULED' : 'COMPLETED',
       },
     });
   }
 
   let invNo = 1;
-  for (let i = 0; i < 10; i += 1) {
+  for (let i = 0; i < 50; i += 1) {
     const fee = i % 3 === 0 ? 600 : 400;
     const paid = i % 4 !== 0;
     await prisma.invoice.create({
@@ -368,7 +375,29 @@ async function main() {
     invNo += 1;
   }
 
-  console.log('✅ Seed complete!\n');
+  const rubricIds = ['r002', 'r014', 'r051', 'r073', 'r039'];
+  for (let i = 0; i < 15; i += 1) {
+    await prisma.repertorizationSession.create({
+      data: {
+        clinicId: clinic.id,
+        patientId: patients[i].id,
+        authorId: doctor.id,
+        title: `Repertorization — ${patients[i].fullName.split(' ')[0]}`,
+        rubricIds: JSON.stringify(rubricIds),
+        topRemedies: JSON.stringify([
+          { name: 'Arsenicum Album', totalScore: 9, rubricCount: 3 },
+          { name: 'Gelsemium', totalScore: 7, rubricCount: 2 },
+        ]),
+        notes: 'Demo session from seed',
+      },
+    });
+  }
+
+  console.log('✅ Seed complete!');
+  console.log(`   Patients: ${patients.length}`);
+  console.log(`   Prescriptions: ${rxNo - 1}`);
+  console.log(`   Invoices: ${invNo - 1}`);
+  console.log('   Repertorization sessions: 15\n');
   console.log('Login credentials (password for all: password123):');
   console.log('  Doctor:       9876543210');
   console.log('  Receptionist: 9876543211');

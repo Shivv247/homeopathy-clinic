@@ -14,6 +14,7 @@ export default function Prescribe() {
   const { id: patientId } = useParams();
   const [search] = useSearchParams();
   const caseId = search.get('case');
+  const remedyParam = search.get('remedy');
   const navigate = useNavigate();
 
   const [items, setItems] = useState([emptyItem()]);
@@ -41,10 +42,11 @@ export default function Prescribe() {
   });
 
   useEffect(() => {
-    if (lastRx?.items?.length && items.length === 1 && !items[0].remedyName) {
-      // offer autofill via button only — don't auto-overwrite
+    if (remedyParam && items.length === 1 && !items[0].remedyName) {
+      setItems([{ ...emptyItem(), remedyName: remedyParam }]);
+      setQ(remedyParam.split(' ')[0]);
     }
-  }, [lastRx]);
+  }, [remedyParam]);
 
   const autofillLast = () => {
     if (!lastRx?.items?.length) return;

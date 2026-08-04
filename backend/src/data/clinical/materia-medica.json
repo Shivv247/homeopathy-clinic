@@ -1,0 +1,1577 @@
+[
+  {
+    "slug": "aconitum-napellus",
+    "name": "Aconitum Napellus",
+    "commonName": "Aconite / Monkshood",
+    "sources": [
+      "Kent",
+      "Boericke"
+    ],
+    "keynotes": [
+      "Sudden violent onset",
+      "Great fear and anxiety",
+      "Restlessness",
+      "Dry hot skin",
+      "Worse in cold dry wind"
+    ],
+    "mental": "Fear of death, predicts time of death. Anxiety with restlessness. Panic attacks. Fear in crowds.",
+    "physical": "High fever with dry burning heat. Thirst for cold drinks. Numbness and tingling. Acute inflammations.",
+    "modalities": {
+      "worse": [
+        "Cold dry wind",
+        "Night",
+        "Shock",
+        "Fright"
+      ],
+      "better": [
+        "Open air",
+        "Rest"
+      ]
+    }
+  },
+  {
+    "slug": "arsenicum-album",
+    "name": "Arsenicum Album",
+    "commonName": "Arsenic",
+    "sources": [
+      "Kent",
+      "Boericke"
+    ],
+    "keynotes": [
+      "Restlessness with exhaustion",
+      "Burning pains relieved by heat",
+      "Fastidious",
+      "Anxiety about health",
+      "Thirst for small sips"
+    ],
+    "mental": "Anxiety about health and salvation. Fear of being alone. Despair of recovery. Meticulous, orderly.",
+    "physical": "Burning pains. Exhaustion out of proportion. Chilly, wants warmth. Offensive discharges.",
+    "modalities": {
+      "worse": [
+        "Cold",
+        "Midnight",
+        "Alone",
+        "Food"
+      ],
+      "better": [
+        "Heat",
+        "Warm drinks",
+        "Company"
+      ]
+    }
+  },
+  {
+    "slug": "belladonna",
+    "name": "Belladonna",
+    "commonName": "Deadly Nightshade",
+    "sources": [
+      "Kent",
+      "Boericke"
+    ],
+    "keynotes": [
+      "Sudden violent onset",
+      "Heat, redness, throbbing",
+      "Dilated pupils",
+      "Delirium with fever",
+      "Right-sided affinity"
+    ],
+    "mental": "Acute mania. Sees monsters. Violent delirium. Fear of dogs. Quarrelsome.",
+    "physical": "High fever, hot red face. Throbbing headaches. Sore throat bright red. Convulsions.",
+    "modalities": {
+      "worse": [
+        "Touch",
+        "Jar",
+        "Light",
+        "Noise",
+        "Lying down"
+      ],
+      "better": [
+        "Semi-erect",
+        "Rest"
+      ]
+    }
+  },
+  {
+    "slug": "bryonia-alba",
+    "name": "Bryonia Alba",
+    "commonName": "Wild Hops",
+    "sources": [
+      "Kent",
+      "Boericke"
+    ],
+    "keynotes": [
+      "Worse from any motion",
+      "Dryness everywhere",
+      "Irritable, wants to be left alone",
+      "Thirst for large quantities",
+      "Stitching pains"
+    ],
+    "mental": "Irritable, wants solitude. Talks of business. Fear of poverty. Dull and sluggish.",
+    "physical": "Stitching pains worse motion. Dry mucous membranes. Constipation with dry hard stool. Pleurisy.",
+    "modalities": {
+      "worse": [
+        "Motion",
+        "Warmth",
+        "Morning",
+        "Eating"
+      ],
+      "better": [
+        "Rest",
+        "Pressure",
+        "Cold"
+      ]
+    }
+  },
+  {
+    "slug": "calcarea-carbonica",
+    "name": "Calcarea Carbonica",
+    "commonName": "Calc Carb",
+    "sources": [
+      "Kent",
+      "Boericke"
+    ],
+    "keynotes": [
+      "Chilly, sweaty head",
+      "Fat, flabby constitution",
+      "Anxiety about health",
+      "Craves eggs and sweets",
+      "Slow development"
+    ],
+    "mental": "Fear of insanity, contagious disease. Obstinate. Forgetful. Anxiety about future.",
+    "physical": "Profuse perspiration head. Cold damp feet. Easy fatigue. Polypi. Delayed dentition.",
+    "modalities": {
+      "worse": [
+        "Cold damp",
+        "Exertion",
+        "Full moon",
+        "Milk"
+      ],
+      "better": [
+        "Dry weather",
+        "Constipation"
+      ]
+    }
+  },
+  {
+    "slug": "chamomilla",
+    "name": "Chamomilla",
+    "commonName": "Chamomile",
+    "sources": [
+      "Kent",
+      "Boericke"
+    ],
+    "keynotes": [
+      "Extreme irritability",
+      "Cannot bear pain",
+      "One cheek red one pale",
+      "Teething and colic",
+      "Wants something then rejects it"
+    ],
+    "mental": "Snappish, spiteful. Impatient. Sensitive to pain. Child wants to be carried.",
+    "physical": "Teething troubles. Colic. Earache at night. Green slimy stools. Menstrual colic.",
+    "modalities": {
+      "worse": [
+        "Anger",
+        "Coffee",
+        "Night",
+        "Wind"
+      ],
+      "better": [
+        "Being carried",
+        "Warmth"
+      ]
+    }
+  },
+  {
+    "slug": "gelsemium",
+    "name": "Gelsemium",
+    "commonName": "Yellow Jasmine",
+    "sources": [
+      "Kent",
+      "Boericke"
+    ],
+    "keynotes": [
+      "Dullness and drowsiness",
+      "Trembling",
+      "Anticipatory anxiety",
+      "Heavy eyelids",
+      "No thirst in fever"
+    ],
+    "mental": "Anticipation paralysis. Stage fright. Wants to be quiet. Fear of falling.",
+    "physical": "Influenza with prostration. Headache beginning occiput. Blurred vision. Urinary retention.",
+    "modalities": {
+      "worse": [
+        "Damp weather",
+        "Emotions",
+        "Sun"
+      ],
+      "better": [
+        "Urination",
+        "Open air"
+      ]
+    }
+  },
+  {
+    "slug": "ignatia-amara",
+    "name": "Ignatia Amara",
+    "commonName": "St. Ignatius Bean",
+    "sources": [
+      "Kent",
+      "Boericke"
+    ],
+    "keynotes": [
+      "Grief and disappointment",
+      "Sighing and sobbing",
+      "Contradictory symptoms",
+      "Hysteria",
+      "Better from hard pressure"
+    ],
+    "mental": "Silent grief. Sighing. Changeable mood. Brooding. Ailments from bad news.",
+    "physical": "Globus hystericus. Headache like nail driven in. Spasmodic cough. Faintness.",
+    "modalities": {
+      "worse": [
+        "Coffee",
+        "Tobacco",
+        "Grief",
+        "Consolation"
+      ],
+      "better": [
+        "Hard pressure",
+        "Change of position"
+      ]
+    }
+  },
+  {
+    "slug": "lycopodium-clavatum",
+    "name": "Lycopodium Clavatum",
+    "commonName": "Club Moss",
+    "sources": [
+      "Kent",
+      "Boericke"
+    ],
+    "keynotes": [
+      "Right-sided complaints",
+      "4-8 PM aggravation",
+      "Gas and bloating",
+      "Lack of confidence",
+      "Intellectual but cowardly"
+    ],
+    "mental": "Lack of self-confidence. Fear of public speaking. Irritable when sick. Dictatorial at home.",
+    "physical": "Flatulence, abdomen distended. Liver complaints. Kidney stones right side. Eczema.",
+    "modalities": {
+      "worse": [
+        "4-8 PM",
+        "Warm room",
+        "Right side"
+      ],
+      "better": [
+        "Motion",
+        "Cool air",
+        "Warm food"
+      ]
+    }
+  },
+  {
+    "slug": "natrum-muriaticum",
+    "name": "Natrum Muriaticum",
+    "commonName": "Nat Mur / Common Salt",
+    "sources": [
+      "Kent",
+      "Boericke"
+    ],
+    "keynotes": [
+      "Grief and reserved nature",
+      "Craves salt",
+      "Headache from sun",
+      "Worse consolation",
+      "Mapped tongue"
+    ],
+    "mental": "Reserved, closed. Ailments from grief. Cannot cry in company. Holds grudges.",
+    "physical": "Migraines from sun. Herpes labialis. Dry mucous membranes. Anemia. Constipation.",
+    "modalities": {
+      "worse": [
+        "Sun",
+        "Heat",
+        "10 AM",
+        "Consolation"
+      ],
+      "better": [
+        "Open air",
+        "Cold bathing",
+        "Fasting"
+      ]
+    }
+  },
+  {
+    "slug": "nux-vomica",
+    "name": "Nux Vomica",
+    "commonName": "Poison Nut",
+    "sources": [
+      "Kent",
+      "Boericke"
+    ],
+    "keynotes": [
+      "Irritable and driven",
+      "Digestive complaints from excess",
+      "Chilly and oversensitive",
+      "Constipation with urging",
+      "Morning aggravation"
+    ],
+    "mental": "Ambitious, irritable. Impatient. Fault-finding. Workaholic. Ailments from drugs and alcohol.",
+    "physical": "Indigestion. Hangover. Piles. Cough worse morning. Spasms and cramps.",
+    "modalities": {
+      "worse": [
+        "Morning",
+        "Cold",
+        "Food",
+        "Mental exertion"
+      ],
+      "better": [
+        "Evening",
+        "Rest",
+        "Warmth"
+      ]
+    }
+  },
+  {
+    "slug": "phosphorus",
+    "name": "Phosphorus",
+    "commonName": "Phosphorus",
+    "sources": [
+      "Kent",
+      "Boericke"
+    ],
+    "keynotes": [
+      "Sympathetic and sensitive",
+      "Bleeding tendency",
+      "Thirst for cold drinks",
+      "Burning pains",
+      "Fear of thunder and dark"
+    ],
+    "mental": "Sympathetic, affectionate. Fear alone at dusk. Easily startled. Desires company.",
+    "physical": "Hemorrhages bright red. Respiratory complaints. Gastritis. Tall thin constitution.",
+    "modalities": {
+      "worse": [
+        "Cold",
+        "Thunder",
+        "Lying on left",
+        "Evening"
+      ],
+      "better": [
+        "Sleep",
+        "Cold food",
+        "Rubbing"
+      ]
+    }
+  },
+  {
+    "slug": "pulsatilla-nigricans",
+    "name": "Pulsatilla Nigricans",
+    "commonName": "Wind Flower",
+    "sources": [
+      "Kent",
+      "Boericke"
+    ],
+    "keynotes": [
+      "Mild gentle disposition",
+      "Changeable symptoms",
+      "Thirstless",
+      "Better open air",
+      "Wants consolation"
+    ],
+    "mental": "Mild, yielding. Weeps easily. Changeable mood. Jealous. Timid.",
+    "physical": "Discharges thick yellow green. Varicose veins. Styes. Late menses. One-sided complaints.",
+    "modalities": {
+      "worse": [
+        "Warm room",
+        "Fatty food",
+        "Evening"
+      ],
+      "better": [
+        "Open air",
+        "Cold",
+        "Motion",
+        "Consolation"
+      ]
+    }
+  },
+  {
+    "slug": "rhus-toxicodendron",
+    "name": "Rhus Toxicodendron",
+    "commonName": "Poison Ivy",
+    "sources": [
+      "Kent",
+      "Boericke"
+    ],
+    "keynotes": [
+      "Restlessness",
+      "Stiffness worse first motion",
+      "Better continued motion",
+      "Sprains and strains",
+      "Skin eruptions with itching"
+    ],
+    "mental": "Restless, anxious. Fear of poison. Superstitious. Sadness worse at night.",
+    "physical": "Arthritis. Sciatica. Sprains. Herpes. Typhoid with restlessness.",
+    "modalities": {
+      "worse": [
+        "Rest",
+        "Cold damp",
+        "First motion",
+        "Night"
+      ],
+      "better": [
+        "Warmth",
+        "Continued motion",
+        "Rubbing"
+      ]
+    }
+  },
+  {
+    "slug": "sepia-officinalis",
+    "name": "Sepia Officinalis",
+    "commonName": "Cuttlefish Ink",
+    "sources": [
+      "Kent",
+      "Boericke"
+    ],
+    "keynotes": [
+      "Indifference to loved ones",
+      "Bearing-down sensation",
+      "Hormonal complaints",
+      "Yellow saddle across nose",
+      "Better vigorous exercise"
+    ],
+    "mental": "Indifferent to family. Irritable, averse to sex. Weeps when telling symptoms.",
+    "physical": "Prolapse. Menstrual disorders. Morning sickness. Hair falls. Herpes circinatus.",
+    "modalities": {
+      "worse": [
+        "Cold damp",
+        "Before menses",
+        "Pregnancy"
+      ],
+      "better": [
+        "Exercise",
+        "Warmth",
+        "Pressure"
+      ]
+    }
+  },
+  {
+    "slug": "sulphur",
+    "name": "Sulphur",
+    "commonName": "Brimstone",
+    "sources": [
+      "Kent",
+      "Boericke"
+    ],
+    "keynotes": [
+      "Burning itching eruptions",
+      "Untidy philosopher",
+      "Hot patient",
+      "Worse heat and bathing",
+      "Red orifices"
+    ],
+    "mental": "Philosophical, lazy. Selfish. Critical. Religious melancholy. Forgetful.",
+    "physical": "Skin eruptions worse heat. Hemorrhoids. Diarrhea drives out of bed. Hot feet.",
+    "modalities": {
+      "worse": [
+        "Heat",
+        "Bathing",
+        "11 AM",
+        "Standing"
+      ],
+      "better": [
+        "Dry weather",
+        "Open air"
+      ]
+    }
+  },
+  {
+    "slug": "thuja-occidentalis",
+    "name": "Thuja Occidentalis",
+    "commonName": "Arbor Vitae",
+    "sources": [
+      "Kent",
+      "Boericke"
+    ],
+    "keynotes": [
+      "Warts and growths",
+      "Fixed ideas",
+      "Sycotic miasm",
+      "Urethral complaints",
+      "Left-sided"
+    ],
+    "mental": "Fixed ideas. Feels body is fragile as glass. Music causes weeping.",
+    "physical": "Warts. Condylomata. Vaccinosis. Oily skin. Left-sided ovarian cysts.",
+    "modalities": {
+      "worse": [
+        "Cold damp",
+        "3 AM",
+        "Vaccination"
+      ],
+      "better": [
+        "Drawing limbs up",
+        "Warmth"
+      ]
+    }
+  },
+  {
+    "slug": "silicea",
+    "name": "Silicea",
+    "commonName": "Silica / Flint",
+    "sources": [
+      "Kent",
+      "Boericke"
+    ],
+    "keynotes": [
+      "Chilly, lacks stamina",
+      "Suppuration",
+      "Sweaty head and feet",
+      "Obstinate",
+      "Better warmth"
+    ],
+    "mental": "Yielding but obstinate. Lack of grit. Timid. Brain fog. Fixed ideas.",
+    "physical": "Abscesses slow to heal. Fistulas. Offensive foot sweat. Weak nails. Sinusitis.",
+    "modalities": {
+      "worse": [
+        "Cold",
+        "Draft",
+        "New moon",
+        "Suppression"
+      ],
+      "better": [
+        "Warmth",
+        "Wrapping head"
+      ]
+    }
+  },
+  {
+    "slug": "hepar-sulphuris",
+    "name": "Hepar Sulphuris",
+    "commonName": "Hepar Sulph / Calc Sulph",
+    "sources": [
+      "Kent",
+      "Boericke"
+    ],
+    "keynotes": [
+      "Extreme sensitivity to pain and cold",
+      "Suppuration",
+      "Offensive discharges",
+      "Splinter-like pains",
+      "Angry when hurt"
+    ],
+    "mental": "Hasty speech. Violent impulses. Oversensitive. Angry and abusive.",
+    "physical": "Quinsy. Abscess ready to open. Croup. Eczema with pus. Chilliness.",
+    "modalities": {
+      "worse": [
+        "Cold air",
+        "Touch",
+        "Suppression"
+      ],
+      "better": [
+        "Warmth",
+        "Damp weather"
+      ]
+    }
+  },
+  {
+    "slug": "mercurius-solubilis",
+    "name": "Mercurius Solubilis",
+    "commonName": "Merc Sol / Quicksilver",
+    "sources": [
+      "Kent",
+      "Boericke"
+    ],
+    "keynotes": [
+      "Night sweats",
+      "Salivation",
+      "Offensive discharges",
+      "Trembling",
+      "Bone pains"
+    ],
+    "mental": "Suspicious. Weak memory. Hurried speech. Restless.",
+    "physical": "Sore throat with salivation. Ulcers. Bone pains. Syphilitic complaints.",
+    "modalities": {
+      "worse": [
+        "Night",
+        "Heat and cold",
+        "Sweating"
+      ],
+      "better": [
+        "Rest"
+      ]
+    }
+  },
+  {
+    "slug": "apis-mellifica",
+    "name": "Apis Mellifica",
+    "commonName": "Honey Bee",
+    "sources": [
+      "Kent",
+      "Boericke"
+    ],
+    "keynotes": [
+      "Edema without thirst",
+      "Stinging burning pains",
+      "Jealousy",
+      "Worse heat",
+      "Right-sided"
+    ],
+    "mental": "Jealous. Fidgety. Cannot concentrate. Awkward, drops things.",
+    "physical": "Urticaria. Angioedema. Meningitis. Ovarian cysts. Urinary retention.",
+    "modalities": {
+      "worse": [
+        "Heat",
+        "Touch",
+        "3 PM",
+        "Closed room"
+      ],
+      "better": [
+        "Cold",
+        "Open air"
+      ]
+    }
+  },
+  {
+    "slug": "lachesis-mutus",
+    "name": "Lachesis Mutus",
+    "commonName": "Bushmaster Snake",
+    "sources": [
+      "Kent",
+      "Boericke"
+    ],
+    "keynotes": [
+      "Left-sided",
+      "Loquacity",
+      "Worse after sleep",
+      "Purplish discoloration",
+      "Cannot bear tight clothing"
+    ],
+    "mental": "Jealous, suspicious. Talks constantly. Religious mania. Suspicious.",
+    "physical": "Sore throat left side. Menopause. Varicose veins. Hemorrhage.",
+    "modalities": {
+      "worse": [
+        "Sleep",
+        "Heat",
+        "Touch neck",
+        "Spring"
+      ],
+      "better": [
+        "Discharges",
+        "Cold drinks"
+      ]
+    }
+  },
+  {
+    "slug": "arnica-montana",
+    "name": "Arnica Montana",
+    "commonName": "Leopard's Bane",
+    "sources": [
+      "Kent",
+      "Boericke"
+    ],
+    "keynotes": [
+      "Trauma and bruising",
+      "Says he is well when sick",
+      "Bed feels too hard",
+      "Sore bruised feeling",
+      "Fear of touch"
+    ],
+    "mental": "Fear of being approached. Says no help needed. Stupor after injury.",
+    "physical": "Bruises. Sprains. Concussion. Post-surgical soreness. Black eye.",
+    "modalities": {
+      "worse": [
+        "Touch",
+        "Motion",
+        "Wine"
+      ],
+      "better": [
+        "Rest",
+        "Lying with head low"
+      ]
+    }
+  },
+  {
+    "slug": "china-officinalis",
+    "name": "China Officinalis",
+    "commonName": "Cinchona / China",
+    "sources": [
+      "Kent",
+      "Boericke"
+    ],
+    "keynotes": [
+      "Debility from loss of fluids",
+      "Periodic complaints",
+      "Flatulence",
+      "Sensitive to touch",
+      "Hemorrhages"
+    ],
+    "mental": "Apathetic, indifferent. Sensitive to noise. Irritable.",
+    "physical": "Malaria. Diarrhea. Postpartum weakness. Tinnitus. Liver enlarged.",
+    "modalities": {
+      "worse": [
+        "Touch",
+        "Periodically",
+        "Cold",
+        "Fruit"
+      ],
+      "better": [
+        "Hard pressure",
+        "Warmth"
+      ]
+    }
+  },
+  {
+    "slug": "argentum-nitricum",
+    "name": "Argentum Nitricum",
+    "commonName": "Silver Nitrate",
+    "sources": [
+      "Kent",
+      "Boericke"
+    ],
+    "keynotes": [
+      "Anticipatory anxiety",
+      "Craves sweets",
+      "Diarrhea from nerves",
+      "Claustrophobia",
+      "Impulsive"
+    ],
+    "mental": "Anticipation anxiety. Fear of heights, crowds. Hurried. Impulsive.",
+    "physical": "Nervous diarrhea. Flatulence. Headache from mental work. Ulcers.",
+    "modalities": {
+      "worse": [
+        "Warmth",
+        "Crowds",
+        "Sweets"
+      ],
+      "better": [
+        "Cool air",
+        "Pressure"
+      ]
+    }
+  },
+  {
+    "slug": "ipecacuanha",
+    "name": "Ipecacuanha",
+    "commonName": "Ipecac",
+    "sources": [
+      "Kent",
+      "Boericke"
+    ],
+    "keynotes": [
+      "Persistent nausea",
+      "Clean tongue with nausea",
+      "Bleeding from lungs",
+      "Worse warmth"
+    ],
+    "mental": "Irritable, impatient. Desires things then rejects.",
+    "physical": "Constant nausea not relieved by vomiting. Hemorrhages bright red. Asthma with nausea.",
+    "modalities": {
+      "worse": [
+        "Warmth",
+        "Motion",
+        "Periodically"
+      ],
+      "better": [
+        "Rest",
+        "Open air"
+      ]
+    }
+  },
+  {
+    "slug": "colocynthis",
+    "name": "Colocynthis",
+    "commonName": "Bitter Cucumber",
+    "sources": [
+      "Kent",
+      "Boericke"
+    ],
+    "keynotes": [
+      "Colic bending double amel.",
+      "Sciatica cramping",
+      "Anger agg.",
+      "Stitching pains"
+    ],
+    "mental": "Extremely irritable from pain. Ailments from anger.",
+    "physical": "Violent colic relieved by pressure and bending double. Sciatica.",
+    "modalities": {
+      "worse": [
+        "Anger",
+        "Food",
+        "Touch"
+      ],
+      "better": [
+        "Hard pressure",
+        "Bending double"
+      ]
+    }
+  },
+  {
+    "slug": "causticum",
+    "name": "Causticum",
+    "commonName": "Causticum",
+    "sources": [
+      "Kent",
+      "Boericke"
+    ],
+    "keynotes": [
+      "Paralysis single parts",
+      "Urinary incontinence",
+      "Warts on face",
+      "Sympathetic"
+    ],
+    "mental": "Deep sympathy for suffering. Anxious about others.",
+    "physical": "Paralytic weakness. Involuntary urination on coughing. Warts.",
+    "modalities": {
+      "worse": [
+        "Cold dry wind",
+        "Clear weather"
+      ],
+      "better": [
+        "Damp wet weather",
+        "Warmth"
+      ]
+    }
+  },
+  {
+    "slug": "graphites",
+    "name": "Graphites",
+    "commonName": "Black Lead",
+    "sources": [
+      "Kent",
+      "Boericke"
+    ],
+    "keynotes": [
+      "Obesity",
+      "Cracks oozing honey-like",
+      "Chilly",
+      "Indecision"
+    ],
+    "mental": "Sad, irresolute. Music makes weep.",
+    "physical": "Eczema oozing sticky discharge. Constipation with large stool.",
+    "modalities": {
+      "worse": [
+        "Night",
+        "Warmth",
+        "During menses"
+      ],
+      "better": [
+        "Open air",
+        "Wrapping up"
+      ]
+    }
+  },
+  {
+    "slug": "staphysagria",
+    "name": "Staphysagria",
+    "commonName": "Stavesacre",
+    "sources": [
+      "Kent",
+      "Boericke"
+    ],
+    "keynotes": [
+      "Suppressed anger",
+      "Ailments from indignation",
+      "Styes",
+      "Surgical wounds"
+    ],
+    "mental": "Suppressed anger. Sensitive to criticism. Ailments from humiliation.",
+    "physical": "Styes. Cystitis after coition. Surgical incision pain.",
+    "modalities": {
+      "worse": [
+        "Anger",
+        "Touch",
+        "Tobacco"
+      ],
+      "better": [
+        "Warmth",
+        "After breakfast"
+      ]
+    }
+  },
+  {
+    "slug": "opium",
+    "name": "Opium",
+    "commonName": "Poppy",
+    "sources": [
+      "Kent",
+      "Boericke"
+    ],
+    "keynotes": [
+      "Stupor",
+      "Constipation no desire",
+      "Hot sweaty skin",
+      "Shock"
+    ],
+    "mental": "Stupor, coma. Delirious with wide open eyes.",
+    "physical": "Painless conditions. Constipation. Retention of urine.",
+    "modalities": {
+      "worse": [
+        "Heat",
+        "Suppression"
+      ],
+      "better": [
+        "Cold",
+        "Constant walking"
+      ]
+    }
+  },
+  {
+    "slug": "coffea-cruda",
+    "name": "Coffea Cruda",
+    "commonName": "Coffee",
+    "sources": [
+      "Kent",
+      "Boericke"
+    ],
+    "keynotes": [
+      "Sleepless from excitement",
+      "Oversensitive to pain",
+      "Toothache relieved by cold",
+      "Joy agg."
+    ],
+    "mental": "Overexcited, full of ideas. Cannot sleep from joy.",
+    "physical": "Toothache better cold water. Labor pains intolerable.",
+    "modalities": {
+      "worse": [
+        "Noise",
+        "Touch",
+        "Strong odors"
+      ],
+      "better": [
+        "Ice cold"
+      ]
+    }
+  },
+  {
+    "slug": "drosera-rotundifolia",
+    "name": "Drosera Rotundifolia",
+    "commonName": "Sundew",
+    "sources": [
+      "Kent",
+      "Boericke"
+    ],
+    "keynotes": [
+      "Whooping cough",
+      "Cough worse lying",
+      "Hoarseness",
+      "Night cough"
+    ],
+    "mental": "Anxiety, restlessness. Fear of being alone.",
+    "physical": "Spasmodic cough. Whooping cough. Cough worse after midnight.",
+    "modalities": {
+      "worse": [
+        "Lying",
+        "After midnight",
+        "Heat"
+      ],
+      "better": [
+        "Pressure",
+        "Open air"
+      ]
+    }
+  },
+  {
+    "slug": "spongia-tosta",
+    "name": "Spongia Tosta",
+    "commonName": "Roasted Sponge",
+    "sources": [
+      "Kent",
+      "Boericke"
+    ],
+    "keynotes": [
+      "Dry barking cough",
+      "Croup",
+      "Awakens suffocating",
+      "Heart affections"
+    ],
+    "mental": "Fear of heart disease. Anxious.",
+    "physical": "Dry hollow cough like saw through wood. Croup.",
+    "modalities": {
+      "worse": [
+        "Cold",
+        "Lying head low",
+        "Full moon"
+      ],
+      "better": [
+        "Warm food",
+        "Lying head high"
+      ]
+    }
+  },
+  {
+    "slug": "carbo-vegetabilis",
+    "name": "Carbo Vegetabilis",
+    "commonName": "Vegetable Charcoal",
+    "sources": [
+      "Kent",
+      "Boericke"
+    ],
+    "keynotes": [
+      "Collapse",
+      "Desires fanning",
+      "Flatulence",
+      "Cold clammy"
+    ],
+    "mental": "Aversion to darkness. Indifferent.",
+    "physical": "Collapse, wants air. Bloating. Slow digestion.",
+    "modalities": {
+      "worse": [
+        "Warm humid weather",
+        "Fat food",
+        "Evening"
+      ],
+      "better": [
+        "Fanning",
+        "Eructation"
+      ]
+    }
+  },
+  {
+    "slug": "podophyllum",
+    "name": "Podophyllum",
+    "commonName": "May Apple",
+    "sources": [
+      "Kent",
+      "Boericke"
+    ],
+    "keynotes": [
+      "Morning diarrhea",
+      "Prolapse rectum",
+      "Jaundice",
+      "Teething diarrhea"
+    ],
+    "mental": "Depressed. Loquacity alternating with depression.",
+    "physical": "Profuse gushing morning diarrhea. Prolapse during stool.",
+    "modalities": {
+      "worse": [
+        "Early morning",
+        "Hot weather",
+        "During dentition"
+      ],
+      "better": [
+        "Lying on abdomen"
+      ]
+    }
+  },
+  {
+    "slug": "cantharis",
+    "name": "Cantharis",
+    "commonName": "Spanish Fly",
+    "sources": [
+      "Kent",
+      "Boericke"
+    ],
+    "keynotes": [
+      "Burning urination",
+      "Burns and scalds",
+      "Jealousy",
+      "Violent urging"
+    ],
+    "mental": "Furious delirium. Jealous rage.",
+    "physical": "Burning cutting urinary pain. Burns and blisters.",
+    "modalities": {
+      "worse": [
+        "Touch",
+        "Urination",
+        "Coffee"
+      ],
+      "better": [
+        "Warm applications"
+      ]
+    }
+  },
+  {
+    "slug": "euphrasia-officinalis",
+    "name": "Euphrasia Officinalis",
+    "commonName": "Eyebright",
+    "sources": [
+      "Kent",
+      "Boericke"
+    ],
+    "keynotes": [
+      "Profuse bland tears",
+      "Acrid nasal discharge",
+      "Conjunctivitis",
+      "Hay fever"
+    ],
+    "mental": "Cheerful in evening. Confused.",
+    "physical": "Eye inflammation with profuse watering. Cough only daytime.",
+    "modalities": {
+      "worse": [
+        "Evening",
+        "Indoors",
+        "Warmth"
+      ],
+      "better": [
+        "Dark",
+        "Coffee"
+      ]
+    }
+  },
+  {
+    "slug": "allium-cepa",
+    "name": "Allium Cepa",
+    "commonName": "Red Onion",
+    "sources": [
+      "Kent",
+      "Boericke"
+    ],
+    "keynotes": [
+      "Acrid nasal discharge",
+      "Bland tears",
+      "Hay fever",
+      "Colds in damp"
+    ],
+    "mental": "No strong mental picture.",
+    "physical": "Fluent acrid coryza. Hay fever. Neuralgic pains.",
+    "modalities": {
+      "worse": [
+        "Warm room",
+        "Evening"
+      ],
+      "better": [
+        "Open air",
+        "Cold room"
+      ]
+    }
+  },
+  {
+    "slug": "kali-carbonicum",
+    "name": "Kali Carbonicum",
+    "commonName": "Kali Carb",
+    "sources": [
+      "Kent",
+      "Boericke"
+    ],
+    "keynotes": [
+      "3 AM aggravation",
+      "Stitching pains",
+      "Back pain must sit up",
+      "Closed room"
+    ],
+    "mental": "Anxious about future. Full of fear.",
+    "physical": "Back pain 3 AM. Cough worse 3 AM. Edema.",
+    "modalities": {
+      "worse": [
+        "3 AM",
+        "Cold",
+        "Draft"
+      ],
+      "better": [
+        "Motion",
+        "Warmth"
+      ]
+    }
+  },
+  {
+    "slug": "kali-bichromicum",
+    "name": "Kali Bichromicum",
+    "commonName": "Kali Bich",
+    "sources": [
+      "Kent",
+      "Boericke"
+    ],
+    "keynotes": [
+      "Thick stringy discharge",
+      "Migrating pains",
+      "Sinusitis",
+      "Ulcers punched out"
+    ],
+    "mental": "Aversion to mental work. Morose.",
+    "physical": "Stringy yellow discharge. Sinusitis. Migrating joint pains.",
+    "modalities": {
+      "worse": [
+        "Beer",
+        "Morning",
+        "Heat"
+      ],
+      "better": [
+        "Heat",
+        "Pressure"
+      ]
+    }
+  },
+  {
+    "slug": "natrum-sulphuricum",
+    "name": "Natrum Sulphuricum",
+    "commonName": "Nat Sulph",
+    "sources": [
+      "Kent",
+      "Boericke"
+    ],
+    "keynotes": [
+      "Asthma damp weather",
+      "Head injury ailments",
+      "Depression",
+      "Liver"
+    ],
+    "mental": "Depressed, suicidal after injury. Music sad.",
+    "physical": "Asthma worse damp. Head injury sequelae.",
+    "modalities": {
+      "worse": [
+        "Damp",
+        "Morning",
+        "Music"
+      ],
+      "better": [
+        "Dry weather",
+        "Pressure"
+      ]
+    }
+  },
+  {
+    "slug": "phosphoric-acid",
+    "name": "Phosphoric Acid",
+    "commonName": "Phos Acid",
+    "sources": [
+      "Kent",
+      "Boericke"
+    ],
+    "keynotes": [
+      "Debility from grief",
+      "Growth disorders",
+      "Diarrhea painless",
+      "Mental exhaustion"
+    ],
+    "mental": "Indifferent, apathetic. Grief without tears.",
+    "physical": "Weakness from loss of fluids. Growing pains.",
+    "modalities": {
+      "worse": [
+        "Grief",
+        "Loss of fluids",
+        "Sexual excess"
+      ],
+      "better": [
+        "Warmth"
+      ]
+    }
+  },
+  {
+    "slug": "aurum-metallicum",
+    "name": "Aurum Metallicum",
+    "commonName": "Gold",
+    "sources": [
+      "Kent",
+      "Boericke"
+    ],
+    "keynotes": [
+      "Suicidal depression",
+      "Heart disease",
+      "Bone pains night",
+      "Religious despair"
+    ],
+    "mental": "Profound depression. Suicidal thoughts. Feels worthless.",
+    "physical": "High blood pressure. Bone pains at night.",
+    "modalities": {
+      "worse": [
+        "Night",
+        "Cold",
+        "Cloudy weather"
+      ],
+      "better": [
+        "Open air",
+        "Moonlight"
+      ]
+    }
+  },
+  {
+    "slug": "hyoscyamus-niger",
+    "name": "Hyoscyamus Niger",
+    "commonName": "Henbane",
+    "sources": [
+      "Kent",
+      "Boericke"
+    ],
+    "keynotes": [
+      "Jealousy",
+      "Loquacity",
+      "Suspicion",
+      "Uncovers body"
+    ],
+    "mental": "Jealous, suspicious. Talks constantly. Shameless exposure.",
+    "physical": "Dry spasmodic cough worse lying. Meningitis.",
+    "modalities": {
+      "worse": [
+        "Evening",
+        "Touch",
+        "Jealousy"
+      ],
+      "better": [
+        "Stooping"
+      ]
+    }
+  },
+  {
+    "slug": "stramonium",
+    "name": "Stramonium",
+    "commonName": "Thorn Apple",
+    "sources": [
+      "Kent",
+      "Boericke"
+    ],
+    "keynotes": [
+      "Violent delirium",
+      "Fear of darkness",
+      "Stuttering",
+      "Convulsions"
+    ],
+    "mental": "Terrifying delirium. Sees animals. Fear of dark.",
+    "physical": "Convulsions. Stuttering from fright. Sunstroke.",
+    "modalities": {
+      "worse": [
+        "Dark",
+        "Alone",
+        "Glare"
+      ],
+      "better": [
+        "Light",
+        "Company"
+      ]
+    }
+  },
+  {
+    "slug": "cina-maritima",
+    "name": "Cina Maritima",
+    "commonName": "Wormseed",
+    "sources": [
+      "Kent",
+      "Boericke"
+    ],
+    "keynotes": [
+      "Worms",
+      "Grinding teeth",
+      "Boring nose",
+      "Irritable child"
+    ],
+    "mental": "Cross, obstinate child. Wants many things then throws away.",
+    "physical": "Worm complaints. Grinding teeth in sleep.",
+    "modalities": {
+      "worse": [
+        "Touch",
+        "Looking at child"
+      ],
+      "better": [
+        "Lying on abdomen"
+      ]
+    }
+  },
+  {
+    "slug": "chelidonium-majus",
+    "name": "Chelidonium Majus",
+    "commonName": "Celandine",
+    "sources": [
+      "Kent",
+      "Boericke"
+    ],
+    "keynotes": [
+      "Right-sided liver",
+      "Jaundice",
+      "Pain under right scapula",
+      "Better hot drinks"
+    ],
+    "mental": "Sad, anxious. Better after dinner.",
+    "physical": "Liver and gallbladder. Jaundice. Right shoulder pain.",
+    "modalities": {
+      "worse": [
+        "Motion",
+        "Change of weather"
+      ],
+      "better": [
+        "Hot drinks",
+        "Eating",
+        "Pressure"
+      ]
+    }
+  },
+  {
+    "slug": "hamamelis-virginiana",
+    "name": "Hamamelis Virginiana",
+    "commonName": "Witch Hazel",
+    "sources": [
+      "Kent",
+      "Boericke"
+    ],
+    "keynotes": [
+      "Venous congestion",
+      "Bleeding passive",
+      "Varicose veins",
+      "Bruised soreness"
+    ],
+    "mental": "No strong mental.",
+    "physical": "Passive hemorrhages. Varicose veins. Orchitis.",
+    "modalities": {
+      "worse": [
+        "Touch",
+        "Jar",
+        "Pressure"
+      ],
+      "better": [
+        "Rest"
+      ]
+    }
+  },
+  {
+    "slug": "ledum-palustre",
+    "name": "Ledum Palustre",
+    "commonName": "Marsh Tea",
+    "sources": [
+      "Kent",
+      "Boericke"
+    ],
+    "keynotes": [
+      "Puncture wounds",
+      "Gout starts feet",
+      "Better cold",
+      "Black eye"
+    ],
+    "mental": "Anger from contradiction.",
+    "physical": "Puncture wounds. Gout in great toe. Rheumatism better cold.",
+    "modalities": {
+      "worse": [
+        "Heat",
+        "Motion",
+        "Night"
+      ],
+      "better": [
+        "Cold",
+        "Cold bathing"
+      ]
+    }
+  },
+  {
+    "slug": "ruta-graveolens",
+    "name": "Ruta Graveolens",
+    "commonName": "Rue",
+    "sources": [
+      "Kent",
+      "Boericke"
+    ],
+    "keynotes": [
+      "Sprains tendons",
+      "Eye strain",
+      "Bruised bones",
+      "Worse cold damp"
+    ],
+    "mental": "Anxiety with desire to escape.",
+    "physical": "Sprains of wrists and ankles. Eye strain from fine work.",
+    "modalities": {
+      "worse": [
+        "Cold damp",
+        "Lying"
+      ],
+      "better": [
+        "Motion",
+        "Warmth"
+      ]
+    }
+  },
+  {
+    "slug": "hypericum-perforatum",
+    "name": "Hypericum Perforatum",
+    "commonName": "St. John's Wort",
+    "sources": [
+      "Kent",
+      "Boericke"
+    ],
+    "keynotes": [
+      "Nerve injuries",
+      "Spine injuries",
+      "Shooting pains",
+      "Tooth extraction"
+    ],
+    "mental": "Mental excitement after injury.",
+    "physical": "Crushed nerves. Spine injury. Shooting pains.",
+    "modalities": {
+      "worse": [
+        "Cold",
+        "Touch",
+        "Motion"
+      ],
+      "better": [
+        "Bending head back"
+      ]
+    }
+  },
+  {
+    "slug": "baryta-carbonica",
+    "name": "Baryta Carbonica",
+    "commonName": "Barium Carb",
+    "sources": [
+      "Kent",
+      "Boericke"
+    ],
+    "keynotes": [
+      "Delayed development",
+      "Tonsils enlarged",
+      "Old age childish",
+      "Takes cold easily"
+    ],
+    "mental": "Timid, shy. Slow comprehension. Childish in elderly.",
+    "physical": "Enlarged tonsils. Swollen glands. Senility.",
+    "modalities": {
+      "worse": [
+        "Cold",
+        "Suppression"
+      ],
+      "better": [
+        "Walking in open air"
+      ]
+    }
+  },
+  {
+    "slug": "medorrhinum",
+    "name": "Medorrhinum",
+    "commonName": "Nosode",
+    "sources": [
+      "Kent",
+      "Boericke"
+    ],
+    "keynotes": [
+      "Sycotic miasm",
+      "Time passes slowly",
+      "Craves ice",
+      "Restless heat feet"
+    ],
+    "mental": "Time moves too slowly. Hurried. Cannot concentrate.",
+    "physical": "Chronic gonorrhea effects. Asthma. Warts.",
+    "modalities": {
+      "worse": [
+        "Daytime",
+        "Sun",
+        "Closing eyes"
+      ],
+      "better": [
+        "Sea air",
+        "Lying on abdomen"
+      ]
+    }
+  },
+  {
+    "slug": "tuberculinum",
+    "name": "Tuberculinum",
+    "commonName": "Nosode",
+    "sources": [
+      "Kent",
+      "Boericke"
+    ],
+    "keynotes": [
+      "Family TB history",
+      "Desire change",
+      "Restlessness",
+      "Enlarged glands"
+    ],
+    "mental": "Desire to travel. Irritable on waking. Contradictory.",
+    "physical": "Enlarged tonsils. Ringworm. Recurrent colds.",
+    "modalities": {
+      "worse": [
+        "Closed room",
+        "Damp"
+      ],
+      "better": [
+        "Open air",
+        "Motion"
+      ]
+    }
+  }
+]

@@ -1,0 +1,88 @@
+[
+  {
+    "slug": "kent-lectures",
+    "title": "Lectures on Homoeopathic Materia Medica",
+    "author": "James Tyler Kent",
+    "year": 1905,
+    "category": "Materia Medica",
+    "description": "Classic materia medica lectures covering constitutional pictures of major polychrest remedies. Essential for understanding remedy personalities.",
+    "chapters": [
+      { "id": "c1", "title": "Introduction to Kent's Method", "content": "Kent teaches that every remedy has a personality — a coherent picture of mind, body, and modalities. The prescriber must match the patient's totality to the remedy's totality, not isolated symptoms. Key principles: (1) Mind symptoms are most important, (2) Strange, rare, and peculiar symptoms guide selection, (3) Modalities confirm the remedy." },
+      { "id": "c2", "title": "Aconitum Napellus", "content": "Sudden violent onset after exposure to dry cold wind or fright. Great fear and anxiety — fear of death, predicts the hour. Restlessness with tossing. Dry burning heat, unquenchable thirst for cold water. Face red or pale, one cheek red. Acute inflammations with stinging, numbness, tingling. Never give after fever is established — Aconite is for the first stage only." },
+      { "id": "c3", "title": "Arsenicum Album", "content": "The restless, anxious, fastidious patient. Burning pains relieved by heat. Thirst for small sips frequently. Exhaustion disproportionate to illness. Chilly, wants warmth and company. Fear of being alone, fear of disease. Offensive discharges. Periodic complaints. Suited to anemia, asthma, food poisoning, and anxious states." },
+      { "id": "c4", "title": "Natrum Muriaticum", "content": "The grief remedy. Reserved, closed personality — cannot weep in company but weeps alone. Ailments from disappointment in love, grief, humiliation. Craves salt. Headaches from sun, school headaches in children. Herpes labialis. Constipation. Worse from consolation — the patient wants to be left alone. Mapped tongue." },
+      { "id": "c5", "title": "Sepia Officinalis", "content": "Indifference to loved ones — husband, children, duties. Bearing-down sensation in pelvis. Yellow saddle across nose. Hormonal complaints — PMS, menopause, morning sickness. Better from vigorous exercise. Averse to sex. Weeps when describing symptoms. Suits worn-out mothers and overworked women." },
+      { "id": "c6", "title": "Sulphur", "content": "The philosopher who neglects personal hygiene. Burning itching eruptions worse from heat and bathing. Untidy, selfish, critical. Hot patient with hot feet, throws off covers. Red orifices — lips, anus. Philosophical, lazy, religious melancholy. The king of antipsoric remedies." }
+    ]
+  },
+  {
+    "slug": "boericke-materia-medica",
+    "title": "Pocket Manual of Homoeopathic Materia Medica",
+    "author": "William Boericke",
+    "year": 1927,
+    "category": "Materia Medica",
+    "description": "Concise remedy keynotes used worldwide for quick reference during consultations. Ideal for differential diagnosis.",
+    "chapters": [
+      { "id": "c1", "title": "How to Use This Manual", "content": "Boericke's manual is designed for rapid bedside reference. Each remedy entry lists: mind, head, eyes, ears, nose, face, mouth, throat, stomach, abdomen, stool, urine, female, respiratory, heart, extremities, skin, sleep, fever, and modalities. Cross-reference keynotes with repertory rubrics for confirmation." },
+      { "id": "c2", "title": "Polychrest Remedies Overview", "content": "The major polychrests — Sulphur, Calcarea, Lycopodium, Natrum Mur, Sepia, Phosphorus, Pulsatilla, Nux Vomica, Arsenicum, Bryonia, Rhus Tox — cover the majority of chronic cases. Learn their constitutional pictures first before studying smaller remedies." },
+      { "id": "c3", "title": "Acute Remedies", "content": "For acute prescribing: Aconite (sudden onset, fear), Belladonna (heat, redness, throbbing), Bryonia (worse motion, dry), Gelsemium (dull, drowsy, trembling), Rhus Tox (stiffness, better motion), Chamomilla (irritable, unbearable pain), Arsenicum (restless, burning, anxious)." },
+      { "id": "c4", "title": "Modalities Quick Reference", "content": "Time aggravations: Nux Vom (morning), Lycopodium (4-8 PM), Arsenicum (midnight), Kali Carb (3 AM). Thermal: Calcarea and Silicea (chilly), Sulphur and Pulsatilla (warm). Motion: Bryonia (worse), Rhus Tox (worse first, then better). Thirst: Arsenicum (small sips), Bryonia (large quantities), Pulsatilla and Gelsemium (thirstless)." }
+    ]
+  },
+  {
+    "slug": "organon-aphorisms",
+    "title": "Organon of Medicine — Key Aphorisms",
+    "author": "Samuel Hahnemann",
+    "year": 1810,
+    "category": "Philosophy",
+    "description": "Foundational principles of homeopathic practice. Selected aphorisms for daily clinical reference.",
+    "chapters": [
+      { "id": "c1", "title": "Aphorism §1 — The Physician's Mission", "content": "The physician's high and only mission is to restore the sick to health, to cure, as it is termed. A cure means the removal of disease in its entire extent in the shortest, most reliable, and most harmless way." },
+      { "id": "c2", "title": "Aphorism §7 — Totality of Symptoms", "content": "The totality of symptoms is the outwardly reflected picture of the internal essence of the disease — that is, of the suffering of the life force. The totality must be the principal and sole means by which the disease allows the appropriate remedy to be discovered." },
+      { "id": "c3", "title": "Aphorism §153 — Strange, Rare, Peculiar", "content": "In this search for a homoeopathic specific remedy, the more striking, singular, uncommon, and peculiar signs and symptoms of the case are chiefly and most solely to be kept in view; for it is more particularly these that very similar ones in the list of symptoms of the selected medicine must correspond to." },
+      { "id": "c4", "title": "Aphorism §211 — Chronic Disease", "content": "The homoeopathic physician must never forget that chronic diseases are almost always caused by chronic miasms — Psora, Syphilis, and Sycosis — and that the anti-miasmatic remedy must be selected according to the totality of symptoms." },
+      { "id": "c5", "title": "Aphorism §246 — Single Remedy", "content": "In no case under treatment is it necessary and therefore not permissible to administer to a patient more than one single, simple medicinal substance at one time. It is inconceivable how the slightest doubt could exist as to whether it was more consistent with nature and more rational to prescribe a single well-known medicine at a time." }
+    ]
+  },
+  {
+    "slug": "kent-repertory-guide",
+    "title": "Kent's Repertory — Clinical Guide",
+    "author": "James Tyler Kent",
+    "year": 1897,
+    "category": "Repertory",
+    "description": "Guide to using Kent's Repertory of the Homoeopathic Materia Medica for case analysis and remedy selection.",
+    "chapters": [
+      { "id": "c1", "title": "Structure of the Repertory", "content": "Kent's Repertory is organized into chapters: Mind, Generals, and body parts from Head to Skin. Each rubric lists remedies with grades 1-3 (some editions use 1-4). Grade 3 (bold) remedies are most strongly indicated. Always confirm repertory results with materia medica." },
+      { "id": "c2", "title": "Repertorization Technique", "content": "Select 5-10 characteristic rubrics covering mind, generals, and particulars with clear modalities. Avoid common symptoms. Score remedies by adding grades. Remedies appearing in multiple high-grade rubrics rise to the top. Eliminate remedies that contradict keynotes." },
+      { "id": "c3", "title": "Mind Chapter — Most Important", "content": "Kent placed Mind first because mental symptoms are the most individual. Key rubrics: fear types, grief, irritability, loquacity, indifference, consolation amel/aggr, dreams, memory. A strong mental picture often points directly to the simillimum." },
+      { "id": "c4", "title": "Generals vs Particulars", "content": "General symptoms affect the whole person: thermal state, food desires/aversions, perspiration, sleep, time aggravations. Particular symptoms are localized. Generals carry more weight. A particular symptom with a clear modality is more valuable than a general without modality." }
+    ]
+  },
+  {
+    "slug": "chronic-diseases",
+    "title": "The Chronic Diseases — Miasmatic Theory",
+    "author": "Samuel Hahnemann",
+    "year": 1828,
+    "category": "Philosophy",
+    "description": "Understanding Psora, Sycosis, and Syphilis as foundations of chronic prescribing.",
+    "chapters": [
+      { "id": "c1", "title": "Psora — The Fundamental Miasm", "content": "Psora is the oldest and most universal miasm, underlying most chronic disease. It manifests as deficiency, sensitivity, itching, anxiety, and functional disorders. Anti-psoric remedies include Sulphur, Calcarea, Lycopodium, Natrum Mur, Sepia, and Silicea." },
+      { "id": "c2", "title": "Sycosis — The Excess Miasm", "content": "Sycosis produces excess growth — warts, condylomata, fibroids, keloids. Fixed ideas, secretiveness. Anti-sycotic remedies: Thuja, Medorrhinum, Nitric Acid, Causticum." },
+      { "id": "c3", "title": "Syphilis — The Destructive Miasm", "content": "Syphilis causes destruction — ulcers, bone pains, night pains, suicidal tendency. Anti-syphilitic remedies: Mercurius, Aurum, Syphilinum, Kali Iodatum." },
+      { "id": "c4", "title": "Tubercular Miasm", "content": "Added by later homeopaths (Burnett, Foubister). Restlessness, desire for change, creative but destructive. Family history of TB. Remedies: Tuberculinum, Phosphorus, Bacillinum." }
+    ]
+  },
+  {
+    "slug": "boenninghausen-method",
+    "title": "Boenninghausen's Repertory Method",
+    "author": "Clemens von Boenninghausen",
+    "year": 1846,
+    "category": "Repertory",
+    "description": "The complete symptom concept — location, sensation, modality — for precise repertorization.",
+    "chapters": [
+      { "id": "c1", "title": "The Complete Symptom", "content": "Boenninghausen taught that every symptom has four parts: Quis (who — constitution), Quid (what — complaint), Ubi (where — location), Quibus Auxiliis (with what — concomitants), Cur (why — cause), Quomodo (how — sensation), Quando (when — time). This complete symptom approach prevents incomplete prescribing." },
+      { "id": "c2", "title": "Concomitants", "content": "Concomitant symptoms are those occurring simultaneously with the chief complaint but not causally related. They are highly characteristic. Example: headache with nausea and thirstlessness points to Bryonia; headache with nausea and thirst points to Nux Vomica." },
+      { "id": "c3", "title": "Modalities as Key", "content": "What makes the symptom better or worse is often more important than the symptom itself. 'Pain worse from motion' immediately suggests Bryonia. 'Pain better from continued motion' suggests Rhus Tox. Always record modalities during case taking." }
+    ]
+  }
+]

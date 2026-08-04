@@ -11,6 +11,7 @@ import PatientReports from '../components/PatientReports';
 const tabs = [
   { id: 'overview', label: 'Overview' },
   { id: 'prescriptions', label: 'Prescriptions' },
+  { id: 'clinical', label: 'Repertorization' },
   { id: 'reports', label: 'Reports' },
   { id: 'billing', label: 'Billing' },
 ];
@@ -41,6 +42,12 @@ export default function PatientDetail() {
     queryKey: ['patient-invoices', id],
     queryFn: async () => (await api.get(`/patients/${id}/invoices`)).data.invoices,
     enabled: tab === 'billing',
+  });
+
+  const { data: clinicalSessions = [], isLoading: sessionsLoading } = useQuery({
+    queryKey: ['clinical-sessions', id],
+    queryFn: async () => (await api.get('/clinical/sessions', { params: { patientId: id } })).data.sessions,
+    enabled: tab === 'clinical' && canClinical,
   });
 
   if (isLoading) return <PageLoader />;
@@ -172,6 +179,37 @@ export default function PatientDetail() {
 
       {tab === 'reports' && (
         <PatientReports patientId={id} />
+      )}
+
+      {tab === 'clinical' && canClinical && (
+        <div className="space-y-3">
+          <div className="flex justify-between items-center">
+            <p className="text-sm text-muted">Saved repertorization sessions for this patient</p>
+            <Link to={`/clinical?tab=analyze`} className="btn btn-secondary text-xs py-2 min-h-9">New analysis</Link>
+          </div>
+          {sessionsLoading ? (
+            <Skeleton className="h-24" />
+          ) : !clinicalSessions.length ? (
+            <div className="card-surface p-6 text-muted text-sm">No repertorization saved yet. Analyze from Clinical Suite and link to this patient.</div>
+          ) : (
+            clinicalSessions.map((s) => {
+              const top = s.topRemedies ? JSON.parse(s.topRemedies) : [];
+              return (
+                <div key={s.id} className="card-surface p-4">
+                  <div className="flex justify-between gap-2">
+                    <p className="font-medium text-sage-900">{s.title || 'Repertorization'}</p>
+                    <p className="text-xs text-muted">{format(new Date(s.createdAt), 'd MMM yyyy')}</p>
+                  </div>
+                  {top.length > 0 && (
+                    <p className="text-sm text-muted mt-2">
+                      Top: {top.slice(0, 3).map((r) => r.name).join(' · ')}
+                    </p>
+                  )}
+                </div>
+              );
+            })
+          )}
+        </div>
       )}
 
       {tab === 'billing' && (

@@ -1,23 +1,31 @@
 import { useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { Link } from 'react-router-dom';
-import { Search, Plus, Phone } from 'lucide-react';
+import { Search, Plus, Phone, ChevronLeft, ChevronRight } from 'lucide-react';
 import api from '../lib/api';
 import { PageLoader, TagBadge, EmptyState } from '../components/ui';
 import { useAuth } from '../store/auth';
 import { useDebouncedValue } from '../lib/useDebouncedValue';
 
+const PAGE_SIZE = 20;
+
 export default function Patients() {
   const [q, setQ] = useState('');
   const [tag, setTag] = useState('');
+  const [page, setPage] = useState(1);
   const debouncedQ = useDebouncedValue(q.trim(), 300);
   const canManage = useAuth((s) => s.canManageOps());
 
-  const { data, isLoading } = useQuery({
-    queryKey: ['patients', debouncedQ, tag],
-    queryFn: async () => (await api.get('/patients', { params: { q: debouncedQ || undefined, tag: tag || undefined } })).data,
+  const { data, isLoading, isFetching } = useQuery({
+    queryKey: ['patients', debouncedQ, tag, page],
+    queryFn: async () => (await api.get('/patients', {
+      params: { q: debouncedQ || undefined, tag: tag || undefined, page, limit: PAGE_SIZE },
+    })).data,
     staleTime: 30_000,
   });
+
+  const total = data?.total ?? 0;
+  const totalPages = Math.max(1, Math.ceil(total / PAGE_SIZE));
 
   return (
     <div className="space-y-5">
@@ -33,17 +41,17 @@ export default function Patients() {
         )}
       </div>
 
-      <div className="flex flex-col sm:flex-row gap-3">
-        <div className="relative flex-1">
-          <Search className="pointer-events-none absolute left-3.5 top-1/2 -translate-y-1/2 text-sage-400" size={18} />
+      <div className="flex flex-col sm:flex-row gap-3 min-w-0">
+        <div className="relative flex-1 min-w-0">
+          <Search className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-sage-400" size={18} />
           <input
-            className="input-with-icon"
+            className="input-with-icon w-full"
             placeholder="Search name, phone, or ID"
             value={q}
-            onChange={(e) => setQ(e.target.value)}
+            onChange={(e) => { setQ(e.target.value); setPage(1); }}
           />
         </div>
-        <select className="input sm:w-44" value={tag} onChange={(e) => setTag(e.target.value)}>
+        <select className="input w-full sm:w-44 shrink-0" value={tag} onChange={(e) => { setTag(e.target.value); setPage(1); }}>
           <option value="">All tags</option>
           <option value="NEW">New</option>
           <option value="FOLLOW_UP">Follow-up</option>
@@ -51,6 +59,13 @@ export default function Patients() {
           <option value="INACTIVE">Inactive</option>
         </select>
       </div>
+
+      {!isLoading && total > 0 && (
+        <p className="text-sm text-muted">
+          Showing {(page - 1) * PAGE_SIZE + 1}–{Math.min(page * PAGE_SIZE, total)} of {total} patients
+          {isFetching && <span className="text-sage-600"> · updating…</span>}
+        </p>
+      )}
 
       {isLoading ? <PageLoader /> : !data?.patients?.length ? (
         <EmptyState title="No patients found" description="Try a different search or register a new patient." />
@@ -77,6 +92,28 @@ export default function Patients() {
               <span className="text-xs text-muted hidden sm:block">{p._count?.caseRecords || 0} visits</span>
             </Link>
           ))}
+        </div>
+      )}
+
+      {totalPages > 1 && (
+        <div className="flex items-center justify-center gap-3 pt-2">
+          <button
+            type="button"
+            className="btn btn-secondary py-2 min-h-10"
+            disabled={page <= 1}
+            onClick={() => setPage((p) => p - 1)}
+          >
+            <ChevronLeft size={18} /> Prev
+          </button>
+          <span className="text-sm text-muted">Page {page} of {totalPages}</span>
+          <button
+            type="button"
+            className="btn btn-secondary py-2 min-h-10"
+            disabled={page >= totalPages}
+            onClick={() => setPage((p) => p + 1)}
+          >
+            Next <ChevronRight size={18} />
+          </button>
         </div>
       )}
     </div>

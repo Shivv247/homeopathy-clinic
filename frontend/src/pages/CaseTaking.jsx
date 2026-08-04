@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useNavigate, useParams, Link } from 'react-router-dom';
 import { useMutation, useQuery } from '@tanstack/react-query';
-import { Plus, Trash2 } from 'lucide-react';
+import { Plus, Trash2, Brain } from 'lucide-react';
 import api from '../lib/api';
 import { ChipSelect, PageLoader } from '../components/ui';
 
@@ -57,6 +57,24 @@ export default function CaseTaking() {
     setComplaints((list) => list.map((c, i) => (i === idx ? { ...c, [key]: val } : c)));
   };
 
+  const buildSymptomText = () => {
+    const parts = [];
+    complaints.forEach((c) => {
+      if (!c.description.trim()) return;
+      parts.push(c.description);
+      if (c.sensation) parts.push(c.sensation);
+      if (c.modalityAgg?.length) parts.push(`worse from ${c.modalityAgg.join(', ')}`);
+      if (c.modalityAmel?.length) parts.push(`better from ${c.modalityAmel.join(', ')}`);
+    });
+    if (mental.temperament) parts.push(mental.temperament);
+    if (mental.fears?.length) parts.push(`fear of ${mental.fears.join(', ')}`);
+    if (mental.mood) parts.push(mental.mood);
+    if (physical.thermal) parts.push(physical.thermal);
+    if (physical.cravings?.length) parts.push(`craves ${physical.cravings.join(', ')}`);
+    if (miasm) parts.push(`${miasm} miasm`);
+    return parts.join(', ');
+  };
+
   const submit = (e) => {
     e.preventDefault();
     setError('');
@@ -92,12 +110,18 @@ export default function CaseTaking() {
           </p>
           <h1 className="font-display text-2xl text-sage-900 mt-1">Case taking</h1>
         </div>
-        <div className="flex gap-2">
+        <div className="flex gap-2 flex-wrap">
           {['NEW', 'FOLLOW_UP'].map((t) => (
             <button key={t} type="button" className={`chip ${visitType === t ? 'chip-active' : 'chip-idle'}`} onClick={() => setVisitType(t)}>
               {t === 'NEW' ? 'New case' : 'Follow-up'}
             </button>
           ))}
+          <Link
+            to={`/clinical?tab=analyze&symptoms=${encodeURIComponent(buildSymptomText())}`}
+            className="btn btn-secondary text-xs py-2 min-h-10"
+          >
+            <Brain size={16} /> Analyze in Repertory
+          </Link>
         </div>
       </div>
 
