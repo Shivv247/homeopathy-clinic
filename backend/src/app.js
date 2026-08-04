@@ -49,7 +49,13 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/uploads', express.static(path.join(__dirname, '..', 'uploads')));
 
 app.get('/api/health', (_req, res) => {
-  res.json({ success: true, message: 'Homeopathy Clinic API running', time: new Date().toISOString() });
+  res.json({
+    success: true,
+    message: 'Homeopathy Clinic API running',
+    time: new Date().toISOString(),
+    commit: process.env.RENDER_GIT_COMMIT || null,
+    version: '2.1.0',
+  });
 });
 
 app.use('/api/auth', authRoutes);
